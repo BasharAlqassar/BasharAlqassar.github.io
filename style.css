@@ -44,8 +44,20 @@ body {
     color: white;
     opacity: 1.0;
   }
+
+  #navbar header
+  {
+    color: white;
+    text-align: left;
+    font-size: larger;
+    text-indent: 1%;
+  }
   
   .content {
     padding: 16px;
   }
   
+  iframe
+  {
+
+  }
