@@ -64,11 +64,11 @@ body {
 
   align-items: center;
   padding: 20px;
-  font-size: 30px;
-  width: 20px;
+  font-size: 10px;
+  width: 10px;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
+  margin: 4px 2px;
   background:rgba(1, 1, 1, 0);
   filter: sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
   
@@ -80,6 +80,20 @@ body {
 }
 
 
+.written-text
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  color: white;
+}
+
+.link
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  color: #32a3ff;
+}
+
 footer
 {
   bottom: 0;
@@ -87,3 +101,5 @@ footer
   text-align: center;
   background-color: black;
 }
+
+
