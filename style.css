@@ -128,7 +128,6 @@ body {
   border-style: none;
   width: 420px;
   height: 260px;
-  margin: 5%;
   background-color: #f2f2f2;
   align-items: center;
   text-align: center;
@@ -140,12 +139,36 @@ body {
   transform: scale(1.02);
 }
 
+.card-text-holder
+{
+  justify-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.card-image-holder
+{
+  height: 100%;
+  width: 100%;
+
+  justify-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
 .project-card-image
 {
-  border-radius: 5%;
+  height: 100%;
+  width: 100%;
+
+  justify-items: center;
+  justify-content: center;
+  align-self: center;
+
   border-color: #353535;
+
+  border-radius: 15px;
   border-width: 10;
-  width: 90%;
 }
 
 
