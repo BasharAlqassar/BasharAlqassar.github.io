@@ -118,6 +118,26 @@ body {
 
 .project-card
 {
+
+}
+
+
+.card-text-holder
+{
+  justify-items: center;
+  justify-content: center;
+  align-self: center;
+
+  color: #f1f1f1;
+}
+
+
+
+.project-card-image
+{
+  height: 100%;
+  width: 100%;
+
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   border-radius: 15px;
   display: flex;
@@ -133,42 +153,10 @@ body {
   text-align: center;
 }
 
-.project-card:hover
+.project-card-image:hover
 {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   transform: scale(1.02);
-}
-
-.card-text-holder
-{
-  justify-items: center;
-  justify-content: center;
-  align-self: center;
-}
-
-.card-image-holder
-{
-  height: 100%;
-  width: 100%;
-
-  justify-items: center;
-  justify-content: center;
-  align-self: center;
-}
-
-.project-card-image
-{
-  height: 100%;
-  width: 100%;
-
-  justify-items: center;
-  justify-content: center;
-  align-self: center;
-
-  border-color: #353535;
-
-  border-radius: 15px;
-  border-width: 10;
 }
 
 
