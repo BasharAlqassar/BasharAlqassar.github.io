@@ -118,7 +118,7 @@ body {
 
 .project-card
 {
-
+  width: 100%;
 }
 
 
@@ -158,6 +158,61 @@ body {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   transform: scale(1.02);
 }
+
+
+.card-tags-holder
+{
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+
+  margin: 10px 0;
+}
+
+.card-tags
+{
+  background-color: rgb(0, 255, 0);
+  border-radius: 5px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+.card-tag-role
+{
+  background-color: rgb(0, 255, 0);
+  border-radius: 5px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.card-tag-project-type
+{
+  background-color: rgb(255, 0, 0);
+  border-radius: 5px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.card-tag-language
+{
+  background-color: rgb(34, 0, 255);
+  border-radius: 5px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
 
 
 footer
