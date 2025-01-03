@@ -18,6 +18,7 @@ body {
   
   #navbar {
     position: sticky;
+    z-index: 100;
     top: 0;
     overflow: hidden;
     background-color: rgba(41, 41, 41, 0.8);
@@ -153,6 +154,18 @@ footer
   font-size: 36px;
   text-align: center;
   color: rgb(0, 255, 0);
+}
+
+.header-container
+{
+  position: relative;
+}
+
+.header-link-target
+{
+  position: absolute;
+  top: -64px;
+  left: 0;
 }
 
 .small_text_center
