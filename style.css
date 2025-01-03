@@ -7,7 +7,7 @@ body {
     font-size: 28px;
     font-family: Arial, Helvetica, sans-serif;
 
-    background-color: #333;
+    background-color: #000000;
   }
   
   .header {
@@ -20,7 +20,7 @@ body {
     position: sticky;
     top: 0;
     overflow: hidden;
-    background-color: rgba(1, 1, 1, 0.8);
+    background-color: rgba(41, 41, 41, 0.8);
     opacity: 1.0;
 
     font-family: 'Courier New', Courier, monospace;
@@ -45,17 +45,18 @@ body {
   }
   
   #navbar a.active {
-    color: white;
+    color: rgb(0, 255, 0);
     opacity: 1.0;
   }
 
   #navbar header
   {
-    color: white;
+    color: rgb(0, 255, 0);
     text-align: left;
     font-size: larger;
     text-indent: 1%;
   }
+
   
   .content {
     padding: 16px;
@@ -80,7 +81,7 @@ body {
 
 .social-link:hover
 {
-  filter: invert(19%) sepia(65%) saturate(4435%) hue-rotate(184deg) brightness(105%) contrast(103%);
+  filter: invert(75%) sepia(46%) saturate(7184%) hue-rotate(81deg) brightness(115%) contrast(125%);
 }
 
 
@@ -95,7 +96,7 @@ body {
 {
   font-family: 'Courier New', Courier, monospace;
   font-size: large;
-  color: #32a3ff;
+  color: rgb(0, 255, 0);
 }
 
 
@@ -143,14 +144,29 @@ footer
   bottom: 0;
   align-items: center;
   text-align: center;
-  background-color: black;
+  background-color:  rgba(41, 41, 41, 0.8);
 }
 
 .title_center
 {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 48px;
+  font-size: 36px;
+  text-align: center;
+  color: rgb(0, 255, 0);
+}
+
+.small_text_center
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
   text-align: center;
   color: rgb(255, 255, 255);
 }
 
+
+.line_dash_small
+{
+  width:10%;
+  text-align:center;
+  color: rgb(0, 255, 0);
+}
