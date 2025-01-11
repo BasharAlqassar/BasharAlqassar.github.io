@@ -1,23 +1,28 @@
 html {
   scroll-behavior: smooth;
-}
+    }
 
 body {
     margin: 0;
     font-size: 28px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #000000;
+    }
+  
+
+  .content 
+  {
+    padding: 16px;
   }
   
+
+
   .header {
     background-color: #f1f1f1;
     padding: 30px;
     text-align: center;
   }
   
-
-
-
   .topnav {
     position: sticky;
     z-index: 100;
@@ -60,10 +65,6 @@ body {
     }
   }
 
-
-
-
-
   .topnav a {
     float: center;
     display: block;
@@ -105,32 +106,72 @@ body {
   }
 
 
+
+
+  .home-content
+  {
+    margin: 50px 50px;
+
+    display: grid;
+    align-content: flex-start;
   
-  .content {
-    padding: 16px;
+    grid-template-columns: repeat(auto-fill, 700px);
+    grid-template-rows: auto;
+    grid-auto-rows: min-content;
+  
+    justify-items: center;
+    justify-content: center;
+    align-self: center;
+
+
+  
   }
+
+
+  .home-header
+  {
+
+  }
+
+  .home-colum
+  {
+
+  }
+
+  .home-large-text
+  {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    text-align: center;
+    align-self: c;
+    color: rgb(255, 255, 255);
+  }
+
+  .home-showcase-gif
+  {
+    height: 150%;
+    width: 150%;
   
-
-
-.social-link
-{
-
-  align-items: center;
-  padding: 20px;
-  font-size: 10px;
-  width: 10px;
-  text-align: center;
-  text-decoration: none;
-  margin: 4px 2px;
-  background:rgba(1, 1, 1, 0);
-  filter: sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 15px;
+    display: flex;
+    position: relative;
+    text-align: center;
   
-}
+    border-style: none;
+    width: 620px;
+    height: 460px;
+    background-color: #f2f2f2;
+    align-items: center;
+  }
 
-.social-link:hover
-{
-  filter: invert(75%) sepia(46%) saturate(7184%) hue-rotate(81deg) brightness(115%) contrast(125%);
-}
+  @media screen and (max-width: 680px) 
+  {
+    .home-showcase-gif {width: 420px; height: 260px;}
+
+  }
+
+
 
 
 .written-text
@@ -289,6 +330,27 @@ body {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   padding: 0 5px;
+}
+
+
+.social-link
+{
+
+  align-items: center;
+  padding: 20px;
+  font-size: 10px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  background:rgba(1, 1, 1, 0);
+  filter: sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+  
+}
+
+.social-link:hover
+{
+  filter: invert(75%) sepia(46%) saturate(7184%) hue-rotate(81deg) brightness(115%) contrast(125%);
 }
 
 
