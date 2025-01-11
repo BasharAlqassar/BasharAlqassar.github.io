@@ -18,7 +18,7 @@ body {
 
 
 
-  #navbar {
+  .topnav {
     position: sticky;
     z-index: 100;
     top: 0;
@@ -34,39 +34,33 @@ body {
   
 
   @media screen and (max-width: 600px) {
-    .navbar a:not(:first-child), .dropdown .dropbtn {
-      display: none;
-    }
-    .navbar a.icon {
+    .topnav a:not(:last-child) {display: none;}
+    .topnav a.icon {
       float: right;
       display: block;
     }
   }
+  
 
   @media screen and (max-width: 600px) {
-
-    .navbar.responsive {position: relative;}
-    .navbar.responsive .icon {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
       position: absolute;
       right: 0;
       top: 0;
     }
-    .navbar.responsive a {
+    .topnav.responsive a {
       float: none;
       display: block;
       text-align: left;
     }
-
-    .navbar.responsive .dropdown {float : none;}
-    .navbar.responsive .dropdown-content {position: relative;}
-    .navbar.responsive .dropdown .dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
   }
 
-  #navbar a {
+
+
+
+
+  .topnav a {
     float: center;
     display: block;
     color: #f2f2f2;
@@ -78,18 +72,18 @@ body {
     font-weight: bold;
   }
   
-  #navbar a:hover {
+  .topnav a:hover {
     background-color: #353535;
     color: black;
     opacity: 1.0;
   }
   
-  #navbar a.active {
+  .topnav a.active {
     color: rgb(0, 255, 0);
     opacity: 1.0;
   }
 
-  #navbar header
+  .topnav header
   {
     color: rgb(0, 255, 0);
     text-align: left;
