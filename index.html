@@ -27,19 +27,49 @@
 
     
 <!-- Sticky Header Bar, read from right to left on the page-->
-    <div id="navbar">
+    <div id="navbar" class="navbar">
         
-        <a class="active" href="index.html#AboutMe">About Me</a>
-        <a class="active" href="index.html#Projects">Work</a>
-        <a class="active" href="Documents/Bashar Alqassar's Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-        <a class="active" href="index.html">Home</a>
-        <header>Bashar Alqassar</header>
+        <a class="active" href="index.html#AboutMe">
+            <img class="navbar-icon" src="Icons/user.svg"></img>
+            About Me
+        </a>
+
+        <a class="active" href="index.html#Projects">
+            <img class="navbar-icon" src="Icons/play-circle.svg"></img>
+            Projects
+        </a>
+
+        <a class="active" href="Documents/Bashar Alqassar's Resume.pdf" target="_blank" rel="noopener noreferrer">
+            <img class="navbar-icon" src="Icons/file-text.svg"></img>
+            Resume
+        </a>
+
+        <a class="active" href="index.html">
+            <img class="navbar-icon" src="Icons/home.svg"></img>
+            Home
+        </a>
+        <!--<header>Bashar Alqassar</header>-->
 
        <!-- <a href="javascript:void(0)">News</a> -->
        <!-- <a href="javascript:void(0)">Contact</a> -->
        
 
       </div>
+
+<script>
+    function replace_navbar()
+    {
+        var navbar = document.getElementById("navbar");
+        if (navbar.className == "navbar")
+    {
+       navbar.className == " responsive";
+    }
+    else
+    {
+        navbar.className === "navbar";
+    }
+    }
+</script>
 
 
 
@@ -66,7 +96,6 @@
         <img class="project-card-image" src="Images/CardImages/GuisepeTitle.png" alt="Project_Banner">
 
         <div class="card-tags-holder">
-
 
             <div class="card-tag-project-type">Type</div>
             <div class="card-tag-role">Programing Lead</div>
@@ -163,7 +192,7 @@
             <a class="link" href="mailto:bbalqassar@gmail.com">BBAlqassar@gmail.com<br></a>
             <a class="written-text">Check out my </a>
             <a class="link" href="Documents/Bashar Alqassar's Resume.pdf">Resume</a>
-            <a class="written-text">here</a>
+            <a class="written-text">here!</a>
 
     </div>
     
