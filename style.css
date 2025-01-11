@@ -110,7 +110,8 @@ body {
 
   .home-content
   {
-    margin: 50px 50px;
+    margin-left: 40px;
+    margin-right: 40px;
 
     display: grid;
     align-content: flex-start;
@@ -122,20 +123,17 @@ body {
     justify-items: center;
     justify-content: center;
     align-self: center;
-
-
   
   }
 
 
   .home-header
   {
-
+    background-color: rgb(37, 37, 37);
   }
 
   .home-colum
   {
-
   }
 
   .home-large-text
@@ -151,6 +149,8 @@ body {
   {
     height: 150%;
     width: 150%;
+    margin-top: 40px;
+    margin-bottom: 40px;
   
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 15px;
@@ -163,6 +163,7 @@ body {
     height: 460px;
     background-color: #f2f2f2;
     align-items: center;
+
   }
 
   @media screen and (max-width: 680px) 
@@ -383,7 +384,7 @@ footer
 .header-link-target
 {
   position: absolute;
-  top: -48px;
+  top: -68px;
   left: 0;
 }
 
