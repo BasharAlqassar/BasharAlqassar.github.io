@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<link rel = 'stylesheet' href='../style.css'>
+
+<!-- Icon Links -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- This is the page tab information! (What shows on the browwser for the page window!)-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bashar Alqassar : Game Programer and Creative Coder Portfolio</title>
+        <meta name="description" content="The portfolio of Bashar Alqassar: ">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>        
+        <script src="" async defer></script>
+    </body>
+</html>
+
+
+<body>
+
+    
+<!-- Sticky Header Bar, read from right to left on the page-->
+    <div id="navbar" class="topnav">
+        
+        <a class="active" href="../index.html#AboutMe">
+            <img class="navbar-icon" src="../Icons/user.svg"></img>
+            About Me
+        </a>
+
+        <a class="active" href="../index.html#Projects">
+            <img class="navbar-icon" src="../Icons/play-circle.svg"></img>
+            Projects
+        </a>
+
+        <a class="active" href="../Documents/Bashar Alqassar's Resume.pdf" target="_blank" rel="noopener noreferrer">
+            <img class="navbar-icon" src="../Icons/file-text.svg"></img>
+            Resume
+        </a>
+
+        <a class="active" href="../index.html">
+            <img class="navbar-icon" src="../Icons/home.svg"></img>
+            Home
+        </a>
+
+        <a href="javascript:void(0);" onclick="show_collapsed()" class="navbar-dropdown">
+            <img class="navbar-icon" src="../Icons/menu.svg" id="navbar_showhide"></img>
+        </a>
+
+
+
+        <script>
+            function show_collapsed()
+            {
+                var navbar = document.getElementById("navbar");
+                var show_hide_btn_icon = document.getElementById("navbar_showhide");
+
+                console.log(navbar)
+
+                if (navbar.className === "topnav") 
+                {
+                    navbar.className += " responsive";
+                    show_hide_btn_icon.src = "../Icons/x-square.svg";
+                    
+                } else 
+                {
+                    navbar.className = "topnav";
+                    show_hide_btn_icon.src = "../Icons/menu.svg";
+                }
+                console.log(navbar)
+            }
+        </script>       
+
+    </div>
+
+<!-- End of Navbar Template-->
+
+
+
+
+<!-- This is a template for the footer! Place on every page!-->
+
+<footer>
+
+
+    <div>
+            <br>
+            <a class="written-text">This Website was 100% Developed by Bashar Alqassar (that's me!)<br></a>  
+            <a class="written-text"> using Github Pages, HTML, CSS and the Bootstrap Library<br></a>
+            <br>
+            <a class="written-text">Contact me at </a>
+            <a class="link" href="mailto:bbalqassar@gmail.com">BBAlqassar@gmail.com<br></a>
+            <a class="written-text">Check out my </a>
+            <a class="link" href="../Documents/Bashar Alqassar's Resume.pdf">Resume</a>
+            <a class="written-text">here!</a>
+
+    </div>
+    
+    <hr style="width:50%;text-align:center;">
+    
+    <div>
+            <a href="mailto:bbalqassar@gmail.com" class="social-link">
+                <img src="../Icons/email.png" width="50"/>
+            </a>
+    
+            <a href="https://www.linkedin.com/in/bashar-alqassar-974830224/" class="social-link">
+                <img src="../Icons/linkedin.svg" width="50"/>
+            </a>
+            
+            <a href="https://github.com/DocterBuster" class="social-link">
+                <img src="../Icons/github.svg" width="50"/>
+            </a>
+            
+            <a href="https://docterbuster.itch.io/" class="social-link">
+                <img src="../Icons/itchio.svg" width="50"/>
+            </a>
+    
+    </div>
+    
+    <div style="clear: both;">&nbsp;</div>
+    </footer>
+
+<!-- End of Footer Template-->
+<html>
