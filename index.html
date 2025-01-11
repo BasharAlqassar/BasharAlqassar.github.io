@@ -48,6 +48,35 @@
             <img class="navbar-icon" src="Icons/home.svg"></img>
             Home
         </a>
+
+        <a href="javascript:void(0);" onclick="show_collapsed()" class="navbar-dropdown">
+            <img class="navbar-icon" src="Icons/menu.svg" id="navbar_showhide"></img>
+        </a>
+
+
+
+        <script>
+            function show_collapsed()
+            {
+                var navbar = document.getElementById("navbar");
+                var show_hide_btn_icon = document.getElementById("navbar_showhide");
+
+                console.log(navbar)
+
+                if (navbar.className === "topnav") 
+                {
+                    navbar.className += " responsive";
+                    show_hide_btn_icon.src = "Icons/x-square.svg";
+                    
+                } else 
+                {
+                    navbar.className = "topnav";
+                    show_hide_btn_icon.src = "Icons/menu.svg";
+                }
+                console.log(navbar)
+            }
+        </script>
+
         <!--<header>Bashar Alqassar</header>-->
 
        <!-- <a href="javascript:void(0)">News</a> -->
