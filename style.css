@@ -139,7 +139,7 @@ body {
   .home-large-text
   {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 50px;
+    font-size: 48px;
     text-align: center;
     align-self: c;
     color: rgb(255, 255, 255);
@@ -147,8 +147,8 @@ body {
 
   .home-showcase-gif
   {
-    height: 150%;
-    width: 150%;
+    height: 140%;
+    width: 140%;
     margin-top: 40px;
     margin-bottom: 40px;
   
@@ -168,7 +168,7 @@ body {
 
   @media screen and (max-width: 680px) 
   {
-    .home-showcase-gif {width: 420px; height: 260px;}
+    .home-showcase-gif {width: 400px; height: 240px;}
 
   }
 
@@ -203,12 +203,12 @@ body {
   justify-items: center;
   justify-content: center;
   align-self: center;
-  gap: 50px;
+  gap: 20px;
 }
 
 .project-card
 {
-  width: 420px;
+  width: 400px;
 
   justify-items: center;
   justify-content: center;
@@ -248,8 +248,8 @@ body {
   transition: .25s;
 
   border-style: none;
-  width: 420px;
-  height: 260px;
+  width: 400px;
+  height: 240px;
   background-color: #000000;
   align-items: center;
   text-align: center;
