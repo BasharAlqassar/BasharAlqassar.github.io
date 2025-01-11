@@ -75,7 +75,7 @@ body {
     display: inline-block;
     font-weight: bold;
   }
-  
+
   .topnav a:hover {
     background-color: #353535;
     color: black;
@@ -98,6 +98,7 @@ body {
   .navbar-icon
   {
     width: 30px;
+    margin-bottom: -8px;
     text-decoration: none;
     background:rgba(1, 1, 1, 0);
     filter: invert(65%) sepia(87%) saturate(4237%) hue-rotate(85deg) brightness(117%) contrast(129%);
