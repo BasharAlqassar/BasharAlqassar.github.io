@@ -427,6 +427,23 @@ footer
   color: rgb(255, 255, 255);
 }
 
+.about-me-text[color="white"]
+{
+  --text-color: rgb(255, 255, 255);
+}
+
+.about-me-text[color="green"]
+{
+  --text-color: rgb(0, 255, 0);
+}
+
+.about-me-text
+{
+  color: var(--text-color);
+}
+
+
+
 .about-me-image
 {
   width: 80%;
