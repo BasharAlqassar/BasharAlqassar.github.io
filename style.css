@@ -273,73 +273,48 @@ body {
 .card-tags-holder
 {
   width: 100%;
-
   display: flex;
   flex-wrap: wrap;
   column-gap: 10px;
   row-gap: 10px;
-
   margin: 10px 0;
 }
 
-.card-tags
+.card-tag
 {
-  background-color: rgb(0, 255, 0);
-
   border-radius: 5px;
   font-size: 16px;
   color: rgb(255, 255, 255);
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
   text-align: center;
   padding: 0 5px;
 }
 
-.card-tag-role
+.card-tag[type="role"]
 {
-  background-color: #209372;
-
-  border-radius: 5px;
-  font-size: 16px;
-  color: rgb(255, 255, 255);
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-  padding: 0 5px;
+  --bg_color: #209372;
+}
+.card-tag[type="project-type"]
+{
+  --bg_color: #c30600;
+}
+.card-tag[type="tool"]
+{
+  --bg_color: #335eb5;
+}
+.card-tag[type="engine"]
+{
+  --bg_color: #933ac2;
+}
+.card-tag[type="date"]
+{
+  --bg_color: #cf630b;
 }
 
-.card-tag-project-type
+.card-tag
 {
-  background-color: #c30600;
-
-  border-radius: 5px;
-  font-size: 16px;
-  color: rgb(255, 255, 255);
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-  padding: 0 5px;
-}
-
-.card-tag-tool
-{
-  background-color: #335eb5;
-
-  border-radius: 5px;
-  font-size: 16px;
-  color: rgb(255, 255, 255);
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-  padding: 0 5px;
-}
-
-.card-tag-engine
-{
-  background-color: #933ac2;
-
-  border-radius: 5px;
-  font-size: 16px;
-  color: rgb(255, 255, 255);
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-  padding: 0 5px;
+  background-color: var(--bg_color);
 }
 
 
