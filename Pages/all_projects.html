@@ -1,13 +1,6 @@
-
-
-<!-- Thank you for checking out my portfolio!-->
-<!-- If your here to see how I did some things:-->
-<!-- Looking to Make a Portfolio: feel free to copy for your own reference! (No Shame!) -->
-<!-- Looking to see how I messed up horribly: You're in the right place! ;D -->
-
 <!DOCTYPE html>
 
-<link rel = 'stylesheet' href='style.css'>
+<link rel = 'stylesheet' href='../style.css'>
 
 
 <!-- This is the page tab information! (What shows on the browwser for the page window!)-->
@@ -15,7 +8,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Bashar Alqassar</title>
+        <title>Bashar Alqassar's Projects</title>
         <meta name="description" content="Game Programer, Software Engineer and Creative Coder">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
@@ -39,28 +32,28 @@
 <!-- Sticky Header Bar, read from right to left on the page-->
 <div id="navbar" class="topnav">
         
-    <a class="active" href="./index.html#AboutMe">
-        <img class="navbar-icon" src="./Icons/user.svg"></img>
+    <a class="active" href="../index.html#AboutMe">
+        <img class="navbar-icon" src="../Icons/user.svg"></img>
         About Me
     </a>
 
-    <a class="active" href="./index.html#Projects">
-        <img class="navbar-icon" src="./Icons/play-circle.svg"></img>
+    <a class="active" href="../index.html#Projects">
+        <img class="navbar-icon" src="../Icons/play-circle.svg"></img>
         Projects
     </a>
 
-    <a class="active" href="./Documents/Bashar Alqassar's Resume.pdf" target="_blank" rel="noopener noreferrer">
-        <img class="navbar-icon" src="./Icons/file-text.svg"></img>
+    <a class="active" href="../Documents/Bashar Alqassar's Resume.pdf" target="_blank" rel="noopener noreferrer">
+        <img class="navbar-icon" src="../Icons/file-text.svg"></img>
         Resume
     </a>
 
-    <a class="active" href="./index.html">
-        <img class="navbar-icon" src="./Icons/home.svg"></img>
+    <a class="active" href="../index.html">
+        <img class="navbar-icon" src="../Icons/home.svg"></img>
         Home
     </a>
 
     <a href="javascript:void(0);" onclick="show_collapsed()" class="navbar-dropdown">
-        <img class="navbar-icon" src="./Icons/menu.svg" id="navbar_showhide"></img>
+        <img class="navbar-icon" src="../Icons/menu.svg" id="navbar_showhide"></img>
     </a>
 
 
@@ -76,12 +69,12 @@
             if (navbar.className === "topnav") 
             {
                 navbar.className += " responsive";
-                show_hide_btn_icon.src = "./Icons/x-square.svg";
+                show_hide_btn_icon.src = "../Icons/x-square.svg";
                 
             } else 
             {
                 navbar.className = "topnav";
-                show_hide_btn_icon.src = "./Icons/menu.svg";
+                show_hide_btn_icon.src = "../Icons/menu.svg";
             }
             console.log(navbar)
         }
@@ -92,30 +85,6 @@
 <!-- End of Sticky Navbar Template-->
 
 
-<!--Top of Home Page content-->
-<div id="home" class="home-header">
-
-    <div class="home-content">
-
-        <div class="project-card">
-            <h1 class="home-large-text">Bashar Alqassar</h1>
-            <header class="title_center">
-                Game Programmer 
-                <br>
-                and 
-                <br>
-                Software Engineer
-            </header>
-        </div>
-
-        <div class="project-card">
-            <iframe controls class="home-showcase-video" src="https://www.youtube.com/embed/qJd0pAWGYYE?si=iLmDZn4i4ekCSnEy?start=0&loop=1&autoplay=1&mute=1&playlist=qJd0pAWGYYE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-            </iframe>
-        </div>
-
-    </div>
-
-</div>
 
 <!--End of Top Home Page content-->
 
@@ -124,7 +93,7 @@
 
 <div class="header-container">
     <a class="header-link-target" id="Projects"></a>
-    <h1 class="title_center">Recent Projects</h1>
+    <h1 class="title_center">My Projects and Work</h1>
     <h2 class="small_text_center">Click on an image to learn more about each project!</h2>
     <hr class="line_dash_small">
     <br>
@@ -138,7 +107,7 @@
 
     <div class="project-card">
         <a  href="https://store.steampowered.com/app/3547360/And_The_World_Went_Dark/">
-            <img class="project-card-image" src="Images/CardImages/TheSunIsDead_PLACEHOLDERIMAGE.png" alt="Project_Banner">
+            <img class="project-card-image" src="../Images/CardImages/TheSunIsDead_PLACEHOLDERIMAGE.png" alt="Project_Banner">
         </a>
         <div class="card-tags-holder">
 
@@ -162,7 +131,7 @@
 
     <div class="project-card">
         <a  href="https://docterbuster.itch.io/a-color-theory">
-            <img class="project-card-image" src="Images/CardImages/V_0.2.0_Itch_Logo.png" alt="Project_Banner">
+            <img class="project-card-image" src="../Images/CardImages/V_0.2.0_Itch_Logo.png" alt="Project_Banner">
         </a>
         <div class="card-tags-holder">
 
@@ -180,75 +149,70 @@
         </div>
     </div>
 
-
-
-
-
-</div>
-
-
-
-
-<div class="header-container">
-    <a class="header-link-target" id="AboutMe"></a>
-    <h1 class="title_center">About Me</h1>
-    <hr class="line_dash_small">
-</div>
-
-
-
-
-<!--Top of Home Page content-->
-<div>
-
-    <div class="about-me-content">
-
-        <div class="about-me-holder">
-            <img class="about-me-image" src="Images/Photos/Bashar_WindowPicture.jpg">
-        </div>
-        <div class="about-me-holder">
-            <a class="about-me-text" color="white">
-                <br>
-                My name is
-                <a class="about-me-text" color="green">Bashar Alqassar;</a>
-                <a class="about-me-text" color="white">I am a current Undergraduate</a>
-                <a class="about-me-text" color="green">Double Major</a>
-                <a class="about-me-text" color="white">studying </a>
-                <a class="about-me-text" color="green">Interactive Media and Game Development (IMGD)</a>
-                <a class="about-me-text" color="white">&</a>
-                <a class="about-me-text" color="green">Computer Science</a>
-                <a class="about-me-text" color="white"> at Worcester Polytechnic Institute</a>
-                <a class="about-me-text" color="white"> and a soon-to-be Graduate pursuing a</a>
-                <a class="about-me-text" color="green">Master of Science in IMGD.</a>
-                <br>
-                <br>
-                <a class="about-me-text" color="white">
-                    I am proficient in working in the Godot Game Engine using their custom GD-Script Language. 
-                    I  am also fluent in coding in Java, Javascript, Python, C/C++, C#, and HTML. I emphasize modular 
-                    design whenever possible in anything I make and always code with the end-user experience in mind with 
-                    the games I create.  
-                </a>
-                <br>
-                <br>
-                <a class="about-me-text" color="white">
-                    On teams, I love working directly with other disciplines in a project to find the best ways of developing 
-                    code systems that can elevate art, writing, design, or audio work to new heights, 
-                    making good work become exceptional.
-                </a>
-                <br>
-                <br>
-            </a>
+    <div class="project-card">
+        <a href="https://docterbuster.itch.io/project-alter-labyrinth-alpha">
+            <img class="project-card-image" src="../Images/CardImages/Project_AlterLabryth.png" alt="Project_Banner">
+        </a>
+        <div class="card-tags-holder">
+            
+            <div class="card-tag" type="project-type">Game</div>
+            <div class="card-tag" type="date">Ongoing</div>
+            <div class="card-tag" type="role">Programing Lead</div>
+            <div class="card-tag" type="role">Designer</div>
+            <div class="card-tag" type="tool">Godot</div>
+            <div class="card-tag" type="tool">Git</div>
+            <div class="card-tag" type="tool">Procedural Generation</div>
         </div>
 
-
-
-
+        <div class="card-text-holder">
+            <a>A 2-D Action-Platformer Roguelike on an Alien Moon where Infinite Alternate Dimensions have Converged. Your only enemy is Yourself. </a>
         </div>
-
     </div>
 
+    <div class="project-card">
+        <a  href="https://oinkymoo.itch.io/iuseepes-grand-adventure">
+            <img class="project-card-image" src="../Images/CardImages/GuisepeTitle.png" alt="Project_Banner">
+        </a>
+        <div class="card-tags-holder">
+
+            <div class="card-tag" type="project-type">Game Jam</div>
+            <div class="card-tag" type="date">Sept '23</div>
+            <div class="card-tag" type="role">Programing Lead</div>
+            <div class="card-tag" type="role">Designer</div>
+            <div class="card-tag" type="tool">Godot</div>
+            <div class="card-tag" type="tool">Git</div>
+
+        </div>
+
+        <div class="card-text-holder">
+            <a>A 2-D Platformer Staring the Titular Gui- [FINISH PR DESCRIPTION]</a>
+        </div>
+    </div>
+
+
+
+
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+<!--Additonal Work-->
+<div class="header-container">
+    <a class="header-link-target" id="Projects"></a>
+    <h1 class="title_center">Additional Work</h1>
+    <h2 class="small_text_center">Want to know about some of the other things I've done? Look here!</h2>
+    <hr class="line_dash_small">
+    <br>
+</div>
 
 
 <div class="card-holder">
@@ -279,7 +243,7 @@
             <a class="written-text">Contact me at </a>
             <a class="link" href="mailto:bbalqassar@gmail.com">BBAlqassar@gmail.com<br></a>
             <a class="written-text">Check out my </a>
-            <a class="link" href="./Documents/Bashar Alqassar's Resume.pdf">Resume</a>
+            <a class="link" href="../Documents/Bashar Alqassar's Resume.pdf">Resume</a>
             <a class="written-text">here!</a>
 
     </div>
@@ -288,19 +252,19 @@
     
     <div>
             <a href="mailto:bbalqassar@gmail.com" class="social-link">
-                <img src="./Icons/email.png" width="50"/>
+                <img src="../Icons/email.png" width="50"/>
             </a>
     
             <a href="https://www.linkedin.com/in/bashar-alqassar-974830224/" class="social-link">
-                <img src="./Icons/linkedin.svg" width="50"/>
+                <img src="../Icons/linkedin.svg" width="50"/>
             </a>
             
             <a href="https://github.com/DocterBuster" class="social-link">
-                <img src="./Icons/github.svg" width="50"/>
+                <img src="../Icons/github.svg" width="50"/>
             </a>
             
             <a href="https://docterbuster.itch.io/" class="social-link">
-                <img src="./Icons/itchio.svg" width="50"/>
+                <img src="../Icons/itchio.svg" width="50"/>
             </a>
     
     </div>

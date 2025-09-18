@@ -460,6 +460,7 @@ footer
   align-self: center;
 
   margin-bottom: 50px;
+
 }
 
 .about-me-text
@@ -583,3 +584,17 @@ footer
 
 }
 
+
+.subpage-image-grid
+{
+    display: grid;
+  
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-auto-rows: min-content;
+  
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-self: center;
+}
