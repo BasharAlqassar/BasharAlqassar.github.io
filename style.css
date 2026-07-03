@@ -1,3 +1,5 @@
+
+/*#region HTML General*/
 html {
   scroll-behavior: smooth;
     }
@@ -14,15 +16,18 @@ body {
   {
     padding: 16px;
   }
-  
+  /*#endregion HTML General*/
 
 
+/*#region HeaderNav*/
   .header {
     background-color: #f1f1f1;
     padding: 30px;
     text-align: center;
   }
   
+
+
   .topnav {
     position: sticky;
     z-index: 100;
@@ -106,8 +111,30 @@ body {
   }
 
 
+  .social-link
+  {
+
+    align-items: center;
+    padding: 20px;
+    font-size: 10px;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    background:rgba(1, 1, 1, 0);
+    filter: sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    
+  }
+
+  .social-link:hover
+  {
+    filter: invert(75%) sepia(46%) saturate(7184%) hue-rotate(81deg) brightness(115%) contrast(125%);
+  }
+
+  /*#endregion HeaderNav*/
 
 
+/*#region Homepage Content*/
   .home-content
   {
     margin-left: 40px;
@@ -174,33 +201,19 @@ body {
   }
 
 
+  /*#endregion Homepage Content*/
 
 
-.written-text
-{
-  font-family: 'Courier New', Courier, monospace;
-  font-size: large;
-  color: rgb(255, 255, 255);
-}
+/*#region Project Cards*/
 
-.link
-{
-  font-family: 'Courier New', Courier, monospace;
-  font-size: large;
-  color: rgb(0, 255, 0);
-}
-
-
-
+ /* Card display grid*/
 .card-holder
 {
   display: grid;
   align-content: flex-start;
-
   grid-template-columns: repeat(auto-fill, 500px);
   grid-template-rows: auto;
   grid-auto-rows: min-content;
-
   justify-items: center;
   justify-content: center;
   align-self: center;
@@ -208,15 +221,11 @@ body {
 }
 
 
-
+ /* Singular Card holder for div centering */
 .project-card
 {
   width: 400px;
-
-  justify-items: center;
-  justify-content: center;
   align-self: center;
-
   opacity: 0;
   animation: fadeInCard 0.5s forwards ease-in-out;
 }
@@ -243,6 +252,7 @@ body {
 }
 
 
+ /* Text below a card */
 .card-text-holder
 {
   color: #f1f1f1;
@@ -251,9 +261,6 @@ body {
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
   text-align: center;
-
-
-
   justify-items: center;
   justify-content: center;
   align-self: center;
@@ -262,6 +269,7 @@ body {
 
 
 
+ /* The image on a Card */
 .project-card-image
 {
   height: 100%;
@@ -280,41 +288,34 @@ body {
   background-color: #000000;
   align-items: center;
   text-align: center;
+
+
+
+  transition: scale 0.3s, filter 0.3s; 
+
+
 }
 
 
-@keyframes card-on-click {
-  
-}
 
-
+/* Card hover animation */ 
 .project-card-image:hover
 {
-  animation: card-on-hover 0.1s forwards ease-in-out;
-}
+  /*
+  animation: card-on-hover 0.1s ease-in-out forwards;
+  animation-play-state: running;
+  */
+  scale: 1.03;
+  filter: opacity(110%) invert(10%);
 
-@keyframes card-on-hover {
-
-  from
-  {
-    filter: opacity(100%) invert(0%);
-    transform: scale(1);
-  }
-
-  to 
-  {
-    filter: opacity(110%) invert(10%);
-    transform: scale(1.03);
-  }
-  
 }
 
 
 
+/*#endregion Project Cards*/
 
-/* */
 
-
+/*#region Card Tags*/
 .card-tags-holder
 {
   width: 100%;
@@ -362,79 +363,10 @@ body {
   background-color: var(--bg_color);
 }
 
-
-.social-link
-{
-
-  align-items: center;
-  padding: 20px;
-  font-size: 10px;
-  width: 10px;
-  text-align: center;
-  text-decoration: none;
-  margin: 4px 2px;
-  background:rgba(1, 1, 1, 0);
-  filter: sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
-  
-}
-
-.social-link:hover
-{
-  filter: invert(75%) sepia(46%) saturate(7184%) hue-rotate(81deg) brightness(115%) contrast(125%);
-}
+/*#endregion Card Tags*/
 
 
-
-
-
-
-
-footer
-{
-  bottom: 0;
-  align-items: center;
-  text-align: center;
-  background-color:  rgba(40, 40, 40, 0.95);
-}
-
-.title_center
-{
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 36px;
-  text-align: center;
-  color: rgb(0, 255, 0);
-}
-
-.header-container
-{
-  position: relative;
-}
-
-.header-link-target
-{
-  position: absolute;
-  top: -68px;
-  left: 0;
-}
-
-.small_text_center
-{
-  font-family: 'Courier New', Courier, monospace;
-  font-size: large;
-  text-align: center;
-  color: rgb(255, 255, 255);
-}
-
-
-.line_dash_small
-{
-  width:10%;
-  text-align:center;
-  color: rgb(0, 255, 0);
-  text-align: center;
-}
-
-
+/*#region AboutMe*/
 
 .about-me-content
 {
@@ -499,12 +431,73 @@ footer
   display: flex;
 }
 
+/*#endregion AboutMe*/
 
 
+/*#region Misc*/
+footer
+{
+  bottom: 0;
+  align-items: center;
+  text-align: center;
+  background-color:  rgba(40, 40, 40, 0.95);
+}
+
+.title_center
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 36px;
+  text-align: center;
+  color: rgb(0, 255, 0);
+}
+
+.header-container
+{
+  position: relative;
+}
+
+.header-link-target
+{
+  position: absolute;
+  top: -68px;
+  left: 0;
+}
+
+.small_text_center
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
 
 
+.line_dash_small
+{
+  width:10%;
+  text-align:center;
+  color: rgb(0, 255, 0);
+  text-align: center;
+}
 
-/* Subpage Specfic tags */ 
+
+.written-text
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  color: rgb(255, 255, 255);
+}
+
+.link
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  color: rgb(0, 255, 0);
+}
+/*#endregion Misc*/
+
+
+/*#region Subpages*/
 
 .subpage-centeral-column
 {
@@ -600,3 +593,6 @@ footer
     justify-content: center;
     align-self: center;
 }
+
+
+/*#endregion Subpages*/
