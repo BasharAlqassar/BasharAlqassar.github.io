@@ -188,10 +188,9 @@ body {
     border-right: .10em solid rgb(0, 255, 0); /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
     animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
+      typing 3.0s steps(40, end),
+      blink-caret 1.25s step-end infinite;
 
   }
 
@@ -230,11 +229,6 @@ body {
 
   }
 
-  @media screen and (max-width: 680px) 
-  {
-    .home-showcase-video {width: 400px; height: 240px;}
-
-  }
 
 
   /*#endregion Homepage Content*/
@@ -554,6 +548,7 @@ footer
 
 /*#region Subpages*/
 
+
 .subpage-centeral-column
 {
 
@@ -651,3 +646,14 @@ footer
 
 
 /*#endregion Subpages*/
+
+
+
+
+/*Resize by screen size */
+  @media screen and (max-width: 680px) 
+  {
+    .home-showcase-video {width: 400px; height: 240px;}
+    .about-me-holder {width: 400px;}
+
+  }
