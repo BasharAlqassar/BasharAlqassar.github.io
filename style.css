@@ -172,6 +172,7 @@ body {
   }
 
 
+
   .home-holder
   {
       align-items: center;
@@ -182,7 +183,7 @@ body {
   .home-large-text
   {
     font-family: 'Fira Sans', sans-serif;
-    font-size: 48px;
+    font-size: 60px;
     font-weight: 300;
     font-style: normal;
     line-height: 1.4;
@@ -204,6 +205,13 @@ body {
 
   }
 
+  .home-sub-text
+  {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(0, 255, 0);
+  }
 
   
 
@@ -234,8 +242,10 @@ body {
   
     border-style: none;
 
-    background-color: #f2f2f2;
+    background-color: #00000084;
     align-items: center;
+
+    animation: fadeInCard 0.5s forwards ease-in-out; 
 
   }
 
@@ -472,7 +482,11 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   border-radius: 15px;
   display: flex;
+
+  transition: scale 0.3s, transform 0.1s;
 }
+
+
 
 /*#endregion AboutMe*/
 
