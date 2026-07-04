@@ -175,8 +175,14 @@ body {
 
   .home-large-text
   {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Fira Sans', sans-serif;
     font-size: 48px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.4;
+    word-spacing: 0px;
+    text-transform: none;
+    text-decoration: none;
     text-align: center;
     align-self: c;
     color: rgb(255, 255, 255);
@@ -235,7 +241,7 @@ body {
 .project-card
 {
   width: 400px;
-  align-self: center;
+  align-self: top;
   opacity: 0;
   animation: fadeInCard 0.5s forwards ease-in-out;
 }
@@ -508,9 +514,19 @@ footer
 .link
 {
   font-family: 'Courier New', Courier, monospace;
-  font-size: large;
+  font-size: 18px;
   color: rgb(0, 255, 0);
+
+  transition: font-size 0.3s, color 0.3s; 
 }
+
+.link:hover
+{
+    color: rgb(0, 21, 255);
+    font-size: 22px;
+
+}
+
 /*#endregion Misc*/
 
 
