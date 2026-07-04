@@ -80,13 +80,21 @@ body {
     font-size: 20px;
     display: inline-block;
     font-weight: bold;
+    opacity: 1.0;
+
+    transition: scale 0.3s, background-color 0.3s;
   }
 
   .topnav a:hover {
-    background-color: #353535;
-    color: black;
-    opacity: 1.0;
+    background-color: #4f4f4f;
+
+
+    scale: 1.2; 
+
   }
+
+
+
   
   .topnav a.active {
     color: rgb(0, 255, 0);
@@ -122,12 +130,14 @@ body {
     text-decoration: none;
     margin: 4px 2px;
     background:rgba(1, 1, 1, 0);
-    filter: sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+
+    transition: scale 0.3s, filter 0.3s;
     
   }
 
   .social-link:hover
   {
+    scale : 1.1; 
     filter: invert(75%) sepia(46%) saturate(7184%) hue-rotate(81deg) brightness(115%) contrast(125%);
   }
 
@@ -335,6 +345,13 @@ body {
   font-weight: bold;
   text-align: center;
   padding: 0 5px;
+
+  transition: scale 0.3s; 
+}
+
+.card-tag:hover
+{
+  scale: 1.1;
 }
 
 .card-tag[type="role"]
