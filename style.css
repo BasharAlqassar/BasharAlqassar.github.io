@@ -335,7 +335,7 @@ body {
   text-align: center;
   transition: .25s;
 
-  border-style: none;
+  border: 2px solid, white;
   width: 400px;
   height: 240px;
   background-color: #000000;
@@ -391,7 +391,21 @@ body {
 
 .card-tag:hover
 {
-  scale: 1.1;
+  animation: spinOnClick 1.0s ease-in-out !important;
+}
+
+
+@keyframes spinOnClick 
+{
+  from 
+  {
+    transform: rotateX(0deg);
+  }
+
+  to
+  {
+    transform: rotateX(360deg);
+  }
 }
 
 .card-tag[type="role"]
