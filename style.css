@@ -669,6 +669,12 @@ footer
 
 }
 
+.subpage-pdf
+{
+    width: 60vw;
+    height: 60vw;
+    max-height: 900px;
+}
 
 
 .subpage-image-grid
