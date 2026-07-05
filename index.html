@@ -3,12 +3,11 @@
 <!-- Thank you for checking out my portfolio!-->
 <!-- If your here to see how I did some things:-->
 <!-- Looking to Make a Portfolio: feel free to copy for your own reference! (No Shame!) -->
-<!-- Looking to see how I messed up horribly: You're in the right place! ;D -->
+<!-- Looking to see how I messed up horribly? You're in the right place! ;D -->
 
 <!DOCTYPE html>
 
 <link rel = 'stylesheet' href='style.css'>
-
 
 
 <!-- This is the page tab information! (What shows on the browwser for the page window!)-->
@@ -17,14 +16,17 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Bashar Alqassar</title>
-        <meta name="description" content="Game Programer, Software Engineer and Creative Coder">
+        <meta name="description" content="Game Programer. Designer and Software Engineer">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
     </head>
+
     <body>        
         <script src="" async defer></script>
     </body>
 </html>
+
+
 
 <!--End of Page Information-->
 
@@ -32,6 +34,7 @@
 <body>
 
 <script src="page-script.js"></script>
+
 
     
 <!-- Sticky Header Bar, read from right to left on the page-->
@@ -47,7 +50,7 @@
         Projects
     </a>
 
-    <a class="active" href="./Documents/Bashar Alqassar's Resume.pdf" target="_blank" rel="noopener noreferrer">
+    <a class="active" href="./Pages/resume_view.html" target="_blank" rel="noopener noreferrer">
         <img class="navbar-icon" src="./Icons/file-text.svg"></img>
         Resume
     </a>
@@ -95,18 +98,17 @@
 
     <div class="home-content">
 
-        <div class="project-card">
+        <div class="home-holder">
             <h1 class="home-large-text">Bashar Alqassar</h1>
-            <header class="title_center">
-                Game Programmer 
+            <br>
+            <header class="home-sub-text">
+                Game Designer &
                 <br>
-                and 
-                <br>
-                Software Engineer
+                Full Stack Software Engineer
             </header>
         </div>
 
-        <div class="project-card">
+        <div class="home-holder">
             <iframe controls class="home-showcase-video" src="https://www.youtube.com/embed/qJd0pAWGYYE?si=iLmDZn4i4ekCSnEy?start=0&loop=1&autoplay=1&mute=1&playlist=qJd0pAWGYYE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
             </iframe>
         </div>
@@ -120,10 +122,11 @@
 
 
 
+
 <div class="header-container">
     <a class="header-link-target" id="Projects"></a>
-    <h1 class="title_center">My Projects and Work</h1>
-    <h2 class="small_text_center">Click on an image to learn more about each project!</h2>
+    <h1 class="title_center">Released Games</h1>
+    <h2 class="small_text_center">Click on an image to learn more about each game!</h2>
     <hr class="line_dash_small">
     <br>
 </div>
@@ -134,27 +137,58 @@
 
 <!-- This is a template for project cards! -->
 
+
+
+
+
     <div class="project-card">
-        <a  href="https://store.steampowered.com/app/4189620/A_Color_Theory_Demo/">
-            <img class="project-card-image" src="Images\CardImages\AColorTheory.png" alt="Project_Banner">
+        
+        <a  href="https://docterbuster.itch.io/a-color-theory">
+            <img class="project-card-image" src="Images/CardImages/AColorTheory.png" alt="Project_Banner">
         </a>
         <div class="card-tags-holder">
 
+
             <div class="card-tag" type="project-type">Game</div>
-            <div class="card-tag" type="date">Ongoing</div>
+            <div class="card-tag" type="date">BFIG Winner</div>
             <div class="card-tag" type="role">Solo Project</div>
             <div class="card-tag" type="tool">Godot</div>
             <div class="card-tag" type="tool">Git</div>
-            <div class="card-tag" type="tool">Tech Art</div>
-            <div class="card-tag" type="tool">Design</div>
+            <div class="card-tag" type="tool">Puzzle Design</div>
         </div>
 
         <div class="card-text-holder">
-            <a>A Trippy Puzzle-Platformer that literally plays with Color.</a>
+            <a>A Turn-based Rogue-Lite in a Ruined World shrouded in Darkness: Both Metaphorically and Literally.</a>
         </div>
     </div>
 
 
+
+    <div class="project-card">
+        <a  href="https://docterbuster.itch.io/bots-that-explode-most-of-the-time">
+            <img class="project-card-image" src="Images/CardImages/Bots_Itch_Icon.png" alt="Project_Banner">
+        </a>
+        <div class="card-tags-holder">
+
+
+            <div class="card-tag" type="project-type">Game</div>
+            <div class="card-tag" type="date">Masters Capstone</div>
+            <div class="card-tag" type="role">Solo Project</div>
+            <div class="card-tag" type="tool">Godot</div>
+            <div class="card-tag" type="tool">Git</div>
+            <div class="card-tag" type="tool">AI Ethics</div>
+            <div class="card-tag" type="tool">UI/UX</div>
+
+        </div>
+
+        <div class="card-text-holder">
+            <a>Why play a platforming level if you can program an AI to do it for you?</a>
+        </div>
+    </div>
+
+
+
+    
 
     <div class="project-card">
         <a  href="https://store.steampowered.com/app/3547360/And_The_World_Went_Dark/">
@@ -164,62 +198,21 @@
 
 
             <div class="card-tag" type="project-type">Game</div>
-            <div class="card-tag" type="date">2025 WPI: People's Choice Award</div>
-            <div class="card-tag" type="role">Programing Lead</div>
-            <div class="card-tag" type="role">Designer</div>
+            <div class="card-tag" type="date">'25 WPI: People's Choice</div>
+            <div class="card-tag" type="role">Tech Lead</div>
             <div class="card-tag" type="tool">Godot</div>
             <div class="card-tag" type="tool">Git</div>
-            <div class="card-tag" type="tool">Tech Art</div>
             <div class="card-tag" type="tool">Modular Design</div>
 
         </div>
 
         <div class="card-text-holder">
-            <a>A Turn-based Rogue-Lite in a Ruined World shrouded in Darkness: Both Metaphorically and Literally.</a>
-        </div>
-    </div>
-
-    <div class="project-card">
-        <a href="https://docterbuster.itch.io/project-alter-labyrinth-alpha">
-            <img class="project-card-image" src="Images/CardImages/Project_AlterLabryth.png" alt="Project_Banner">
-        </a>
-        <div class="card-tags-holder">
-            
-            <div class="card-tag" type="project-type">Game</div>
-            <div class="card-tag" type="date">Ongoing</div>
-            <div class="card-tag" type="role">Programing Lead</div>
-            <div class="card-tag" type="role">Designer</div>
-            <div class="card-tag" type="tool">Godot</div>
-            <div class="card-tag" type="tool">Git</div>
-            <div class="card-tag" type="tool">Procedural Generation</div>
-        </div>
-
-        <div class="card-text-holder">
-            <a>A 2-D Action-Platformer Roguelike on an Alien Moon where Infinite Alternate Dimensions have Converged. Your only enemy is Yourself. </a>
-        </div>
-    </div>
-
-    <div class="project-card">
-        <a  href="https://oinkymoo.itch.io/iuseepes-grand-adventure">
-            <img class="project-card-image" src="Images/CardImages/GuisepeTitle.png" alt="Project_Banner">
-        </a>
-        <div class="card-tags-holder">
-
-            <div class="card-tag" type="project-type">Game Jam</div>
-            <div class="card-tag" type="date">Sept '23</div>
-            <div class="card-tag" type="role">Programing Lead</div>
-            <div class="card-tag" type="role">Designer</div>
-            <div class="card-tag" type="tool">Godot</div>
-            <div class="card-tag" type="tool">Git</div>
-
-        </div>
-
-        <div class="card-text-holder">
-            <a>A 2-D Platformer Staring the Titular Gui- [FINISH PR DESCRIPTION]</a>
+            <a>A Turn-based Rogue-Lite in a Ruined World Shrouded in Darkness: Both Metaphorically and Literally.</a>
         </div>
     </div>
 
 
+    
 
 
 </div>
@@ -236,13 +229,13 @@
 
 
 
-<!--Top of Home Page content-->
+<!--#About Me Content-->
 <div>
 
     <div class="about-me-content">
 
         <div class="about-me-holder">
-            <img class="about-me-image" src="Images/Photos/Bashar_WindowPicture.jpg">
+            <img class="about-me-image" onclick="this.classList.toggle('spin-click')" src="Images/Photos/Bashar_WindowPicture.jpg">
         </div>
         <div class="about-me-holder">
             <a class="about-me-text" color="white">
@@ -291,7 +284,7 @@
 
 </div>
 
-<!--End of Top Home Page content-->
+<!--End of About Me Content-->
 
 
 </body>
@@ -313,7 +306,7 @@
             <a class="written-text">Contact me at </a>
             <a class="link" href="mailto:bbalqassar@gmail.com">BBAlqassar@gmail.com<br></a>
             <a class="written-text">Check out my </a>
-            <a class="link" href="./Documents/Bashar Alqassar's Resume.pdf">Resume</a>
+            <a class="link" href="../Pages/resume_view.html">Resume</a>
             <a class="written-text">here!</a>
 
     </div>
