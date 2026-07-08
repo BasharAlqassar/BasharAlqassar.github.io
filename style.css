@@ -167,13 +167,6 @@ body {
   }
 
 
-  .home-header
-  {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-  }
-
 
 
   .home-holder
@@ -702,8 +695,11 @@ footer
   {
      .home-large-text {font-size: 50px;}
      .home-sub-text {font-size: 20px;}
-    .home-showcase-video {width: 400px; height: 240px;}
-    .about-me-holder {width: 400px;}
+     .project-card-image {width: 320px; height: 180px;}
+     .card-text-holder {width: 320px;}
+     .card-tags-holder {width: 320px;}
+    .home-showcase-video {width: 320px; height: 180px;}
+    .about-me-holder {width: 320px;}
 
   }
 /*Resize by screen size */
