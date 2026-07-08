@@ -705,10 +705,10 @@ footer
     }
     .home-large-text {font-size: 40px;}
     .home-sub-text {font-size: 16px;}
-    .project-card-image {width: 320px; height: 180px; justify-self: center;}
-    .project-card { justify-items: center; align-items: center; margin-left: auto; margin-right: auto;}
-    .card-text-holder {width: 320px;}
-    .card-tags-holder {width: 320px;}
+    .project-card-image {width: 320px; height: 180px; margin: auto;}
+    .project-card { margin: auto;}
+    .card-text-holder {width: 320px; margin: auto;}
+    .card-tags-holder {width: 320px; margin: auto;}
     .home-showcase-video {width: 320px; height: 180px;}
     .about-me-holder {width: 320px;}
 
