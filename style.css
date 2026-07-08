@@ -705,7 +705,8 @@ footer
     }
     .home-large-text {font-size: 40px;}
     .home-sub-text {font-size: 16px;}
-    .project-card-image {width: 320px; height: 180px;}
+    .project-card-image {width: 320px; height: 180px; place-self: center;}
+    .project-card { place-items: center;}
     .card-text-holder {width: 320px;}
     .card-tags-holder {width: 320px;}
     .home-showcase-video {width: 320px; height: 180px;}
