@@ -694,7 +694,13 @@ footer
  FOR MOBILE */
   @media screen and (max-width: 680px) 
   {
-    .body {background-size: 800px;}
+    .body {
+      background-size: 800px;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
     .home-large-text {font-size: 40px;}
     .home-sub-text {font-size: 16px;}
     .project-card-image {width: 320px; height: 180px;}
