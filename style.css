@@ -700,6 +700,8 @@ footer
       margin-right: 0 !important;
       padding-left: 15px;
       padding-right: 15px;
+      width: auto;
+      height: auto;
     }
     .home-large-text {font-size: 40px;}
     .home-sub-text {font-size: 16px;}
