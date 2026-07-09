@@ -234,7 +234,10 @@ body {
     height: 349px;
     margin-top: 40px;
     margin-bottom: 40px;
-  
+
+
+
+
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 15px;
     display: flex;
@@ -517,7 +520,7 @@ footer
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-color: #2fea0011;
+  background-color: #192915e6;
 }
 
 .title_center
@@ -591,7 +594,7 @@ footer
 {
 
 
-  background-color: rgba(24, 24, 24, 0.315);
+  background-color: rgba(24, 24, 24, 0.715);
 
     margin-left: 10%;
     margin-right: 10%;
@@ -633,7 +636,7 @@ footer
 .subpage-text-body
 {
 
-  max-width: 80%;
+  max-width: 60%;
   height: auto;
 
   font-family: Calibri;
