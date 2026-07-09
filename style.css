@@ -669,8 +669,8 @@ footer
 
 .subpage-pdf
 {
-    width: 60vw;
-    height: 60vw;
+    width: 100vw;
+    height: 100vw;
     max-height: 900px;
 }
 
