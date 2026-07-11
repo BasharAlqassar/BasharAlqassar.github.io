@@ -439,6 +439,77 @@ body {
 /*#endregion Card Tags*/
 
 
+/*#region Tool Cards */
+
+ /* Card display grid*/
+.tool-card-holder
+{
+  display: grid;
+  align-content: flex-start;
+  grid-template-columns: repeat(auto-fit, 150px);
+  grid-template-rows: auto;
+  grid-auto-rows: min-content;
+  justify-items: center;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+  row-gap: 15px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+
+ /* Singular Tool Card holder for div centering */
+.tool-card
+{
+
+  position: relative;
+  width: 120px;
+  height: 180px;
+  background-color: #192915e6;
+
+  border-radius: 15px;
+  transition: .25s;
+  animation: fadeInCard 0.5s forwards ease-in-out; 
+
+}
+
+.tool-card:hover
+{
+    scale: 1.03;
+    filter: opacity(110%) invert(10%);
+}
+
+.tool-card-image
+{
+
+  width: 75%;
+  height: 50%;
+  margin-top: 10px;
+  filter: invert(100%);
+
+}
+
+
+.tool-card-text
+{
+  color: white; 
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  width: 80%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tool-card-text[type="two-line"]
+{
+    font-size: 16px;
+}
+
+
+/*#endregion Tool Cards */
+
+
 /*#region AboutMe*/
 
 .about-me-content
@@ -701,8 +772,7 @@ footer
 
 
 
-/*Resize by screen size
- FOR MOBILE */
+/*#region Resize by screen size */
   @media screen and (max-width: 680px) 
   {
     .body {
@@ -724,4 +794,4 @@ footer
     .about-me-holder {width: 320px;}
 
   }
-/*Resize by screen size */
+/*#endregion Resize by screen size */
