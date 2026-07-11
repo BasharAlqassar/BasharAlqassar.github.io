@@ -474,6 +474,12 @@ body {
 
 }
 
+.tool-card:hover
+{
+    scale: 1.03;
+    filter: opacity(110%) invert(10%);
+}
+
 .tool-card-image
 {
 
