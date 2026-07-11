@@ -450,6 +450,7 @@ body {
   grid-template-rows: auto;
   grid-auto-rows: min-content;
   justify-items: center;
+  text-align: center;
   justify-content: center;
   align-self: center;
   row-gap: 20px;
@@ -466,8 +467,9 @@ body {
 
   position: relative;
   width: 140px;
-  height: 170px;
-  background-color: #005a4082;
+  height: 200px;
+  background-color: #192915e6;
+
   border-radius: 15px;
   transition: .25s;
   animation: fadeInCard 0.5s forwards ease-in-out; 
@@ -476,10 +478,13 @@ body {
 
 .tool-card-image
 {
+
   width: 70%;
-  height: 60%;
+  height: 50%;
   margin-top: 10px;
   filter: invert(100%);
+
+
 
 }
 
@@ -488,6 +493,8 @@ body {
 {
   color: white; 
   font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  width: 80%;
   font-weight: bold;
   text-align: center;
 }
@@ -757,8 +764,7 @@ footer
 
 
 
-/*Resize by screen size
- FOR MOBILE */
+/*#region Resize by screen size */
   @media screen and (max-width: 680px) 
   {
     .body {
@@ -780,4 +786,4 @@ footer
     .about-me-holder {width: 320px;}
 
   }
-/*Resize by screen size */
+/*#endregion Resize by screen size */
