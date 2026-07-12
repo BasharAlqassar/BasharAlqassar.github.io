@@ -278,15 +278,15 @@ body {
  /* Card display grid*/
 .card-holder
 {
-  display: grid;
-  align-content: flex-start;
-  grid-template-columns: repeat(auto-fill, 500px);
-  grid-template-rows: auto;
+  display: flex;
+  flex-wrap: wrap;
+  place-items: center;
+  align-self: center;
   grid-auto-rows: min-content;
   justify-items: center;
   justify-content: center;
   align-self: center;
-  gap: 20px;
+  gap: 100px;
   row-gap: 50px;
   
 }
@@ -297,6 +297,12 @@ body {
 {
   width: 400px;
   align-self: top;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  place-self: center;
   opacity: 0;
   animation: fadeInCard 0.5s forwards ease-in-out; 
 
@@ -328,7 +334,6 @@ body {
 .card-text-holder
 {
   color: #f1f1f1;
-
   font-size: 16px;
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
@@ -343,17 +348,15 @@ body {
  /* The image on a Card */
 .project-card-image
 {
-  height: 100%;
-  width: 100%;
-
+  width: 400px;
+  height: 240px;
   border-radius: 15px;
   display: flex;
   position: relative;
   text-align: center;
   transition: .25s;
 
-  width: 400px;
-  height: 240px;
+
   background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
   box-shadow: 0 0 5px 5px rgba(0, 128, 0, 0.26);
   align-items: center;
@@ -633,6 +636,7 @@ footer
 .header-container
 {
   position: relative;
+  margin-top: 60px;
 }
 
 .header-link-target
@@ -695,6 +699,8 @@ footer
 
 .view-more-button
 {
+  margin-top: 60px;
+  margin-bottom: 60px;
   position: relative;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
@@ -706,7 +712,7 @@ footer
   color: #ffffff;
   border: none;
   cursor: pointer;
-  width: 300px;
+  width: 400px;
   height: 80px;
   transition: 0.3s;
 }
