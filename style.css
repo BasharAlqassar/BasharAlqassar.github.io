@@ -470,7 +470,7 @@ body {
   width: 120px;
   height: 180px;
   background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
-  box-shadow: 0 0 5px 5px green;
+  box-shadow: 0 0 5px 5px rgba(0, 128, 0, 0.26);
 
 
   border-radius: 15px;
@@ -483,6 +483,7 @@ body {
 {
     scale: 1.03;
     filter: brightness(0) saturate(100%) invert(76%) sepia(52%) saturate(2353%) hue-rotate(132deg) brightness(99%) contrast(105%);
+    box-shadow: 0 0 5px 5px green;
 
 
 }
