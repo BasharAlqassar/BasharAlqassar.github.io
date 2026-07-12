@@ -590,13 +590,18 @@ body {
   width: 80%;
 
   background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
-  box-shadow: 0 0 20px 20px rgba(0, 128, 0, 0.26);
+  box-shadow: 0 0 15px 15px rgba(0, 128, 0, 0.26);
   border-radius: 15px;
   display: flex;
 
-  transition: scale 0.3s, transform 0.1s;
+  transition: 0.3s;
 }
 
+.about-me-image:hover
+{
+  scale: 1.03;
+  box-shadow: 0 0 20px 20px rgba(2, 251, 255, 0.286);
+}
 
 
 /*#endregion AboutMe*/
