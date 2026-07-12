@@ -1,11 +1,13 @@
 
 /*#region HTML General*/
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    background-color: #000000;
     }
 
 body {
     margin: 0;
+    color: #000000;
     font-size: 28px;
     font-family: Arial, Helvetica, sans-serif;
     background-image: url("Images/Backgrounds/AColorTheory_BG.gif");
@@ -23,12 +25,15 @@ body {
   {
     padding: 16px;
   }
+
+
+
   /*#endregion HTML General*/
 
 
 /*#region HeaderNav*/
   .header {
-    background-color: #f1f1f1;
+    background-color: #000000;
     padding: 30px;
     text-align: center;
   }
@@ -47,6 +52,8 @@ body {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
   .topnav .navbar-dropdown
@@ -91,13 +98,13 @@ body {
     font-weight: bold;
     opacity: 1.0;
 
-    transition: scale 0.3s, background-color 0.3s;
+    transition: 0.3s;
   }
 
   .topnav a:hover {
-    background-color: #00eeff61;
-
-
+    background-color: #00eeff73;
+    filter: brightness(0) saturate(100%) invert(76%) sepia(67%) saturate(2227%) hue-rotate(133deg) brightness(98%) contrast(109%);
+    box-shadow: 0 0 5px 5px green;
     scale: 1.2; 
 
   }
@@ -252,6 +259,8 @@ body {
 
     transition: 0.3s;
 
+
+  
   }
 
   .home-showcase-video:hover
@@ -271,16 +280,14 @@ body {
  /* Card display grid*/
 .card-holder
 {
-  display: grid;
-  align-content: flex-start;
-  grid-template-columns: repeat(auto-fill, 500px);
-  grid-template-rows: auto;
-  grid-auto-rows: min-content;
+  display: flex;
+  flex-wrap: wrap;
+  place-items: center;
+  align-self: center;
   justify-items: center;
   justify-content: center;
   align-self: center;
-  gap: 20px;
-  row-gap: 50px;
+  gap: 100px;
   
 }
 
@@ -290,6 +297,12 @@ body {
 {
   width: 400px;
   align-self: top;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  place-self: center;
   opacity: 0;
   animation: fadeInCard 0.5s forwards ease-in-out; 
 
@@ -321,7 +334,6 @@ body {
 .card-text-holder
 {
   color: #f1f1f1;
-
   font-size: 16px;
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
@@ -336,24 +348,22 @@ body {
  /* The image on a Card */
 .project-card-image
 {
-  height: 100%;
-  width: 100%;
-
+  width: 400px;
+  height: 240px;
   border-radius: 15px;
   display: flex;
   position: relative;
   text-align: center;
   transition: .25s;
 
-  width: 400px;
-  height: 240px;
+
   background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
   box-shadow: 0 0 5px 5px rgba(0, 128, 0, 0.26);
   align-items: center;
   text-align: center;
 
 
-  transition: scale 0.3s, filter 0.3s; 
+  transition: 0.3s; 
 
 }
 
@@ -451,16 +461,15 @@ body {
  /* Card display grid*/
 .tool-card-holder
 {
-  display: grid;
-  align-content: flex-start;
-  grid-template-columns: repeat(auto-fit, 150px);
-  grid-template-rows: auto;
-  grid-auto-rows: min-content;
-  justify-items: center;
-  text-align: center;
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  place-items: center;
   align-self: center;
-  row-gap: 15px;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  gap: 15px;
   margin-bottom: 50px;
   margin-top: 50px;
 }
@@ -583,13 +592,18 @@ body {
   width: 80%;
 
   background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
-  box-shadow: 0 0 20px 20px rgba(0, 128, 0, 0.26);
+  box-shadow: 0 0 15px 15px rgba(0, 128, 0, 0.26);
   border-radius: 15px;
   display: flex;
 
-  transition: scale 0.3s, transform 0.1s;
+  transition: 0.3s;
 }
 
+.about-me-image:hover
+{
+  scale: 1.03;
+  box-shadow: 0 0 20px 20px rgba(2, 251, 255, 0.286);
+}
 
 
 /*#endregion AboutMe*/
@@ -599,13 +613,16 @@ body {
 footer
 {
   bottom: 0;
+  margin-top: 200px;
   align-items: center;
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
-    box-shadow: 0 0 5px 5px rgba(0, 255, 0, 0.169);
+  box-shadow: 0 0 5px 5px rgba(0, 255, 0, 0.169);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .title_center
@@ -619,6 +636,7 @@ footer
 .header-container
 {
   position: relative;
+
 }
 
 .header-link-target
@@ -681,10 +699,15 @@ footer
 
 .view-more-button
 {
+  width: 400px;
+  height: 240px;
+
+  margin-bottom: 170px;
+  align-self: top;
   position: relative;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 22px;
+  font-size: 36px;
   font-weight: bold;
   background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
   box-shadow: 0 0 5px 5px rgba(0, 128, 0, 0.26);
@@ -692,9 +715,9 @@ footer
   color: #ffffff;
   border: none;
   cursor: pointer;
-  width: 300px;
-  height: 80px;
   transition: 0.3s;
+  animation: glow 1.0s linear infinite;
+  animation-direction: alternate;
 }
 
 .view-more-button:hover
@@ -703,6 +726,19 @@ footer
   scale: 1.03;
   filter: brightness(0) saturate(100%) invert(76%) sepia(52%) saturate(2353%) hue-rotate(132deg) brightness(99%) contrast(105%);
   box-shadow: 0 0 5px 5px green;
+}
+
+
+@keyframes glow 
+{
+  from 
+  {
+    box-shadow: 0 0 5px 5px rgba(0, 128, 0, 0.26);
+  }
+  to 
+  {
+    box-shadow: 0 0 5px 5px rgba(0, 191, 255, 0.416);
+  }
 }
 
 
@@ -838,6 +874,7 @@ footer
     .home-large-text {font-size: 40px;}
     .home-sub-text {font-size: 16px;}
     .project-card-image {width: 320px; height: 180px; margin: auto;}
+    .view-more-button {width: 320px; height: 180px; margin: auto;}
     .project-card { margin: auto;}
     .card-text-holder {width: 320px; margin: auto;}
     .card-tags-holder {width: 320px; margin-left: auto; margin-right: auto;}
