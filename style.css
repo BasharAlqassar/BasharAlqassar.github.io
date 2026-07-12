@@ -41,7 +41,7 @@ body {
     top: 0;
     overflow: hidden;
     background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
-      box-shadow: 0 0 5px 5px rgba(0, 255, 0, 0.169);
+    box-shadow: 0 0 5px 5px rgba(0, 255, 0, 0.169);
 
     opacity: 1.0;
     font-family: 'Courier New', Courier, monospace;
@@ -147,7 +147,7 @@ body {
   .social-link:hover
   {
     scale : 1.1; 
-    filter: invert(75%) sepia(46%) saturate(7184%) hue-rotate(81deg) brightness(115%) contrast(125%);
+    filter: brightness(0) saturate(100%) invert(76%) sepia(52%) saturate(2353%) hue-rotate(132deg) brightness(99%) contrast(105%);
   }
 
   /*#endregion HeaderNav*/
@@ -244,7 +244,8 @@ body {
   
     border-style: none;
 
-    background-color: #00000084;
+    background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
+    box-shadow: 0 0 5px 5px rgba(0, 255, 0, 0.169);
     align-items: center;
 
     animation: fadeInCard 0.5s forwards ease-in-out; 
@@ -481,7 +482,9 @@ body {
 .tool-card:hover
 {
     scale: 1.03;
-    filter: opacity(110%) invert(10%);
+    filter: brightness(0) saturate(100%) invert(76%) sepia(52%) saturate(2353%) hue-rotate(132deg) brightness(99%) contrast(105%);
+
+
 }
 
 .tool-card-image
@@ -596,6 +599,7 @@ footer
   background-size: cover;
   background-attachment: fixed;
   background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
+    box-shadow: 0 0 5px 5px rgba(0, 255, 0, 0.169);
 }
 
 .title_center
@@ -654,7 +658,7 @@ footer
 
 .link:hover
 {
-    color: rgb(0, 21, 255);
+    color: rgb(0, 217, 255);
     font-size: 22px;
 
 }
