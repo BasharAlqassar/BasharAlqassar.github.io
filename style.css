@@ -95,7 +95,7 @@ body {
   }
 
   .topnav a:hover {
-    background-color: #4f4f4f;
+    background-color: #00eeff61;
 
 
     scale: 1.2; 
@@ -106,13 +106,13 @@ body {
 
   
   .topnav a.active {
-    color: rgb(0, 255, 0);
+    color: rgb(255, 255, 255);
     opacity: 1.0;
   }
 
   .topnav a.header
   {
-    color: rgb(0, 255, 0);
+    color: rgb(255, 255, 255);
     text-align: left;
     font-size: larger;
     text-indent: 1%;
@@ -124,7 +124,7 @@ body {
     margin-bottom: -8px;
     text-decoration: none;
     background:rgba(1, 1, 1, 0);
-    filter: invert(65%) sepia(87%) saturate(4237%) hue-rotate(85deg) brightness(117%) contrast(129%);
+    filter: invert(100%); 
   }
 
 
