@@ -284,6 +284,7 @@ body {
   flex-wrap: wrap;
   place-items: center;
   align-self: center;
+  align-items: flex-start;
   justify-items: center;
   justify-content: center;
   align-self: center;
@@ -623,6 +624,11 @@ footer
   box-shadow: 0 0 5px 5px rgba(0, 255, 0, 0.169);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+}
+
+.margin-seperator
+{
+  margin-top: 200px;
 }
 
 .title_center
