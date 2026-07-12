@@ -40,7 +40,9 @@ body {
     z-index: 100;
     top: 0;
     overflow: hidden;
-    background-color: #192915e6;
+    background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
+      box-shadow: 0 0 5px 5px rgba(0, 255, 0, 0.169);
+
     opacity: 1.0;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
@@ -231,14 +233,10 @@ body {
   {
 
     width: 620px;
-    height: 349px;
+    height: 350px;
     margin-top: 40px;
     margin-bottom: 40px;
 
-
-
-
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 15px;
     display: flex;
     position: relative;
@@ -251,6 +249,13 @@ body {
 
     animation: fadeInCard 0.5s forwards ease-in-out; 
 
+    transition: 0.3s;
+
+  }
+
+  .home-showcase-video:hover
+  {
+    scale: 1.03; 
   }
 
 
@@ -274,6 +279,7 @@ body {
   align-self: center;
   gap: 20px;
   row-gap: 50px;
+  
 }
 
 
@@ -284,6 +290,7 @@ body {
   align-self: top;
   opacity: 0;
   animation: fadeInCard 0.5s forwards ease-in-out; 
+
 }
 
 @keyframes fadeInCard {
@@ -330,7 +337,6 @@ body {
   height: 100%;
   width: 100%;
 
-  box-shadow: 0 0 0 3px #235f14e6;
   border-radius: 15px;
   display: flex;
   position: relative;
@@ -344,12 +350,9 @@ body {
   text-align: center;
 
 
-
   transition: scale 0.3s, filter 0.3s; 
 
-
 }
-
 
 
 /* Card hover animation */ 
@@ -357,9 +360,6 @@ body {
 {
   scale: 1.03;
   filter: opacity(110%) invert(10%);
-  background-color: #192915e6;
-  box-shadow: 0 0 0 7px #235f14e6;
-  color: #fff;
 
 }
 
@@ -468,7 +468,9 @@ body {
   position: relative;
   width: 120px;
   height: 180px;
-  background-color: #192915e6;
+  background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
+  box-shadow: 0 0 5px 5px green;
+
 
   border-radius: 15px;
   transition: .25s;
@@ -593,7 +595,7 @@ footer
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-color: #192915e6;
+  background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
 }
 
 .title_center
