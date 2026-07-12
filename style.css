@@ -705,7 +705,7 @@ footer
   position: relative;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 22px;
+  font-size: 36px;
   font-weight: bold;
   background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
   box-shadow: 0 0 5px 5px rgba(0, 128, 0, 0.26);
@@ -714,6 +714,8 @@ footer
   border: none;
   cursor: pointer;
   transition: 0.3s;
+  animation: glow 1.0s linear infinite;
+  animation-direction: alternate;
 }
 
 .view-more-button:hover
@@ -722,6 +724,19 @@ footer
   scale: 1.03;
   filter: brightness(0) saturate(100%) invert(76%) sepia(52%) saturate(2353%) hue-rotate(132deg) brightness(99%) contrast(105%);
   box-shadow: 0 0 5px 5px green;
+}
+
+
+@keyframes glow 
+{
+  from 
+  {
+    box-shadow: 0 0 5px 5px rgba(0, 128, 0, 0.26);
+  }
+  to 
+  {
+    box-shadow: 0 0 5px 5px rgba(0, 191, 255, 0.416);
+  }
 }
 
 
