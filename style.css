@@ -50,6 +50,8 @@ body {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
   .topnav .navbar-dropdown
@@ -610,7 +612,9 @@ footer
   background-size: cover;
   background-attachment: fixed;
   background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
-    box-shadow: 0 0 5px 5px rgba(0, 255, 0, 0.169);
+  box-shadow: 0 0 5px 5px rgba(0, 255, 0, 0.169);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .title_center
