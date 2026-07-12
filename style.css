@@ -140,7 +140,7 @@ body {
     margin: 4px 2px;
     background:rgba(1, 1, 1, 0);
 
-    transition: scale 0.3s, filter 0.3s;
+    transition: 0.3s;
     
   }
 
@@ -346,7 +346,8 @@ body {
 
   width: 400px;
   height: 240px;
-  background-color: #000000;
+  background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
+  box-shadow: 0 0 5px 5px rgba(0, 128, 0, 0.26);
   align-items: center;
   text-align: center;
 
@@ -361,6 +362,7 @@ body {
 {
   scale: 1.03;
   filter: opacity(110%) invert(10%);
+  box-shadow: 0 0 10px 10px rgba(2, 251, 255, 0.286);
 
 }
 
