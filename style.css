@@ -361,7 +361,7 @@ body {
   text-align: center;
 
 
-  transition: scale 0.3s, filter 0.3s; 
+  transition: 0.3s; 
 
 }
 
@@ -611,6 +611,7 @@ body {
 footer
 {
   bottom: 0;
+  margin-top: 200px;
   align-items: center;
   text-align: center;
   background-repeat: no-repeat;
@@ -633,7 +634,7 @@ footer
 .header-container
 {
   position: relative;
-  margin-top: 60px;
+
 }
 
 .header-link-target
@@ -696,8 +697,11 @@ footer
 
 .view-more-button
 {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  width: 400px;
+  height: 240px;
+
+  margin-bottom: 170px;
+  align-self: top;
   position: relative;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
@@ -709,8 +713,6 @@ footer
   color: #ffffff;
   border: none;
   cursor: pointer;
-  width: 400px;
-  height: 80px;
   transition: 0.3s;
 }
 
@@ -855,6 +857,7 @@ footer
     .home-large-text {font-size: 40px;}
     .home-sub-text {font-size: 16px;}
     .project-card-image {width: 320px; height: 180px; margin: auto;}
+    .view-more-button {width: 320px; height: 180px; margin: auto;}
     .project-card { margin: auto;}
     .card-text-holder {width: 320px; margin: auto;}
     .card-tags-holder {width: 320px; margin-left: auto; margin-right: auto;}
