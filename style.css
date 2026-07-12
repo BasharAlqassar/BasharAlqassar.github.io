@@ -581,7 +581,8 @@ body {
 {
   width: 80%;
 
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
+  box-shadow: 0 0 20px 20px rgba(0, 128, 0, 0.26);
   border-radius: 15px;
   display: flex;
 
