@@ -23,6 +23,9 @@ body {
   {
     padding: 16px;
   }
+
+
+
   /*#endregion HTML General*/
 
 
@@ -91,13 +94,13 @@ body {
     font-weight: bold;
     opacity: 1.0;
 
-    transition: scale 0.3s, background-color 0.3s;
+    transition: 0.3s;
   }
 
   .topnav a:hover {
-    background-color: #00eeff61;
-
-
+    background-color: #00eeff73;
+    filter: brightness(0) saturate(100%) invert(76%) sepia(67%) saturate(2227%) hue-rotate(133deg) brightness(98%) contrast(109%);
+    box-shadow: 0 0 5px 5px green;
     scale: 1.2; 
 
   }
@@ -252,6 +255,8 @@ body {
 
     transition: 0.3s;
 
+
+  
   }
 
   .home-showcase-video:hover
