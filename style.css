@@ -800,7 +800,8 @@ footer
 .subpage-text-body
 {
 
-  max-width: 60%;
+  width: 80%;
+  max-width: 1000px;
   height: auto;
 
   font-family: Calibri;
@@ -808,31 +809,44 @@ footer
   text-align: center;
   font-size: 20px;
   color: rgb(255, 255, 255);
+
+  display: block;
+  margin: auto;
+
+
 }
 
 
 .subpage-image
 {
 
-  margin-top: 30px; 
-  margin-bottom: 30px;
-
   max-width: 50%;
   height: auto;
-
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 15px;
-  display: flex;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
   position: relative;
-  text-align: center;
-  transition: .25s;
 
   border-style: none;
   background-color: #000000;
   align-items: center;
   text-align: center;
 
+
+  background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
+  box-shadow: 0 0 10px 10px rgba(0, 128, 0, 0.26);
+  border-radius: 15px;
+  display: flex;
+
+  transition: 0.3s;
 }
+
+.subpage-image:hover
+{
+  scale: 1.03;
+  box-shadow: 0 0 10px 10px rgba(2, 251, 255, 0.286);
+}
+
 
 .subpage-pdf
 {
