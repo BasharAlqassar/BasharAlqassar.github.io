@@ -257,6 +257,7 @@ body {
   .home-showcase-video:hover
   {
     scale: 1.03; 
+    box-shadow: 0 0 10px 10px rgba(2, 251, 255, 0.286);
   }
 
 
@@ -684,11 +685,13 @@ footer
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
   font-size: 22px;
-  background-color: #192915e6;
+  font-weight: bold;
+  background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
+  box-shadow: 0 0 5px 5px rgba(0, 128, 0, 0.26);
+  border-radius: 15px;
   color: #ffffff;
   border: none;
   cursor: pointer;
-  border-radius: 8px;
   width: 300px;
   height: 80px;
   transition: 0.3s;
@@ -696,10 +699,10 @@ footer
 
 .view-more-button:hover
 {
-  background-color: #192915e6;
-  box-shadow: 0 0 0 5px #235f14e6;
-  scale: 1.2;
-  color: #fff;
+
+  scale: 1.03;
+  filter: brightness(0) saturate(100%) invert(76%) sepia(52%) saturate(2353%) hue-rotate(132deg) brightness(99%) contrast(105%);
+  box-shadow: 0 0 5px 5px green;
 }
 
 
