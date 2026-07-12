@@ -282,12 +282,10 @@ body {
   flex-wrap: wrap;
   place-items: center;
   align-self: center;
-  grid-auto-rows: min-content;
   justify-items: center;
   justify-content: center;
   align-self: center;
   gap: 100px;
-  row-gap: 50px;
   
 }
 
@@ -461,16 +459,15 @@ body {
  /* Card display grid*/
 .tool-card-holder
 {
-  display: grid;
-  align-content: flex-start;
-  grid-template-columns: repeat(auto-fit, 150px);
-  grid-template-rows: auto;
-  grid-auto-rows: min-content;
-  justify-items: center;
-  text-align: center;
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  place-items: center;
   align-self: center;
-  row-gap: 15px;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  gap: 15px;
   margin-bottom: 50px;
   margin-top: 50px;
 }
