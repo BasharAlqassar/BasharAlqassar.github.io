@@ -40,7 +40,9 @@ body {
     z-index: 100;
     top: 0;
     overflow: hidden;
-    background-color: #192915e6;
+    background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
+    box-shadow: 0 0 5px 5px rgba(0, 255, 0, 0.169);
+
     opacity: 1.0;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
@@ -93,7 +95,7 @@ body {
   }
 
   .topnav a:hover {
-    background-color: #4f4f4f;
+    background-color: #00eeff61;
 
 
     scale: 1.2; 
@@ -104,13 +106,13 @@ body {
 
   
   .topnav a.active {
-    color: rgb(0, 255, 0);
+    color: rgb(255, 255, 255);
     opacity: 1.0;
   }
 
   .topnav a.header
   {
-    color: rgb(0, 255, 0);
+    color: rgb(255, 255, 255);
     text-align: left;
     font-size: larger;
     text-indent: 1%;
@@ -122,7 +124,7 @@ body {
     margin-bottom: -8px;
     text-decoration: none;
     background:rgba(1, 1, 1, 0);
-    filter: invert(65%) sepia(87%) saturate(4237%) hue-rotate(85deg) brightness(117%) contrast(129%);
+    filter: invert(100%); 
   }
 
 
@@ -138,14 +140,14 @@ body {
     margin: 4px 2px;
     background:rgba(1, 1, 1, 0);
 
-    transition: scale 0.3s, filter 0.3s;
+    transition: 0.3s;
     
   }
 
   .social-link:hover
   {
     scale : 1.1; 
-    filter: invert(75%) sepia(46%) saturate(7184%) hue-rotate(81deg) brightness(115%) contrast(125%);
+    filter: brightness(0) saturate(100%) invert(76%) sepia(52%) saturate(2353%) hue-rotate(132deg) brightness(99%) contrast(105%);
   }
 
   /*#endregion HeaderNav*/
@@ -231,14 +233,10 @@ body {
   {
 
     width: 620px;
-    height: 349px;
+    height: 350px;
     margin-top: 40px;
     margin-bottom: 40px;
 
-
-
-
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 15px;
     display: flex;
     position: relative;
@@ -246,11 +244,20 @@ body {
   
     border-style: none;
 
-    background-color: #00000084;
+    background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
+    box-shadow: 0 0 5px 5px rgba(0, 255, 0, 0.169);
     align-items: center;
 
     animation: fadeInCard 0.5s forwards ease-in-out; 
 
+    transition: 0.3s;
+
+  }
+
+  .home-showcase-video:hover
+  {
+    scale: 1.03; 
+    box-shadow: 0 0 10px 10px rgba(2, 251, 255, 0.286);
   }
 
 
@@ -274,6 +281,7 @@ body {
   align-self: center;
   gap: 20px;
   row-gap: 50px;
+  
 }
 
 
@@ -284,6 +292,7 @@ body {
   align-self: top;
   opacity: 0;
   animation: fadeInCard 0.5s forwards ease-in-out; 
+
 }
 
 @keyframes fadeInCard {
@@ -330,27 +339,23 @@ body {
   height: 100%;
   width: 100%;
 
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   border-radius: 15px;
   display: flex;
   position: relative;
   text-align: center;
   transition: .25s;
 
-  border: 2px solid, white;
   width: 400px;
   height: 240px;
-  background-color: #000000;
+  background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
+  box-shadow: 0 0 5px 5px rgba(0, 128, 0, 0.26);
   align-items: center;
   text-align: center;
 
 
-
   transition: scale 0.3s, filter 0.3s; 
 
-
 }
-
 
 
 /* Card hover animation */ 
@@ -358,6 +363,7 @@ body {
 {
   scale: 1.03;
   filter: opacity(110%) invert(10%);
+  box-shadow: 0 0 10px 10px rgba(2, 251, 255, 0.286);
 
 }
 
@@ -379,7 +385,7 @@ body {
 
 .card-tag
 {
-  border: 2px solid;
+
   border-radius: 5px;
   font-size: 16px;
   color: rgb(255, 255, 255);
@@ -412,29 +418,30 @@ body {
 
 .card-tag[type="role"]
 {
-  color: #209372;
+  color: rgb(32, 147, 114);
+  box-shadow: 0 0 3px 3px rgba(32, 147, 114, 0.25);
 }
 .card-tag[type="project-type"]
 {
-  color: #c30600;
+  color: rgb(195, 6, 0);
+  box-shadow: 0 0 3px 3px rgba(195, 6, 0, 0.25);
 }
 .card-tag[type="tool"]
 {
-  color: #335eb5;
+  color: rgb(51, 94, 181);
+  box-shadow: 0 0 3px 3px rgba(51, 94, 181, 0.25);
 }
 .card-tag[type="engine"]
 {
-  color: #933ac2;
+  color: rgb(147, 58, 194);
+  box-shadow: 0 0 3px 3px rgba(147, 58, 194, 0.25);
 }
 .card-tag[type="date"]
 {
-  color: #cf630b;
+  color: rgb(207, 99, 11);
+  box-shadow: 0 0 3px 3px rgba(207, 99, 11, 0.25);
 }
 
-.card-tag
-{
-  background-color: var(--bg_color);
-}
 
 /*#endregion Card Tags*/
 
@@ -466,7 +473,9 @@ body {
   position: relative;
   width: 120px;
   height: 180px;
-  background-color: #192915e6;
+  background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
+  box-shadow: 0 0 5px 5px rgba(0, 128, 0, 0.26);
+
 
   border-radius: 15px;
   transition: .25s;
@@ -477,7 +486,10 @@ body {
 .tool-card:hover
 {
     scale: 1.03;
-    filter: opacity(110%) invert(10%);
+    filter: brightness(0) saturate(100%) invert(76%) sepia(52%) saturate(2353%) hue-rotate(132deg) brightness(99%) contrast(105%);
+    box-shadow: 0 0 5px 5px green;
+
+
 }
 
 .tool-card-image
@@ -570,7 +582,8 @@ body {
 {
   width: 80%;
 
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
+  box-shadow: 0 0 20px 20px rgba(0, 128, 0, 0.26);
   border-radius: 15px;
   display: flex;
 
@@ -591,7 +604,8 @@ footer
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-color: #192915e6;
+  background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
+    box-shadow: 0 0 5px 5px rgba(0, 255, 0, 0.169);
 }
 
 .title_center
@@ -650,10 +664,47 @@ footer
 
 .link:hover
 {
-    color: rgb(0, 21, 255);
+    color: rgb(0, 217, 255);
     font-size: 22px;
 
 }
+
+
+.button-container
+{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 40px;
+
+}
+
+.view-more-button
+{
+  position: relative;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 22px;
+  font-weight: bold;
+  background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
+  box-shadow: 0 0 5px 5px rgba(0, 128, 0, 0.26);
+  border-radius: 15px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  width: 300px;
+  height: 80px;
+  transition: 0.3s;
+}
+
+.view-more-button:hover
+{
+
+  scale: 1.03;
+  filter: brightness(0) saturate(100%) invert(76%) sepia(52%) saturate(2353%) hue-rotate(132deg) brightness(99%) contrast(105%);
+  box-shadow: 0 0 5px 5px green;
+}
+
 
 /*#endregion Misc*/
 
@@ -665,7 +716,7 @@ footer
 {
 
 
-  background-color: rgba(24, 24, 24, 0.715);
+    background-color: rgba(24, 24, 24, 0.715);
 
     margin-left: 10%;
     margin-right: 10%;
