@@ -63,7 +63,7 @@ body {
   
 
   @media screen and (max-width: 680px) {
-    .topnav a:not(:nth-child(4)) {display: none;}
+    .topnav a:not(:nth-child(1)) {display: none;}
     .topnav a.navbar-dropdown {
       position: sticky;
       float: right;
