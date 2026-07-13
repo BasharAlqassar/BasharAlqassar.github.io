@@ -165,17 +165,14 @@ body {
   .home-content
   {
 
-    display: grid;
-    align-content: flex-start;
-  
-    grid-template-columns: repeat(auto-fill, 700px);
-    grid-template-rows: auto;
-    grid-auto-rows: min-content;
-  
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 30px;
+    margin: 10px 0;
     justify-items: center;
     justify-content: center;
     align-self: center;
-    
   
   }
 
@@ -536,14 +533,11 @@ body {
 
 .about-me-content
 {
-
-
-  display: grid;
-  align-content: flex-start;
-
-  grid-template-columns: repeat(auto-fill, 700px);
-  grid-template-rows: auto;
-  grid-auto-rows: min-content;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 30px;
+  margin: 10px 0;
 
   justify-items: center;
   justify-content: center;
