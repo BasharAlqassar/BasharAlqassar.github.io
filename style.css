@@ -481,9 +481,6 @@ body {
   background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
   box-shadow: 0 0 5px 5px rgba(0, 128, 0, 0.26);
 
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-
   border-radius: 15px;
   transition: .25s;
   animation: fadeInCard 0.5s forwards ease-in-out; 
@@ -631,6 +628,7 @@ footer
   font-size: 36px;
   text-align: center;
   color: rgb(0, 255, 0);
+  
 }
 
 .header-container
@@ -807,7 +805,7 @@ footer
 
   font-size: 60px;
   font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
+
   text-align: center;
 
 
@@ -815,7 +813,7 @@ footer
   justify-content: center;
   align-self: center;
 
-  width: 90%;
+  width: 75%;
   max-width: 1000px;
   height: auto;
   margin: auto;
