@@ -27,6 +27,24 @@ body {
   }
 
 
+  code {
+    display: block; 
+    width: max-content; 
+    min-width: 100%;
+    
+  
+  }
+
+  pre
+  {
+    width: max-content; 
+    margin: auto;
+    min-width: 90%;
+    border-radius: 15px;
+    padding: 20px;
+
+  }
+
 
   /*#endregion HTML General*/
 
@@ -255,8 +273,6 @@ body {
     animation: fadeInCard 0.5s forwards ease-in-out; 
 
     transition: 0.3s;
-
-
   
   }
 
@@ -483,7 +499,6 @@ body {
   background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
   box-shadow: 0 0 5px 5px rgba(0, 128, 0, 0.26);
 
-
   border-radius: 15px;
   transition: .25s;
   animation: fadeInCard 0.5s forwards ease-in-out; 
@@ -631,6 +646,7 @@ footer
   font-size: 36px;
   text-align: center;
   color: rgb(0, 255, 0);
+  
 }
 
 .header-container
@@ -747,6 +763,102 @@ footer
 
 /*#region Subpages*/
 
+.subpage-header-content
+{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+
+
+  place-items: center;
+  justify-items: center;
+  justify-content: center;
+  align-self: center;
+
+}
+
+.subpage-header-holder
+{
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+
+.subpage-logo-image
+{
+
+    width: 500px;
+    height: 280px;
+
+    border-radius: 15px;
+    display: flex;
+    position: relative;
+    text-align: center;
+  
+    border-style: none;
+
+    background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
+    box-shadow: 0 0 5px 5px rgba(0, 255, 0, 0.169);
+    align-items: center;
+
+    animation: fadeInCard 0.5s forwards ease-in-out; 
+
+    transition: 0.3s;
+  
+}
+
+.subpage-logo-image:hover
+{
+  scale: 1.03;
+  box-shadow: 0 0 10px 10px rgba(2, 251, 255, 0.286);
+}
+
+.subpage-logo-text
+{
+
+  display: flex;
+
+  color: rgb(245, 245, 245);
+
+  font-size: 60px;
+  font-family: 'Courier New', Courier, monospace;
+
+  justify-items: center;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+
+  width: 75%;
+  max-width: 1000px;
+  height: auto;
+  margin: auto;
+
+  margin-top: 20px;
+  margin-bottom: 30px;
+  position: relative;
+
+  border-style: none;
+  background-color: #000000;
+  background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
+  box-shadow: 0 0 10px 10px rgba(0, 128, 0, 0.26);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  transition: 0.3s;
+
+}
+
+.subpage-logo-text:hover
+{
+  scale: 1.03;
+  box-shadow: 0 0 10px 10px rgba(2, 251, 255, 0.286);
+}
+
+
+
 
 .subpage-centeral-column
 {
@@ -790,6 +902,13 @@ footer
 
 }
 
+.subpage-image:hover
+{
+  scale: 1.03;
+  box-shadow: 0 0 10px 10px rgba(2, 251, 255, 0.286);
+}
+
+
 
 .subpage-text-body
 {
@@ -811,8 +930,11 @@ footer
 }
 
 
+
 .subpage-image
 {
+
+  display: flex;
 
   max-width: 50%;
   height: auto;
@@ -830,7 +952,7 @@ footer
   background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
   box-shadow: 0 0 10px 10px rgba(0, 128, 0, 0.26);
   border-radius: 15px;
-  display: flex;
+
 
   transition: 0.3s;
 }
@@ -856,19 +978,119 @@ footer
 }
 
 
-.subpage-image-grid
+
+
+
+.accordian-holder
 {
-    display: grid;
-  
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-auto-rows: min-content;
-  
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    align-self: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: auto;
+  border-radius: 15px;
+
+
+
+  width: 70%;
+  max-width: 800px;
+
+
+  transition: 0.3s;
 }
+
+.accordian-holder:hover
+{
+  scale: 1.03;
+  box-shadow: 0 0 10px 10px rgba(2, 251, 255, 0.286);
+}
+
+
+.accordian-icon
+{
+  width: 40px;
+  padding-right: 10px;
+  filter: invert(100%);
+
+}
+
+.accordian-drop-arrow
+{
+
+  width: 40px;
+  padding-right: 10px;
+  filter: invert(100%);
+
+  margin-left: auto;
+
+  transition: 0.3s;
+
+}
+
+
+
+.accordian-button
+{
+
+  cursor: pointer;
+
+  display: flex;
+  width: 100%;
+  color: rgb(245, 245, 245);
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+
+  margin: auto;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+
+  padding: 18px 10px;
+
+  border: none;
+  outline: none;
+  transition: 0.4s;
+
+
+  background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
+  box-shadow: 0 0 10px 10px rgba(0, 128, 0, 0.26);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+
+}
+
+
+.accordian-content 
+{
+
+  margin: auto;
+
+  padding-bottom: 20px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+
+  background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
+  box-shadow: 0 0 10px 10px rgba(0, 128, 0, 0.26);
+
+  font-size: 14px;
+
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  transition: 0.3s;
+}
+
+
+
 
 
 /*#endregion Subpages*/
@@ -896,6 +1118,7 @@ footer
     .card-text-holder {width: 320px; margin: auto;}
     .card-tags-holder {width: 320px; margin-left: auto; margin-right: auto;}
     .home-showcase-video {width: 320px; height: 180px;}
+    .subpage-logo-image {width: 320px; height: 180px;}
     .about-me-holder {width: 320px;}
 
   }

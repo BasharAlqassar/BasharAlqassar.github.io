@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<link rel = 'stylesheet' href='../style.css'>
+
+<!-- Icon Links -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- This is the page tab information! (What shows on the browwser for the page window!)-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bashar Alqassar : Game Programer and Creative Coder Portfolio</title>
+        <meta name="description" content="The portfolio of Bashar Alqassar: ">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>        
+        <script src="" async defer></script>
+    </body>
+</html>
+
+
+<!-- Overide for custom background image!-->
+<body>
+
+<style>
+    body {
+        background-image: url("../Images/Backgrounds/bg_level_hesradel_01.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+</style>
+
+    
+<!-- Sticky Header Bar, read from right to left on the page-->
+    <div id="navbar" class="topnav">
+       
+
+        <a class="active" href="../index.html">
+            <img class="navbar-icon" src="../Icons/home.svg"></img>
+            Home
+        </a>
+
+        <a class="active" href="../index.html#AboutMe">
+            <img class="navbar-icon" src="../Icons/user.svg"></img>
+            About Me
+        </a>
+
+        <a class="active" href="../index.html#Projects">
+            <img class="navbar-icon" src="../Icons/play-circle.svg"></img>
+            Projects
+        </a>
+        
+        <a class="active" href="../Pages/resume_view.html" target="_blank" rel="noopener noreferrer">
+            <img class="navbar-icon" src="../Icons/file-text.svg"></img>
+            Resume
+        </a>
+
+        <a href="javascript:void(0);" onclick="show_collapsed()" class="navbar-dropdown">
+            <img class="navbar-icon" src="../Icons/menu.svg" id="navbar_showhide"></img>
+        </a>
+
+
+
+        <script>
+            function show_collapsed()
+            {
+                var navbar = document.getElementById("navbar");
+                var show_hide_btn_icon = document.getElementById("navbar_showhide");
+
+                console.log(navbar)
+
+                if (navbar.className === "topnav") 
+                {
+                    navbar.className += " responsive";
+                    show_hide_btn_icon.src = "../Icons/x-square.svg";
+                    
+                } else 
+                {
+                    navbar.className = "topnav";
+                    show_hide_btn_icon.src = "../Icons/menu.svg";
+                }
+                console.log(navbar)
+            }
+        </script>       
+
+    </div>
+
+<!-- End of Navbar Template-->
+
+
+
+
+
+<!-- End of Acordian container code -->
+
+
+
+ <!-- Start of subpage template!!! (Fill content here!)-->
+
+
+
+
+<div class="subpage-header-content">
+    <!-- Page Logo -->
+    <div class="subpage-header-holder">
+        <img class="subpage-logo-image" src="../Images\CardImages\AColorTheory.png" alt="Project-Logo">
+    </div>
+        
+    <!-- Autoplay Video Widget -->
+    <div class="subpage-header-holder">
+        <iframe controls class="home-showcase-video" src="https://www.youtube.com/embed/qJd0pAWGYYE?si=iLmDZn4i4ekCSnEy?start=0&loop=1&autoplay=1&mute=1&playlist=qJd0pAWGYYE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+    </div>
+
+</div>
+
+
+
+<!-- Project Intro Banner -->
+<div class="subpage-logo-text">
+    <a>And the World Went Dark</a>
+</div>
+
+<!-- Project Description Intror -->
+
+    
+
+<!-- Project Key Tools used -->
+<div class="tool-card-holder">
+
+        <div class="tool-card">
+            <img class="tool-card-image" src="../Icons\Tools\unity.svg"></img>
+            <a class="tool-card-text" color="white">Unity</a>
+        </div>
+
+        <div class="tool-card">
+            <img class="tool-card-image" src="../Icons\Tools\godot.svg"></img>
+            <a class="tool-card-text" color="white">Godot</a>
+        </div>
+
+        <div class="tool-card">
+            <img class="tool-card-image" src="../Icons\Tools\unreal.svg"></img>
+            <a class="tool-card-text" color="white">Unreal 5</a>
+        </div>
+
+        <div class="tool-card">
+            <img class="tool-card-image" src="../Icons\Tools\unreal.svg"></img>
+            <a class="tool-card-text" color="white">Unreal 5</a>
+        </div>
+
+        <div class="tool-card">
+            <img class="tool-card-image" src="../Icons\Tools\unreal.svg"></img>
+            <a class="tool-card-text" color="white">Unreal 5</a>
+        </div>
+
+</div>
+
+
+
+
+<div  class="accordian-holder">
+    <button class="accordian-button">
+        <img class="accordian-icon" src="../Icons\Tools\c-sharp.svg"></img>
+        <img class="accordian-icon" src="../Icons\script_icon.svg"></img>
+        <a>Script About ...</a>
+        <img class="accordian-drop-arrow" src="../Icons\down_arrow.svg"></img>
+    </button>
+    <div class="accordian-content">
+        <div style="max-width:100%;overflow:auto">
+            <pre style="white-space:pre-wrap;word-wrap:break-word;background-color:#121314;color:#BBBEBF"><code><span><span style="color:#569CD6">public</span><span style="color:#FF7B72"> class</span><span style="color:#4EC9B0"> Goblin</span><span style="color:#BBBEBF"> : </span><span style="color:#4EC9B0">MonoBehaviour</span></span>
+            <span><span style="color:#BBBEBF">{</span></span>
+            <span><span style="color:#BBBEBF">    [</span><span style="color:#4EC9B0">SerializeField</span><span style="color:#BBBEBF">] </span><span style="color:#569CD6">private</span><span style="color:#FF7B72"> float</span><span style="color:#9CDCFE"> m_spin_per_update</span><span style="color:#D4D4D4"> =</span><span style="color:#B5CEA8"> 0.5f</span><span style="color:#BBBEBF">;</span></span>
+            <span><span style="color:#569CD6">    private</span><span style="color:#4EC9B0"> PlayerController</span><span style="color:#9CDCFE"> m_player</span><span style="color:#D4D4D4"> =</span><span style="color:#569CD6"> null</span><span style="color:#BBBEBF">; </span></span>
+            <span></span>
+            <span><span style="color:#FF7B72">    void</span><span style="color:#D2A8FF"> Start</span><span style="color:#BBBEBF">()</span></span>
+            <span><span style="color:#BBBEBF">    {</span></span>
+            <span><span style="color:#C9D1D9">        m_player</span><span style="color:#D4D4D4"> =</span><span style="color:#D2A8FF"> FindAnyObjectByType</span><span style="color:#BBBEBF">&lt;</span><span style="color:#4EC9B0">PlayerController</span><span style="color:#BBBEBF">&gt;();</span></span>
+            <span><span style="color:#C9D1D9">        m_player</span><span style="color:#BBBEBF">.</span><span style="color:#C9D1D9">PlayerDied</span><span style="color:#BBBEBF">.</span><span style="color:#D2A8FF">AddListener</span><span style="color:#BBBEBF">(</span><span style="color:#C9D1D9">GoblinDespawn</span><span style="color:#BBBEBF">);</span></span>
+            <span><span style="color:#C9D1D9">        LevelManager</span><span style="color:#BBBEBF">.</span><span style="color:#C9D1D9">Instance</span><span style="color:#BBBEBF">.</span><span style="color:#C9D1D9">FocusScreenCalled</span><span style="color:#BBBEBF">.</span><span style="color:#D2A8FF">AddListener</span><span style="color:#BBBEBF">(</span><span style="color:#C9D1D9">GoblinDespawn</span><span style="color:#BBBEBF">);</span></span>
+            <span><span style="color:#C9D1D9">        LevelManager</span><span style="color:#BBBEBF">.</span><span style="color:#C9D1D9">Instance</span><span style="color:#BBBEBF">.</span><span style="color:#C9D1D9">CollectableTempCollected</span><span style="color:#BBBEBF">.</span><span style="color:#D2A8FF">AddListener</span><span style="color:#BBBEBF">(</span><span style="color:#C9D1D9">GoblinSpawn</span><span style="color:#BBBEBF">);</span></span>
+            <span></span>
+            <span><span style="color:#8B949E">        // Spawn in to avoid freeze on first load</span></span>
+            <span><span style="color:#D2A8FF">        GoblinSpawn</span><span style="color:#BBBEBF">();</span></span>
+            <span></span>
+            <span><span style="color:#BBBEBF">    }</span></span>
+            <span></span>
+            <span><span style="color:#FF7B72">    void</span><span style="color:#D2A8FF"> FixedUpdate</span><span style="color:#BBBEBF">()</span></span>
+            <span><span style="color:#BBBEBF">    {</span></span>
+            <span><span style="color:#C9D1D9">        transform</span><span style="color:#BBBEBF">.</span><span style="color:#D2A8FF">Rotate</span><span style="color:#BBBEBF">(</span><span style="color:#569CD6">new</span><span style="color:#4EC9B0"> Vector3</span><span style="color:#BBBEBF">(</span><span style="color:#B5CEA8">0f</span><span style="color:#BBBEBF">, </span><span style="color:#C9D1D9">m_spin_per_update</span><span style="color:#BBBEBF">, </span><span style="color:#B5CEA8">0f</span><span style="color:#BBBEBF">));</span></span>
+            <span><span style="color:#BBBEBF">    }</span></span>
+            <span></span>
+            <span><span style="color:#FF7B72">    void</span><span style="color:#D2A8FF"> GoblinSpawn</span><span style="color:#BBBEBF">()</span></span>
+            <span><span style="color:#BBBEBF">    {</span></span>
+            <span><span style="color:#C9D1D9">        gameObject</span><span style="color:#BBBEBF">.</span><span style="color:#D2A8FF">SetActive</span><span style="color:#BBBEBF">(</span><span style="color:#569CD6">true</span><span style="color:#BBBEBF">);</span></span>
+            <span><span style="color:#BBBEBF">    }</span></span>
+            <span></span>
+            <span><span style="color:#FF7B72">    void</span><span style="color:#D2A8FF"> GoblinDespawn</span><span style="color:#BBBEBF">()</span></span>
+            <span><span style="color:#BBBEBF">    {</span></span>
+            <span><span style="color:#C9D1D9">        gameObject</span><span style="color:#BBBEBF">.</span><span style="color:#D2A8FF">SetActive</span><span style="color:#BBBEBF">(</span><span style="color:#569CD6">false</span><span style="color:#BBBEBF">);</span></span>
+            <span><span style="color:#BBBEBF">    }</span></span>
+            <span></span>
+            <span><span style="color:#BBBEBF">}</span></span></code></pre>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+<!-- Topic Text -->
+<div class="subpgae-project-topic">
+    <a>Modular Design</a>
+</div>
+
+<!-- Text Body -->
+<a class="subpage-text-body">Every single component of the game is modular and carefully crafted to be easily changed on a moment's notice. Colorable objects are made to have their type swapped on the fly with a dedicated and secure pipeline to maintain seamlessness during gameplay.  </a>
+
+<!-- Image -->
+<img class="subpage-image" src="../Images\Promo\AColorTheory_ColorchangeDemo.gif" alt="Project-Image">
+
+
+
+        <!-- Topic Text -->
+<div class="subpgae-project-topic">
+    <a>Rapid Iteration</a>
+</div>
+
+<!-- Text Body -->
+<a class="subpage-text-body">Engine-side systems are implemented with a focus on being able to quickly prototype an idea, test it and gain immediate feedback for iteration. This allowed for rapid developer-side playtesting during the design phase to ensure quality, to-the-point playtesting with real players.   </a>
+
+<!-- Image -->
+<img class="subpage-image" src="../I.gif" alt="Project-Image">
+
+
+
+
+
+
+
+ <!-- End of subpage template!!! (Fill content Above!)-->
+
+
+
+<!-- Acordian container code (Needs to be below)-->
+<script>
+var acc = document.getElementsByClassName("accordian-button");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+
+// Toggle none state always
+//acc[i].nextElementSibling.style.display = "none";
+
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    var droparrow = this.getElementsByClassName("accordian-drop-arrow");
+    if (panel.style.maxHeight) {
+      droparrow[0].style.rotate = "0deg";
+      panel.style.maxHeight = null;
+    } else {
+      droparrow[0].style.rotate = "180deg";
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+ 
+
+
+</body>
+
+<!-- This is a template for the footer! Place on every page!-->
+
+<footer>
+
+
+    <div>
+            <br>
+            <a class="written-text">This Website was 100% Developed by Bashar Alqassar (that's me!)<br></a>  
+            <a class="written-text"> using Github Pages, HTML, CSS and the Bootstrap Library<br></a>
+            <br>
+            <a class="written-text">Contact me at </a>
+            <a class="link" href="mailto:bbalqassar@gmail.com">BBAlqassar@gmail.com<br></a>
+            <a class="written-text">Check out my </a>
+            <a class="link" href="../Pages/resume_view.html">Resume</a>
+            <a class="written-text">here!</a>
+
+    </div>
+    
+    <hr style="width:50%;text-align:center;">
+    
+    <div>
+            <a href="mailto:bbalqassar@gmail.com" class="social-link">
+                <img src="../Icons/email.png" width="50"/>
+            </a>
+    
+            <a href="https://www.linkedin.com/in/bashar-alqassar-974830224/" class="social-link">
+                <img src="../Icons/linkedin.svg" width="50"/>
+            </a>
+            
+            <a href="https://github.com/DocterBuster" class="social-link">
+                <img src="../Icons/github.svg" width="50"/>
+            </a>
+            
+            <a href="https://docterbuster.itch.io/" class="social-link">
+                <img src="../Icons/itchio.svg" width="50"/>
+            </a>
+    
+    </div>
+    
+    <div style="clear: both;">&nbsp;</div>
+</footer>
+
+<!-- End of Footer Template-->
+<html>
