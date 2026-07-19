@@ -250,7 +250,8 @@ var i;
 
 for (i = 0; i < acc.length; i++) {
 
-acc[i].nextElementSibling.style.display = "none";
+// Toggle none state always
+//acc[i].nextElementSibling.style.display = "none";
 
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
