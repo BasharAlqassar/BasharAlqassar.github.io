@@ -909,26 +909,45 @@ footer
 }
 
 
-
 .subpage-text-body
 {
+  display: flex;
+  flex-direction: column;
+  justify-items: left;
 
   width: 80%;
   max-width: 1000px;
   height: auto;
 
   font-family: Calibri;
-  align-items: center;
-  text-align: center;
+
+  text-align: left;
   font-size: 20px;
   color: rgb(255, 255, 255);
 
-  display: block;
   margin: auto;
 
+  margin-bottom: 15px;
 
+
+  padding: 15px;
+  border-style: none;
+  background-color: #000000;
+  background: linear-gradient(-45deg, #023f02c4 0%, #0252528d 100% );
+  box-shadow: 0 0 2px 2px rgba(0, 128, 0, 0.26);
+  border-radius: 15px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
+
+.subpage-text-body-topic
+{
+  font-size: 36px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.616);
+
+}
 
 
 .subpage-image
@@ -990,6 +1009,7 @@ footer
   align-items: center;
 
   margin: auto;
+  margin-bottom: 20px;
   border-radius: 15px;
 
 
@@ -1120,6 +1140,8 @@ footer
     .home-showcase-video {width: 320px; height: 180px;}
     .subpage-logo-image {width: 320px; height: 180px;}
     .about-me-holder {width: 320px;}
+
+    .accordian-content {font-size: 8px;}
 
   }
 /*#endregion Resize by screen size */
