@@ -262,12 +262,12 @@ for (i = 0; i < acc.length; i++) {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
     var droparrow = this.getElementsByClassName("accordian-drop-arrow");
-    if (panel.style.display === "block") {
+    if (panel.style.maxHeight) {
       droparrow[0].style.rotate = "0deg";
-      panel.style.display = "none";
+      panel.style.maxHeight = null;
     } else {
       droparrow[0].style.rotate = "180deg";
-      panel.style.display = "block";
+      panel.style.maxHeight = panel.scrollHeight + "px";
     }
   });
 }
