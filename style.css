@@ -983,15 +983,10 @@ footer
 
   display: flex;
   flex-direction: column;
-
-  justify-items: center;
   justify-content: center;
   align-items: center;
 
-
-  align-self: center;
-  place-self: center;
-  justify-self: center;
+  margin: auto;
 
   width: 70%;
   max-width: 800px;
@@ -1009,7 +1004,7 @@ footer
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
 
-
+  margin: auto;
 
 
   padding: 18px 10px;
@@ -1037,19 +1032,12 @@ footer
 
 .accordian-content 
 {
-  
+  display: flex;
 
+  margin: 0 auto;
 
   width: 100%;
 
-  justify-items: center;
-  justify-content: center;
-  align-items: center;
-
-
-  align-self: center;
-  place-self: center;
-  justify-self: center;
 
 
   background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
