@@ -989,6 +989,9 @@ footer
   align-items: center;
 
   margin: auto;
+  border-radius: 15px;
+
+
 
   width: 70%;
   max-width: 800px;
@@ -1004,9 +1007,33 @@ footer
 }
 
 
+.accordian-icon
+{
+  width: 40px;
+  padding-right: 10px;
+  filter: invert(100%);
+
+}
+
+.accordian-drop-arrow
+{
+
+  width: 40px;
+  padding-right: 10px;
+  filter: invert(100%);
+
+  margin-left: auto;
+
+  transition: 0.3s;
+
+}
+
+
+
 .accordian-button
 {
 
+  cursor: pointer;
 
   display: flex;
   width: 100%;
@@ -1016,7 +1043,8 @@ footer
   text-align: center;
 
   margin: auto;
-
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 
   padding: 18px 10px;
 
@@ -1027,19 +1055,13 @@ footer
 
   background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
   box-shadow: 0 0 10px 10px rgba(0, 128, 0, 0.26);
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
+
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 
 
-  transition: 0.3s;
-
 }
 
-.accordian-button:hover {
-
-}
 
 .accordian-content 
 {
