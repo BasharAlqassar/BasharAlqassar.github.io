@@ -161,7 +161,7 @@
 
 
 
-
+<!--Acordian Code Holder-->
 <div  class="accordian-holder">
     <button class="accordian-button">
         <img class="accordian-icon" src="../Icons\Tools\c-sharp.svg"></img>
@@ -210,6 +210,53 @@
 </div>
 
 
+<!--Acordian Code Holder-->
+<div  class="accordian-holder">
+    <button class="accordian-button">
+        <img class="accordian-icon" src="../Icons\Tools\c-sharp.svg"></img>
+        <img class="accordian-icon" src="../Icons\script_icon.svg"></img>
+        <a>Script About ...</a>
+        <img class="accordian-drop-arrow" src="../Icons\down_arrow.svg"></img>
+    </button>
+    <div class="accordian-content">
+        <div style="max-width:100%;overflow:auto">
+            <pre style="white-space:pre-wrap;word-wrap:break-word;background-color:#121314;color:#BBBEBF"><code><span><span style="color:#569CD6">public</span><span style="color:#FF7B72"> class</span><span style="color:#4EC9B0"> Goblin</span><span style="color:#BBBEBF"> : </span><span style="color:#4EC9B0">MonoBehaviour</span></span>
+            <span><span style="color:#BBBEBF">{</span></span>
+            <span><span style="color:#BBBEBF">    [</span><span style="color:#4EC9B0">SerializeField</span><span style="color:#BBBEBF">] </span><span style="color:#569CD6">private</span><span style="color:#FF7B72"> float</span><span style="color:#9CDCFE"> m_spin_per_update</span><span style="color:#D4D4D4"> =</span><span style="color:#B5CEA8"> 0.5f</span><span style="color:#BBBEBF">;</span></span>
+            <span><span style="color:#569CD6">    private</span><span style="color:#4EC9B0"> PlayerController</span><span style="color:#9CDCFE"> m_player</span><span style="color:#D4D4D4"> =</span><span style="color:#569CD6"> null</span><span style="color:#BBBEBF">; </span></span>
+            <span></span>
+            <span><span style="color:#FF7B72">    void</span><span style="color:#D2A8FF"> Start</span><span style="color:#BBBEBF">()</span></span>
+            <span><span style="color:#BBBEBF">    {</span></span>
+            <span><span style="color:#C9D1D9">        m_player</span><span style="color:#D4D4D4"> =</span><span style="color:#D2A8FF"> FindAnyObjectByType</span><span style="color:#BBBEBF">&lt;</span><span style="color:#4EC9B0">PlayerController</span><span style="color:#BBBEBF">&gt;();</span></span>
+            <span><span style="color:#C9D1D9">        m_player</span><span style="color:#BBBEBF">.</span><span style="color:#C9D1D9">PlayerDied</span><span style="color:#BBBEBF">.</span><span style="color:#D2A8FF">AddListener</span><span style="color:#BBBEBF">(</span><span style="color:#C9D1D9">GoblinDespawn</span><span style="color:#BBBEBF">);</span></span>
+            <span><span style="color:#C9D1D9">        LevelManager</span><span style="color:#BBBEBF">.</span><span style="color:#C9D1D9">Instance</span><span style="color:#BBBEBF">.</span><span style="color:#C9D1D9">FocusScreenCalled</span><span style="color:#BBBEBF">.</span><span style="color:#D2A8FF">AddListener</span><span style="color:#BBBEBF">(</span><span style="color:#C9D1D9">GoblinDespawn</span><span style="color:#BBBEBF">);</span></span>
+            <span><span style="color:#C9D1D9">        LevelManager</span><span style="color:#BBBEBF">.</span><span style="color:#C9D1D9">Instance</span><span style="color:#BBBEBF">.</span><span style="color:#C9D1D9">CollectableTempCollected</span><span style="color:#BBBEBF">.</span><span style="color:#D2A8FF">AddListener</span><span style="color:#BBBEBF">(</span><span style="color:#C9D1D9">GoblinSpawn</span><span style="color:#BBBEBF">);</span></span>
+            <span></span>
+            <span><span style="color:#8B949E">        // Spawn in to avoid freeze on first load</span></span>
+            <span><span style="color:#D2A8FF">        GoblinSpawn</span><span style="color:#BBBEBF">();</span></span>
+            <span></span>
+            <span><span style="color:#BBBEBF">    }</span></span>
+            <span></span>
+            <span><span style="color:#FF7B72">    void</span><span style="color:#D2A8FF"> FixedUpdate</span><span style="color:#BBBEBF">()</span></span>
+            <span><span style="color:#BBBEBF">    {</span></span>
+            <span><span style="color:#C9D1D9">        transform</span><span style="color:#BBBEBF">.</span><span style="color:#D2A8FF">Rotate</span><span style="color:#BBBEBF">(</span><span style="color:#569CD6">new</span><span style="color:#4EC9B0"> Vector3</span><span style="color:#BBBEBF">(</span><span style="color:#B5CEA8">0f</span><span style="color:#BBBEBF">, </span><span style="color:#C9D1D9">m_spin_per_update</span><span style="color:#BBBEBF">, </span><span style="color:#B5CEA8">0f</span><span style="color:#BBBEBF">));</span></span>
+            <span><span style="color:#BBBEBF">    }</span></span>
+            <span></span>
+            <span><span style="color:#FF7B72">    void</span><span style="color:#D2A8FF"> GoblinSpawn</span><span style="color:#BBBEBF">()</span></span>
+            <span><span style="color:#BBBEBF">    {</span></span>
+            <span><span style="color:#C9D1D9">        gameObject</span><span style="color:#BBBEBF">.</span><span style="color:#D2A8FF">SetActive</span><span style="color:#BBBEBF">(</span><span style="color:#569CD6">true</span><span style="color:#BBBEBF">);</span></span>
+            <span><span style="color:#BBBEBF">    }</span></span>
+            <span></span>
+            <span><span style="color:#FF7B72">    void</span><span style="color:#D2A8FF"> GoblinDespawn</span><span style="color:#BBBEBF">()</span></span>
+            <span><span style="color:#BBBEBF">    {</span></span>
+            <span><span style="color:#C9D1D9">        gameObject</span><span style="color:#BBBEBF">.</span><span style="color:#D2A8FF">SetActive</span><span style="color:#BBBEBF">(</span><span style="color:#569CD6">false</span><span style="color:#BBBEBF">);</span></span>
+            <span><span style="color:#BBBEBF">    }</span></span>
+            <span></span>
+            <span><span style="color:#BBBEBF">}</span></span></code></pre>
+        </div>
+
+    </div>
+</div>
 
 
 
