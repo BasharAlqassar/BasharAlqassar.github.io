@@ -1121,5 +1121,7 @@ footer
     .subpage-logo-image {width: 320px; height: 180px;}
     .about-me-holder {width: 320px;}
 
+    .accordian-content {font-size: 8px;}
+
   }
 /*#endregion Resize by screen size */
