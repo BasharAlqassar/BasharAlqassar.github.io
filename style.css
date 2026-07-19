@@ -1020,10 +1020,10 @@ footer
   box-shadow: 0 0 10px 10px rgba(2, 251, 255, 0.286);
 }
 
-.accordian-content
+.accordian-content 
 {
   
-  overflow-x: auto;
+
 
   padding: 0 10px;
   width: 70%;
@@ -1045,6 +1045,18 @@ footer
   transition: 0.3s;
 }
 
+
+code {
+  display: block; 
+  width: max-content; 
+  min-width: 100%;
+}
+
+pre
+{
+  width: max-content; 
+  min-width: 100%;
+}
 
 
 /*#endregion Subpages*/
