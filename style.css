@@ -45,6 +45,13 @@ body {
 
   }
 
+  iframe
+  {
+      border-radius: 15px;
+      width: 100%;
+      height: 100%;
+  }
+
 
   /*#endregion HTML General*/
 
@@ -902,11 +909,7 @@ footer
 
 }
 
-.subpage-image:hover
-{
-  scale: 1.03;
-  box-shadow: 0 0 10px 10px rgba(2, 251, 255, 0.286);
-}
+
 
 
 .subpage-text-body
@@ -954,19 +957,13 @@ footer
 {
 
   display: flex;
-
-  max-width: 50%;
-  height: auto;
   margin: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
   position: relative;
 
   border-style: none;
   background-color: #000000;
   align-items: center;
   text-align: center;
-
 
   background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
   box-shadow: 0 0 10px 10px rgba(0, 128, 0, 0.26);
@@ -996,6 +993,19 @@ footer
     margin: auto;
 }
 
+
+
+.subpage-general-flex-grid
+{
+  display: flex;
+  flex-wrap: wrap;
+
+  place-items: center;
+  justify-items: center;
+  justify-content: center;
+  align-self: center;
+  
+}
 
 
 
@@ -1130,6 +1140,7 @@ footer
       width: auto;
       height: auto;
     }
+
     .home-large-text {font-size: 40px;}
     .home-sub-text {font-size: 16px;}
     .project-card-image {width: 320px; height: 180px; margin: auto;}
@@ -1140,6 +1151,9 @@ footer
     .home-showcase-video {width: 320px; height: 180px;}
     .subpage-logo-image {width: 320px; height: 180px;}
     .about-me-holder {width: 320px;}
+    .subpage-text-body {max-width: 320px;}
+
+
 
     .accordian-content {font-size: 8px;}
 

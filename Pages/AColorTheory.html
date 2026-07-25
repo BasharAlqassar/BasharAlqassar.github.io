@@ -122,125 +122,68 @@
 
 
 
-<!-- Project Description Intro -->
-<div class="subpage-text-body">
-    
-    <a class="subpage-text-body-topic">About</a>
-    <br>
-    <br>
 
-    A Puzzle Platformer where Color determines what anything and everything does: from simple platformer-style movement, 
-    to destructible hazards to gravity-flipping capability: nothing is immune to being changed by the power of Colors!  
-    <br>
-    <br>
-    This project started as part of an experimental class about designing games and experiences around
-    concepts of Artificial Intelligence. I wanted to make a game to communicate how, abstractly speaking,
-    AI sees things differently than we do as humans. The final game is an experience that constantly 
-    has you questioning what you know about the rules of the game and hides puzzle solutions in plain sight. 
-    If only you hadn’t mistaken the goal for those spikes…you would have solved it by now!  
+<div class="subpage-header-content" style="column-gap: 100px;">
 
-    <br>
-    <br>
-    A Color Theory was selected for the Excellence in Digital Design award at the 2025 Boston Festival of Indie Games. 
+    <!-- Project Description Intro -->
 
+    <div class="subpage-header-holder">
 
-</div>
+        <div class="subpage-text-body" style="width: 400px;">
+            
+            <a class="subpage-text-body-topic">About</a>
+            <br>
+            <br>
 
-<div class="subpage-header-content">
-    <!-- Image -->
-    <img class="subpage-image" src="../Images/Photos/Bashar_FIG25.jpg" alt="Project-Image">
+            A Puzzle Platformer where Color determines what anything and everything does: from simple platformer-style movement, 
+            to destructible hazards to gravity-flipping capability: nothing is immune to being changed by the power of Colors!  
+            <br>
+            <br>
+            This project started as part of an experimental class about designing games and experiences around
+            concepts of Artificial Intelligence. I wanted to make a game to communicate how, abstractly speaking,
+            AI sees things differently than we do as humans. The final game is an experience that constantly 
+            has you questioning what you know about the rules of the game and hides puzzle solutions in plain sight. 
+            If only you hadn’t mistaken the goal for those spikes…you would have solved it by now!  
 
-</div>
+            <br>
+            <br>
+            A Color Theory was selected for the Excellence in Digital Design award at the 2025 Boston Festival of Indie Games. 
 
 
-    <!-- Project Key Tools used -->
-    <div class="tool-card-holder">
-
-            <div class="tool-card">
-                <img class="tool-card-image" src="../Icons\Tools\godot.svg"></img>
-                <a class="tool-card-text" color="white">Godot</a>
-            </div>
-            <div class="tool-card">
-                <img class="tool-card-image" src="../Icons\Tools\github.svg"></img>
-                <a class="tool-card-text" color="white">Git</a>
-            </div>
-            <div class="tool-card">
-                <img class="tool-card-image" src="../Icons\Tools\godot.svg"></img>
-                <a class="tool-card-text" color="white">GD Script</a>
-            </div>
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-<div class="subpage-text-body">
-    
-    <a class="subpage-text-body-topic">Modular Design</a>
-    <br>
-    <br>
-    Every single component of the game is modular and carefully crafted to be easily changed on a moment's notice. Colorable objects
-     are made to have their type swapped on the fly with a dedicated and secure pipeline to maintain seamlessness during gameplay. 
-
-</div>
-
-<!--Acordian Code Holder-->
-<div  class="accordian-holder">
-    <button class="accordian-button">
-        <img class="accordian-icon" src="../Icons\Tools\c-sharp.svg"></img>
-        <img class="accordian-icon" src="../Icons\script_icon.svg"></img>
-        <a>Script About ...</a>
-        <img class="accordian-drop-arrow" src="../Icons\down_arrow.svg"></img>
-    </button>
-    <div class="accordian-content">
-        <div style="max-width:100%;overflow:auto">
-            <pre style="white-space:pre-wrap;word-wrap:break-word;background-color:#121314;color:#BBBEBF"><code><span><span style="color:#569CD6">public</span><span style="color:#FF7B72"> class</span><span style="color:#4EC9B0"> Goblin</span><span style="color:#BBBEBF"> : </span><span style="color:#4EC9B0">MonoBehaviour</span></span>
-            <span><span style="color:#BBBEBF">{</span></span>
-            <span><span style="color:#BBBEBF">    [</span><span style="color:#4EC9B0">SerializeField</span><span style="color:#BBBEBF">] </span><span style="color:#569CD6">private</span><span style="color:#FF7B72"> float</span><span style="color:#9CDCFE"> m_spin_per_update</span><span style="color:#D4D4D4"> =</span><span style="color:#B5CEA8"> 0.5f</span><span style="color:#BBBEBF">;</span></span>
-            <span><span style="color:#569CD6">    private</span><span style="color:#4EC9B0"> PlayerController</span><span style="color:#9CDCFE"> m_player</span><span style="color:#D4D4D4"> =</span><span style="color:#569CD6"> null</span><span style="color:#BBBEBF">; </span></span>
-            <span></span>
-            <span><span style="color:#FF7B72">    void</span><span style="color:#D2A8FF"> Start</span><span style="color:#BBBEBF">()</span></span>
-            <span><span style="color:#BBBEBF">    {</span></span>
-            <span><span style="color:#C9D1D9">        m_player</span><span style="color:#D4D4D4"> =</span><span style="color:#D2A8FF"> FindAnyObjectByType</span><span style="color:#BBBEBF">&lt;</span><span style="color:#4EC9B0">PlayerController</span><span style="color:#BBBEBF">&gt;();</span></span>
-            <span><span style="color:#C9D1D9">        m_player</span><span style="color:#BBBEBF">.</span><span style="color:#C9D1D9">PlayerDied</span><span style="color:#BBBEBF">.</span><span style="color:#D2A8FF">AddListener</span><span style="color:#BBBEBF">(</span><span style="color:#C9D1D9">GoblinDespawn</span><span style="color:#BBBEBF">);</span></span>
-            <span><span style="color:#C9D1D9">        LevelManager</span><span style="color:#BBBEBF">.</span><span style="color:#C9D1D9">Instance</span><span style="color:#BBBEBF">.</span><span style="color:#C9D1D9">FocusScreenCalled</span><span style="color:#BBBEBF">.</span><span style="color:#D2A8FF">AddListener</span><span style="color:#BBBEBF">(</span><span style="color:#C9D1D9">GoblinDespawn</span><span style="color:#BBBEBF">);</span></span>
-            <span><span style="color:#C9D1D9">        LevelManager</span><span style="color:#BBBEBF">.</span><span style="color:#C9D1D9">Instance</span><span style="color:#BBBEBF">.</span><span style="color:#C9D1D9">CollectableTempCollected</span><span style="color:#BBBEBF">.</span><span style="color:#D2A8FF">AddListener</span><span style="color:#BBBEBF">(</span><span style="color:#C9D1D9">GoblinSpawn</span><span style="color:#BBBEBF">);</span></span>
-            <span></span>
-            <span><span style="color:#8B949E">        // Spawn in to avoid freeze on first load</span></span>
-            <span><span style="color:#D2A8FF">        GoblinSpawn</span><span style="color:#BBBEBF">();</span></span>
-            <span></span>
-            <span><span style="color:#BBBEBF">    }</span></span>
-            <span></span>
-            <span><span style="color:#FF7B72">    void</span><span style="color:#D2A8FF"> FixedUpdate</span><span style="color:#BBBEBF">()</span></span>
-            <span><span style="color:#BBBEBF">    {</span></span>
-            <span><span style="color:#C9D1D9">        transform</span><span style="color:#BBBEBF">.</span><span style="color:#D2A8FF">Rotate</span><span style="color:#BBBEBF">(</span><span style="color:#569CD6">new</span><span style="color:#4EC9B0"> Vector3</span><span style="color:#BBBEBF">(</span><span style="color:#B5CEA8">0f</span><span style="color:#BBBEBF">, </span><span style="color:#C9D1D9">m_spin_per_update</span><span style="color:#BBBEBF">, </span><span style="color:#B5CEA8">0f</span><span style="color:#BBBEBF">));</span></span>
-            <span><span style="color:#BBBEBF">    }</span></span>
-            <span></span>
-            <span><span style="color:#FF7B72">    void</span><span style="color:#D2A8FF"> GoblinSpawn</span><span style="color:#BBBEBF">()</span></span>
-            <span><span style="color:#BBBEBF">    {</span></span>
-            <span><span style="color:#C9D1D9">        gameObject</span><span style="color:#BBBEBF">.</span><span style="color:#D2A8FF">SetActive</span><span style="color:#BBBEBF">(</span><span style="color:#569CD6">true</span><span style="color:#BBBEBF">);</span></span>
-            <span><span style="color:#BBBEBF">    }</span></span>
-            <span></span>
-            <span><span style="color:#FF7B72">    void</span><span style="color:#D2A8FF"> GoblinDespawn</span><span style="color:#BBBEBF">()</span></span>
-            <span><span style="color:#BBBEBF">    {</span></span>
-            <span><span style="color:#C9D1D9">        gameObject</span><span style="color:#BBBEBF">.</span><span style="color:#D2A8FF">SetActive</span><span style="color:#BBBEBF">(</span><span style="color:#569CD6">false</span><span style="color:#BBBEBF">);</span></span>
-            <span><span style="color:#BBBEBF">    }</span></span>
-            <span></span>
-            <span><span style="color:#BBBEBF">}</span></span></code></pre>
         </div>
 
     </div>
+
+    <div class="subpage-header-holder" >
+        <!-- Image -->
+        <img class="subpage-image" src="../Images/Photos/Bashar_FIG25.jpg" alt="Project-Image" style="width: 430px;">
+    </div>
+
+</div>
+
+<!-- Project Key Tools used -->
+<div class="tool-card-holder">
+
+        <div class="tool-card">
+            <img class="tool-card-image" src="../Icons\Tools\godot.svg"></img>
+            <a class="tool-card-text" color="white">Godot</a>
+        </div>
+        <div class="tool-card">
+            <img class="tool-card-image" src="../Icons\Tools\github.svg"></img>
+            <a class="tool-card-text" color="white">Git</a>
+        </div>
+        <div class="tool-card">
+            <img class="tool-card-image" src="../Icons\Tools\godot.svg"></img>
+            <a class="tool-card-text" color="white">GD Script</a>
+        </div>
+
 </div>
 
 
-<!-- Image -->
-<img class="subpage-image" src="../Images\Promo\AColorTheory_ColorchangeDemo.gif" alt="Project-Image">
+
+
+
+
 
 
 
@@ -255,11 +198,33 @@
 </div>
 
 
+<!-- Autoplay Video Widget -->
+<div class="subpage-header-content">
+    <div class="subpage-header-holder">
+        <iframe controls class="home-showcase-video" src="https://www.youtube.com/embed/Lxl4T2dzqRY?si=iLmDZn4i4ekCSnEy?start=0&loop=1&autoplay=1&mute=1&playlist=qJd0pAWGYYE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+    </div>
+</div>
 
-<!-- Image -->
-<img class="subpage-image" src="../I.gif" alt="Project-Image">
 
 
+
+
+
+
+<div class="subpage-text-body">
+    
+    <a class="subpage-text-body-topic">Post-Mortum Deck</a>
+    <br>
+    <br>
+    A presentation I gave in March of 2026 recounting the development process of the game, with a focus on understanding scope and potential of an idea before committing to a project. 
+
+</div>
+
+
+<div class="subpage-text-body" style="align-items: center; width: 680px; height: 400px;">
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTGh8Vpmt41IlwmlT1KNbdKcsNzkIoq3ktHlKPzxYCgWpalYAI0YfXF72ejQtVXlLC7oMX6uXF2H6S6/pubembed?start=true&loop=false&delayms=5000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
 
 
 
