@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<link rel = 'stylesheet' href='../style.css'>
+
+<!-- Icon Links -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- This is the page tab information! (What shows on the browwser for the page window!)-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bashar Alqassar : Game Programer and Creative Coder Portfolio</title>
+        <meta name="description" content="The portfolio of Bashar Alqassar: ">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>        
+        <script src="" async defer></script>
+    </body>
+</html>
+
+
+<!-- Overide for custom background image!-->
+<body>
+
+<style>
+    body {
+        background-image: url("../Images/Backgrounds/Dragon_Night.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+</style>
+
+    
+<!-- Sticky Header Bar, read from right to left on the page-->
+    <div id="navbar" class="topnav">
+       
+
+        <a class="active" href="../index.html">
+            <img class="navbar-icon" src="../Icons/home.svg"></img>
+            Home
+        </a>
+
+        <a class="active" href="../index.html#AboutMe">
+            <img class="navbar-icon" src="../Icons/user.svg"></img>
+            About Me
+        </a>
+
+        <a class="active" href="../index.html#Projects">
+            <img class="navbar-icon" src="../Icons/play-circle.svg"></img>
+            Projects
+        </a>
+        
+        <a class="active" href="../Pages/resume_view.html" target="_blank" rel="noopener noreferrer">
+            <img class="navbar-icon" src="../Icons/file-text.svg"></img>
+            Resume
+        </a>
+
+        <a href="javascript:void(0);" onclick="show_collapsed()" class="navbar-dropdown">
+            <img class="navbar-icon" src="../Icons/menu.svg" id="navbar_showhide"></img>
+        </a>
+
+
+
+        <script>
+            function show_collapsed()
+            {
+                var navbar = document.getElementById("navbar");
+                var show_hide_btn_icon = document.getElementById("navbar_showhide");
+
+                console.log(navbar)
+
+                if (navbar.className === "topnav") 
+                {
+                    navbar.className += " responsive";
+                    show_hide_btn_icon.src = "../Icons/x-square.svg";
+                    
+                } else 
+                {
+                    navbar.className = "topnav";
+                    show_hide_btn_icon.src = "../Icons/menu.svg";
+                }
+                console.log(navbar)
+            }
+        </script>       
+
+    </div>
+
+<!-- End of Navbar Template-->
+
+
+
+
+
+<!-- End of Acordian container code -->
+
+
+
+ <!-- Start of subpage template!!! (Fill content here!)-->
+
+
+
+
+<div class="subpage-header-content">
+    <!-- Page Logo -->
+    <div class="subpage-header-holder">
+        <a  href="https://store.steampowered.com/app/4189590/A_Color_Theory/" target="_blank">
+            <img class="subpage-logo-image" src="../Images\CardImages\DropOffDragon.png" alt="Project_Banner">
+        </a>
+    </div>
+        
+    <!-- Autoplay Video Widget -->
+    <div class="subpage-header-holder">
+        <iframe controls class="home-showcase-video" src="https://www.youtube.com/embed/nVyNt1xzX6Q?start=0&loop=1&autoplay=1&mute=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+    </div>
+
+</div>
+
+
+
+
+<div class="subpage-header-content" style="column-gap: 100px;">
+
+    <!-- Project Description Intro -->
+
+    <div class="subpage-header-holder">
+
+        <div class="subpage-text-body" style="width: 400px;">
+            
+            <a class="subpage-text-body-topic">About</a>
+            <br>
+            <br>
+
+            A Puzzle Platformer where Color determines what anything and everything does: from simple platformer-style movement, 
+            to destructible hazards to gravity-flipping capability: nothing is immune to being changed by the power of Colors!  
+            <br>
+            <br>
+            This project started as part of an experimental class about designing games and experiences around
+            concepts of Artificial Intelligence. I wanted to make a game to communicate how, abstractly speaking,
+            AI sees things differently than we do as humans. The final game is an experience that constantly 
+            has you questioning what you know about the rules of the game and hides puzzle solutions in plain sight. 
+            If only you hadn’t mistaken the goal for those spikes…you would have solved it by now!  
+
+            <br>
+            <br>
+            A Color Theory was selected for the Excellence in Digital Design award at the 2025 Boston Festival of Indie Games. 
+
+
+        </div>
+
+    </div>
+
+    <div class="subpage-header-holder" >
+        <!-- Image -->
+        <img class="general-image" src="../Images/Photos/Bashar_FIG25.jpg" alt="Project-Image">
+        </div>
+
+</div>
+
+<!-- Project Key Tools used -->
+<div class="tool-card-holder">
+
+        <div class="tool-card">
+            <img class="tool-card-image" src="../Icons\Tools\godot.svg"></img>
+            <a class="tool-card-text" color="white">Godot</a>
+        </div>
+        <div class="tool-card">
+            <img class="tool-card-image" src="../Icons\Tools\github.svg"></img>
+            <a class="tool-card-text" color="white">Git</a>
+        </div>
+        <div class="tool-card">
+            <img class="tool-card-image" src="../Icons\Tools\godot.svg"></img>
+            <a class="tool-card-text" color="white">GD Script</a>
+        </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="subpage-text-body">
+    
+    <a class="subpage-text-body-topic">Rapid Iteration</a>
+    <br>
+    <br>
+    Engine-side systems are implemented with a focus on being able to quickly prototype an idea, test it and gain immediate feedback for iteration. 
+    This allowed for rapid developer-side playtesting during the design phase to ensure quality, to-the-point playtesting with real players. 
+
+</div>
+
+
+<!-- Autoplay Video Widget -->
+<div class="subpage-header-content">
+    <div class="subpage-header-holder">
+        <iframe controls class="home-showcase-video" src="https://www.youtube.com/embed/Lxl4T2dzqRY?start=0&loop=1&autoplay=1&mute=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="subpage-text-body">
+    
+    <a class="subpage-text-body-topic">Post-Mortum Deck</a>
+    <br>
+    <br>
+    A presentation I gave in March of 2026 recounting the development process of the game, with a focus on understanding scope and potential of an idea before committing to a project. 
+
+</div>
+
+
+<div class="subpage-text-body" style="align-items: center; width: 680px; height: 400px;">
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTGh8Vpmt41IlwmlT1KNbdKcsNzkIoq3ktHlKPzxYCgWpalYAI0YfXF72ejQtVXlLC7oMX6uXF2H6S6/pubembed?start=true&loop=false&delayms=5000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+
+
+
+
+ <!-- End of subpage template!!! (Fill content Above!)-->
+
+
+
+<!-- Acordian container code (Needs to be below)-->
+<script>
+var acc = document.getElementsByClassName("accordian-button");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+
+// Toggle none state always
+//acc[i].nextElementSibling.style.display = "none";
+
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    var droparrow = this.getElementsByClassName("accordian-drop-arrow");
+    if (panel.style.maxHeight) {
+      droparrow[0].style.rotate = "0deg";
+      panel.style.maxHeight = null;
+    } else {
+      droparrow[0].style.rotate = "180deg";
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+ 
+
+
+</body>
+
+<!-- This is a template for the footer! Place on every page!-->
+
+<footer>
+
+
+    <div>
+            <br>
+            <a class="written-text">This Website was 100% Developed by Bashar Alqassar (that's me!)<br></a>  
+            <a class="written-text"> using Github Pages, HTML, CSS and the Bootstrap Library<br></a>
+            <br>
+            <a class="written-text">Contact me at </a>
+            <a class="link" href="mailto:bbalqassar@gmail.com">BBAlqassar@gmail.com<br></a>
+            <a class="written-text">Check out my </a>
+            <a class="link" href="../Pages/resume_view.html">Resume</a>
+            <a class="written-text">here!</a>
+
+    </div>
+    
+    <hr style="width:50%;text-align:center;">
+    
+    <div>
+            <a href="mailto:bbalqassar@gmail.com" class="social-link">
+                <img src="../Icons/email.png" width="50"/>
+            </a>
+    
+            <a href="https://www.linkedin.com/in/bashar-alqassar-974830224/" class="social-link">
+                <img src="../Icons/linkedin.svg" width="50"/>
+            </a>
+            
+            <a href="https://github.com/DocterBuster" class="social-link">
+                <img src="../Icons/github.svg" width="50"/>
+            </a>
+            
+            <a href="https://docterbuster.itch.io/" class="social-link">
+                <img src="../Icons/itchio.svg" width="50"/>
+            </a>
+    
+    </div>
+    
+    <div style="clear: both;">&nbsp;</div>
+</footer>
+
+<!-- End of Footer Template-->
+<html>
