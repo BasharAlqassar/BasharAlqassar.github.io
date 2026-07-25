@@ -52,11 +52,14 @@ body {
     display: flex;
     margin: auto;
     position: relative;
+ 
 
     border-style: none;
     background-color: #000000;
     align-items: center;
     text-align: center;
+    justify-self: center;
+    place-self: center;
 
     background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
     box-shadow: 0 0 10px 10px rgba(0, 128, 0, 0.26);
@@ -177,7 +180,6 @@ body {
 /*#region Homepage Content*/
   .home-content
   {
-
     display: flex;
     flex-wrap: wrap;
     column-gap: 50px;
@@ -186,7 +188,6 @@ body {
     justify-items: center;
     justify-content: center;
     align-self: center;
-  
   }
 
 
@@ -592,10 +593,10 @@ body {
 
 
 
-.about-me-image
+.general-image
 {
   width: 80%;
-
+  margin: auto;
   background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
   box-shadow: 0 0 15px 15px rgba(0, 128, 0, 0.26);
   border-radius: 15px;
@@ -604,7 +605,7 @@ body {
   transition: 0.3s;
 }
 
-.about-me-image:hover
+.general-image:hover
 {
   scale: 1.03;
   box-shadow: 0 0 20px 20px rgba(2, 251, 255, 0.286);
