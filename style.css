@@ -45,6 +45,13 @@ body {
 
   }
 
+  iframe
+  {
+      border-radius: 15px;
+      width: 100%;
+      height: 100%;
+  }
+
 
   /*#endregion HTML General*/
 
@@ -1133,6 +1140,7 @@ footer
       width: auto;
       height: auto;
     }
+
     .home-large-text {font-size: 40px;}
     .home-sub-text {font-size: 16px;}
     .project-card-image {width: 320px; height: 180px; margin: auto;}
@@ -1143,6 +1151,9 @@ footer
     .home-showcase-video {width: 320px; height: 180px;}
     .subpage-logo-image {width: 320px; height: 180px;}
     .about-me-holder {width: 320px;}
+    .subpage-text-body {max-width: 320px;}
+
+
 
     .accordian-content {font-size: 8px;}
 
