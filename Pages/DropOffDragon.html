@@ -186,11 +186,11 @@
 
 <div class="subpage-text-body">
     
-    <a class="subpage-text-body-topic">Rapid Iteration</a>
+    <a class="subpage-text-body-topic">Ghost Data System</a>
     <br>
-    <br>
-    Engine-side systems are implemented with a focus on being able to quickly prototype an idea, test it and gain immediate feedback for iteration. 
-    This allowed for rapid developer-side playtesting during the design phase to ensure quality, to-the-point playtesting with real players. 
+    I developed a data structure and pipeline to record the player playing through a 
+    level and to be able to visually play that information in various parts of the application 
+    and even in the editor itself.
 
 </div>
 
@@ -206,23 +206,29 @@
 
 
 
+<div class="subpage-text-body">
+    
+    <a class="subpage-text-body-topic">Recording Optimization</a>
+    <br>
+    It would be ridiculous to record several keypoints of data every single frame of gameplay,
+    so the solution I implemented was to record data on a frame interval:
+    every 3 fixed updates the game would record a set list of necessary information for proper playback. 
+
+</div>
+
 
 
 
 <div class="subpage-text-body">
     
-    <a class="subpage-text-body-topic">Level Design Do's and Don'ts</a>
+    <a class="subpage-text-body-topic">Smoothed Playback</a>
     <br>
-    <br>
-    A visual level design bible we created as a baseline guide for designing levels in the game. We opted for making the guide as visual as possible, including measurements and video demonstration of the capabilities of the player to show ourselves and future designers standard practice in the project. 
+    Playing this data back as is results in the movement appearing choppy,
+    so to compensate, the ghost playback is eased to glide from recorded point to
+    point for the same interval of time it was recorded for. Below is the playback function script,
+    which supports playing data back on a fixed interval as well as unscaled time for editor and level hints. 
 
 </div>
-
-
-<div class="subpage-text-body" style="align-items: center; width: 680px; height: 400px;">
-    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSh_EqIe3mlLU11AA8fKukIvu1BuX-Y1GNOQPbqBqc53HJVCRLyXSB2vFivNkH6A04mEcTNoZfn4UpZ/pubembed?start=true&loop=true&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-</div>
-
 
 <!--Acordian Code Holder-->
 <div  class="accordian-holder">
@@ -301,6 +307,37 @@
 
     </div>
 </div>
+
+
+
+<div class="subpage-text-body">
+    
+    <a class="subpage-text-body-topic">Hint Keyframes</a>
+    <br>
+    Later on in development, we found the need that some players were struggling with certain rooms
+    in the game, so we wanted a hint system. The ghost playback was easily repurposed by introducing
+    a list of frame event indexes in the data array, that way we could easily mark the starting and end points of a 
+    recording to fetch the part of a recording for a specific room in a level and play it back. 
+
+</div>
+
+
+
+
+
+<div class="subpage-text-body">
+    
+    <a class="subpage-text-body-topic">Level Design Do's and Don'ts</a>
+    <br>
+    A visual level design bible we created as a baseline guide for designing levels in the game. We opted for making the guide as visual as possible, including measurements and video demonstration of the capabilities of the player to show ourselves and future designers standard practice in the project. 
+
+</div>
+
+
+<div class="subpage-text-body" style="align-items: center; width: 680px; height: 400px;">
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSh_EqIe3mlLU11AA8fKukIvu1BuX-Y1GNOQPbqBqc53HJVCRLyXSB2vFivNkH6A04mEcTNoZfn4UpZ/pubembed?start=true&loop=true&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
 
 
 
