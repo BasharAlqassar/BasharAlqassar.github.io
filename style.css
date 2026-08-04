@@ -438,7 +438,7 @@ body {
 
 .card-tag[type="role"]
 {
-  color: rgb(32, 147, 114);
+  color: rgb(57, 123, 255);
   box-shadow: 0 0 3px 3px rgba(32, 147, 114, 0.25);
 }
 .card-tag[type="project-type"]
@@ -448,7 +448,7 @@ body {
 }
 .card-tag[type="tool"]
 {
-  color: rgb(51, 94, 181);
+  color: rgb(32, 147, 114);
   box-shadow: 0 0 3px 3px rgba(51, 94, 181, 0.25);
 }
 .card-tag[type="engine"]
@@ -985,7 +985,7 @@ footer
   align-items: center;
 
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   border-radius: 15px;
 
 
