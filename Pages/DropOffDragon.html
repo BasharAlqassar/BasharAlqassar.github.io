@@ -195,14 +195,20 @@
 </div>
 
 
-<!-- Autoplay Video Widget -->
-<div class="subpage-header-content">
+<div class="subpage-header-content" style="margin: 50px;">
     <div class="subpage-header-holder">
-        <iframe controls class="home-showcase-video" src="https://www.youtube.com/embed/Lxl4T2dzqRY?start=0&loop=1&autoplay=1&mute=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-        </iframe>
+        <a>
+            <img class="general-image" style="width: 100%;" src="../Images/Promo/Ghost_Playback_Demo.gif" alt="Project_Banner">
+        </a>
     </div>
-</div>
 
+    <div class="subpage-header-holder">
+        <a>
+            <img class="general-image" style="width: 100%; height: 400px;" src="../Images/Promo/Ghost_Editor_Data.png" alt="Project_Banner">
+        </a>
+    </div>
+
+</div>
 
 
 
@@ -242,6 +248,15 @@
     so to compensate, the ghost playback is eased to glide from recorded point to
     point for the same interval of time it was recorded for. Below is the playback function script,
     which supports playing data back on a fixed interval as well as unscaled time for editor and level hints. 
+
+</div>
+
+<div class="subpage-header-content" style="margin: 50px;">
+    <div class="subpage-header-holder">
+        <a>
+            <img class="general-image" style="width: 100%;" src="../Images/Promo/Ghost_Eased.gif" alt="Project_Banner">
+        </a>
+    </div>
 
 </div>
 
@@ -322,29 +337,6 @@
 
     </div>
 </div>
-
-<div class="subpage-header-content" style="margin: 50px;">
-    <div class="subpage-header-holder">
-        <a>
-            <img class="general-image" style="width: 100%;" src="../Images/Promo/Ghost_Eased.gif" alt="Project_Banner">
-        </a>
-    </div>
-
-</div>
-
-
-
-<div class="subpage-text-body">
-    
-    <a class="subpage-text-body-topic">Hint Keyframes</a>
-    <br>
-    Later on in development, we found the need that some players were struggling with certain rooms
-    in the game, so we wanted a hint system. The ghost playback was easily repurposed by introducing
-    a list of frame event indexes in the data array, that way we could easily mark the starting and end points of a 
-    recording to fetch the part of a recording for a specific room in a level and play it back. 
-
-</div>
-
 
 
 
