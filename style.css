@@ -1135,9 +1135,10 @@ footer
     .card-text-holder {width: 320px; margin: auto;}
     .card-tags-holder {width: 320px; margin-left: auto; margin-right: auto;}
     .home-showcase-video {width: 320px; height: 180px;}
-    .subpage-logo-image {width: 320px; height: 180px;}
+    .subpage-logo-image {max-width: 320px;}
     .about-me-holder {width: 320px;}
     .subpage-text-body {max-width: 320px;}
+    .general-image {max-width: 320px;}
 
 
 

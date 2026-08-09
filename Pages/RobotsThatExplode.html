@@ -107,7 +107,7 @@
     <!-- Page Logo -->
     <div class="subpage-header-holder">
         <a  href="https://docterbuster.itch.io/bots-that-explode-most-of-the-time" target="_blank">
-            <img class="subpage-logo-image" src="../Images/CardImages/Bots_Itch_Icon.png" alt="Project_Banner">
+            <img class="subpage-logo-image" style="height: 100%;" src="../Images/CardImages/Bots_Itch_Icon.png" alt="Project_Banner">
         </a>
     </div>
         
@@ -156,9 +156,11 @@
     </div>
 
     <div class="subpage-header-holder" >
-        <a  href="https://apps.apple.com/us/app/drop-off-dragon/id6778522561" target="_blank">
+        <a>
         <!-- Image -->
-        <img class="general-image" style="width: 440px;" src="../Images\Promo\drop_off_dragon_poster.png" alt="Project-Image" >
+        <img class="general-image" style="width: 400px; margin-bottom: 30px; " src="../Images/Promo/Robots_TitlescreenFinal.png" alt="Project-Image">
+        <img class="general-image" style="width: 400px; margin-bottom: 30px; " src="../Images/Promo/Robots_Code_Interface.png" alt="Project-Image">
+        <img class="general-image" style="width: 400px; margin-bottom: 30px; " src="../Images/Promo/Bot_BuilderFinal.png" alt="Project-Image">
         </a>
         </div>
 
@@ -192,10 +194,10 @@
 
 <div class="subpage-text-body">
     
-    <a class="subpage-text-body-topic">Choosing a Programing Model </a>
+    <a class="subpage-text-body-topic">Choosing a Programming Model </a>
     <br>
 
-    It was very important that the language system needed to be approachable by anyone in order for the message of 
+    It was very important that the programming language system needed to be approachable by anyone in order for the message of 
     the game to be effective and wide-reaching. I started to prototype a block-based system similar to that of Scratch 
     whereby instructions were represented by conditionals and actions that robot would take 
 
@@ -206,7 +208,7 @@
 
     <div class="subpage-header-holder">
         <a>
-            <img class="general-image" style="width: 80%; height: 80%;" src="../Images/Promo/Robots_Scratch.gif" alt="Project_Banner">
+            <img class="general-image" style="width: 700px; height: 80%;" src="../Images/Promo/Robots_Scratch.gif" alt="Project_Banner">
         </a>
     </div>
 
@@ -217,7 +219,15 @@
 <div class="subpage-text-body">
     
 I quickly realized that it would take a very large amount of time to perfect the UI design of a
- Scratch-based system using the tools and time that I had available, so I needed to pivot to another system. 
+Scratch-based system using the tools and time that I had available, so I needed to pivot to another system. 
+
+<br>
+<br>
+<a class="subpage-text-body-topic">A Flow-Based Model  </a>
+<br>
+
+While researching other accessible programming models, I was reminded of Flow-Based models similar to those found in Unreal Engine’s Blueprints or Shader Graphs in various game engines. 
+
 
 </div>
 
@@ -227,67 +237,19 @@ I quickly realized that it would take a very large amount of time to perfect the
 <div class="subpage-header-content" style="margin: 50px;">
     <div class="subpage-header-holder">
         <a>
-            <img class="general-image" style="width: 100%;" src="../Images/Promo/Ghost_Playback_Demo.gif" alt="Project_Banner">
+            <img class="general-image" style="width: 500px; height: 80%;" src="../Images/Promo/Robots_Scratch.gif" alt="Project_Banner">
         </a>
     </div>
 
     <div class="subpage-header-holder">
         <a>
-            <img class="general-image" style="width: 100%; height: 400px;" src="../Images/Promo/Ghost_Editor_Data.png" alt="Project_Banner">
+            <img class="general-image" style="width: 500px; height: 80%;" src="../Images/Promo/Robots_Scratch.gif" alt="Project_Banner">
         </a>
     </div>
 
 </div>
 
 
-
-<div class="subpage-text-body">
-    
-    <a class="subpage-text-body-topic">Recording Optimization</a>
-    <br>
-    It would be ridiculous to record several keypoints of data every single frame of gameplay,
-    so the solution I implemented was to record data on a frame interval:
-    every 4 fixed updates the game would record a set list of necessary information for proper playback. 
-
-</div>
-
-
-<div class="subpage-header-content" style="margin: 50px;">
-    <div class="subpage-header-holder">
-        <a>
-            <img class="general-image" style="width: 100%;" src="../Images/Promo/Ghost_NoEase.gif" alt="Project_Banner">
-        </a>
-    </div>
-        
-    <div class="subpage-header-holder">
-        <a>
-            <img class="general-image" style="width: 100%;" src="../Images/Promo/GhostFilesizeGraph.png" alt="Project_Banner">
-        </a>
-    </div>
-
-</div>
-
-
-
-<div class="subpage-text-body">
-    
-    <a class="subpage-text-body-topic">Smoothed Playback</a>
-    <br>
-    Playing this data back as is results in the movement appearing choppy,
-    so to compensate, the ghost playback is eased to glide from recorded point to
-    point for the same interval of time it was recorded for. Below is the playback function script,
-    which supports playing data back on a fixed interval as well as unscaled time for editor and level hints. 
-
-</div>
-
-<div class="subpage-header-content" style="margin: 50px;">
-    <div class="subpage-header-holder">
-        <a>
-            <img class="general-image" style="width: 100%;" src="../Images/Promo/Ghost_Eased.gif" alt="Project_Banner">
-        </a>
-    </div>
-
-</div>
 
 <!--Acordian Code Holder-->
 <div  class="accordian-holder">
@@ -305,15 +267,6 @@ I quickly realized that it would take a very large amount of time to perfect the
 </div>
 
 
-
-
-<div class="subpage-text-body">
-    
-    <a class="subpage-text-body-topic">Level Design Do's and Don'ts</a>
-    <br>
-    A visual level design bible we created as a baseline guide for designing levels in the game. We opted for making the guide as visual as possible, including measurements and video demonstration of the capabilities of the player to show ourselves and future designers standard practice in the project. 
-
-</div>
 
 
 <div class="subpage-text-body" style="align-items: center; width: 680px; height: 400px;">
