@@ -1,3 +1,4 @@
 {
-    "workbench.colorTheme": "<GD Script Theme>"
+    "workbench.colorTheme": "<GD Script Theme>",
+    "codeToHtml.showFilePath": "none"
 }
