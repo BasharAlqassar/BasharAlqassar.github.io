@@ -597,6 +597,7 @@ body {
 {
   width: 80%;
   margin: auto;
+  margin-bottom: 20px;
   background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
   box-shadow: 0 0 15px 15px rgba(0, 128, 0, 0.26);
   border-radius: 15px;
@@ -1135,9 +1136,10 @@ footer
     .card-text-holder {width: 320px; margin: auto;}
     .card-tags-holder {width: 320px; margin-left: auto; margin-right: auto;}
     .home-showcase-video {width: 320px; height: 180px;}
-    .subpage-logo-image {width: 320px; height: 180px;}
+    .subpage-logo-image {max-width: 320px;}
     .about-me-holder {width: 320px;}
     .subpage-text-body {max-width: 320px;}
+    .general-image {max-width: 320px;}
 
 
 
