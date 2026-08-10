@@ -32,6 +32,26 @@
         background-size: cover;
         background-attachment: fixed;
     }
+
+
+     /* Color Overides */
+    .topnav, .subpage-logo-image, .home-showcase-video, .tool-card, .subpage-text-body, .accordian-content, .accordian-button, .general-image, footer, iframe
+    {
+        background: linear-gradient(-45deg, #1d5dff67 0%, #00ffff34 100% );
+        box-shadow: 0 0 5px 5px rgba(0, 187, 255, 0.169);
+    }
+
+
+    .tool-card:hover, .topnav a:hover
+    {
+        filter: none;
+        background: linear-gradient(-45deg, #1d5dff67 0%, #00ffff34 100% );
+        box-shadow: 0 0 5px 5px rgb(0, 187, 255);
+    }
+
+
+
+
 </style>
 
     
@@ -49,7 +69,7 @@
             About Me
         </a>
 
-        <a class="active" href="../index.html#Projects">
+        <a class="active" href="../Pages/all_projects.html" target="_blank">
             <img class="navbar-icon" src="../Icons/play-circle.svg"></img>
             Projects
         </a>
