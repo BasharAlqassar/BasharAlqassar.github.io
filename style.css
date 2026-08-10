@@ -675,6 +675,14 @@ footer
 }
 
 
+.line_dash_medium
+{
+  width:30%;
+  text-align:center;
+  color: rgb(0, 255, 0);
+  text-align: center;
+}
+
 .written-text
 {
   font-family: 'Courier New', Courier, monospace;
@@ -1085,6 +1093,10 @@ footer
 }
 
 
+.PAGE_SPACER
+{
+ height: 50px;
+}
 
 
 
