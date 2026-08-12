@@ -1,3 +1,71 @@
+/*#region General Theme */
+
+/*Gradient Components*/
+.topnav, .home-showcase-video, .tool-card, .subpage-text-body, .accordian-content, 
+.accordian-button, .general-image, footer, iframe,  .home-showcase-video, .project-card-image, .view-more-button
+{
+  background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
+  box-shadow: 0 0 10px 10px rgba(0, 128, 0, 0.26);
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  transition: 0.3s;
+  animation: fadeInCard 0.5s forwards ease-in-out; 
+}
+
+
+/*Flex Items*/
+.home-content, .subpage-header-content, .tool-card-holder, .about-me-content, .card-holder, .project-card, .card-text-holder,
+.accordian-holder, .iframe, .home-showcase-video, .subpage-header-holder, .project-card-image, .card-text-holder,
+.button-container, .general-image
+{
+  display: flex;
+  flex-wrap: wrap;
+  place-items: center;
+  align-self: center;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+
+  transition: 0.3s;
+}
+
+
+/*Non-Filter Hover*/
+.tool-card:hover, .topnav a:hover, .view-more-button:hover, .accordian-holder:hover, .accordian-button:hover,
+  .home-showcase-video:hover, .project-card-image:hover, .general-image:hover 
+{
+    scale: 1.03;
+    background: linear-gradient(-45deg, #00f2ff 0%, #031cff7b 100% );
+    box-shadow: 0 0 5px 5px rgb(4, 213, 255);
+}
+
+
+
+@keyframes fadeInCard {
+
+  from 
+  {
+    opacity: 0.0;
+
+    position: relative;
+    top: 50px;
+  }
+  to 
+  {
+    opacity: 1;
+    transform: scaleY(1);
+    transform: scaleX(1);
+    position: relative;
+    top: 0px;
+  }
+  
+}
+/*#endregion General Theme */
 
 /*#region HTML General*/
 html {
@@ -31,11 +99,14 @@ body {
   {
     bottom: 0;
     margin-top: 200px;
+    border-radius: 0px;
     align-items: center;
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+
+    animation: none;
   }
 
 
@@ -82,14 +153,15 @@ body {
   .topnav {
     position: sticky;
     z-index: 100;
+    border-radius: 0px;
     top: 0;
     overflow: hidden;
     opacity: 1.0;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    animation: none;
   }
 
   .topnav .navbar-dropdown
@@ -163,80 +235,7 @@ body {
 
 
 
-/*#region General Theme */
 
-
-/*Gradient Components*/
-.topnav, .home-showcase-video, .tool-card, .subpage-text-body, .accordian-content, 
-.accordian-button, .general-image, footer, iframe,  .home-showcase-video, .project-card-image
-{
-  background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
-  box-shadow: 0 0 10px 10px rgba(0, 128, 0, 0.26);
-  border-radius: 15px;
-  border: none;
-  outline: none;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-
-  transition: 0.3s;
-  animation: fadeInCard 0.5s forwards ease-in-out; 
-}
-
-
-/*Flex Items*/
-.home-content, .subpage-header-content, .tool-card-holder, .about-me-content, .project-card, .card-text-holder,
-.accordian-holder, .iframe, .home-showcase-video, .subpage-header-holder, .project-card-image, .card-text-holder
-{
-  display: flex;
-  flex-wrap: wrap;
-  place-items: center;
-  align-self: center;
-  justify-items: center;
-  justify-content: center;
-  text-align: center;
-  align-self: center;
-
-  transition: 0.3s;
-}
-
-
-
-/*Filter Hover*/
-.tool-card:hover, .topnav a:hover
-{
-    scale: 1.03;
-    background: linear-gradient(-45deg, #00f2ff 0%, #031cff7b 100% );
-    box-shadow: 0 0 5px 5px rgb(4, 213, 255);
-}
-
-
-/*Non-Filter Hover*/
-.accordian-holder:hover, .accordian-button:hover,  .home-showcase-video:hover, .project-card-image:hover
-{
-  scale: 1.03;
-  box-shadow: 0 0 10px 10px rgba(2, 251, 255, 0.286);
-}
-
-@keyframes fadeInCard {
-
-  from 
-  {
-    opacity: 0.0;
-
-    position: relative;
-    top: 50px;
-  }
-  to 
-  {
-    opacity: 1;
-    transform: scaleY(1);
-    transform: scaleX(1);
-    position: relative;
-    top: 0px;
-  }
-  
-}
-/*#endregion General Theme */
   
 
 /*#region Homepage Content*/
@@ -315,16 +314,7 @@ body {
  /* Card display grid*/
 .card-holder
 {
-  display: flex;
-  flex-wrap: wrap;
-  place-items: center;
-  align-self: center;
-  align-items: flex-start;
-  justify-items: center;
-  justify-content: center;
-  align-self: center;
-  gap: 100px;
-  
+  gap: 100px; 
 }
 
 
@@ -461,12 +451,10 @@ body {
 
 .tool-card-image
 {
-
   width: 75%;
   height: 50%;
   margin-top: 10px;
   filter: invert(100%);
-
 }
 
 
@@ -535,24 +523,11 @@ body {
 }
 
 
-
 .general-image
 {
   width: 80%;
   margin: auto;
   margin-bottom: 20px;
-  background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
-  box-shadow: 0 0 15px 15px rgba(0, 128, 0, 0.26);
-  border-radius: 15px;
-  display: flex;
-
-  transition: 0.3s;
-}
-
-.general-image:hover
-{
-  scale: 1.03;
-  box-shadow: 0 0 20px 20px rgba(2, 251, 255, 0.286);
 }
 
 
@@ -578,7 +553,6 @@ body {
 .header-container
 {
   position: relative;
-
 }
 
 .header-link-target
@@ -626,7 +600,6 @@ body {
   font-family: 'Courier New', Courier, monospace;
   font-size: 18px;
   color: rgb(0, 255, 0);
-
   transition: font-size 0.3s, color 0.3s; 
 }
 
@@ -634,17 +607,12 @@ body {
 {
     color: rgb(0, 217, 255);
     font-size: 22px;
-
 }
 
 
 .button-container
 {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
   margin-top: 40px;
-
 }
 
 .view-more-button
@@ -658,38 +626,9 @@ body {
   font-family: 'Courier New', Courier, monospace;
   font-size: 36px;
   font-weight: bold;
-  background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
-  box-shadow: 0 0 5px 5px rgba(0, 128, 0, 0.26);
-  border-radius: 15px;
   color: #ffffff;
-  border: none;
   cursor: pointer;
-  transition: 0.3s;
-  animation: glow 1.0s linear infinite;
-  animation-direction: alternate;
 }
-
-.view-more-button:hover
-{
-
-  scale: 1.03;
-  filter: brightness(0) saturate(100%) invert(76%) sepia(52%) saturate(2353%) hue-rotate(132deg) brightness(99%) contrast(105%);
-  box-shadow: 0 0 5px 5px green;
-}
-
-
-@keyframes glow 
-{
-  from 
-  {
-    box-shadow: 0 0 5px 5px rgba(0, 128, 0, 0.26);
-  }
-  to 
-  {
-    box-shadow: 0 0 5px 5px rgba(0, 191, 255, 0.416);
-  }
-}
-
 
 /*#endregion Misc*/
 
@@ -706,22 +645,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-items: left;
-
   width: 80%;
   max-width: 1000px;
   height: auto;
-
   font-family: Calibri;
-
   text-align: left;
   font-size: 20px;
   color: rgb(255, 255, 255);
-
   margin: auto;
-
   margin-bottom: 15px;
-
-
   padding: 15px;
   border-style: none;
   background-color: #000000;
