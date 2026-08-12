@@ -760,31 +760,8 @@ footer
 }
 
 
-.subpage-logo-image
-{
 
-    width: 500px;
-    height: 280px;
 
-    border-radius: 15px;
-    display: flex;
-    position: relative;
-    text-align: center;
-  
-    border-style: none;
-    align-items: center;
-
-    animation: fadeInCard 0.5s forwards ease-in-out; 
-
-    transition: 0.3s;
-  
-}
-
-.subpage-logo-image:hover
-{
-  scale: 1.03;
-  box-shadow: 0 0 10px 10px rgba(2, 251, 255, 0.286);
-}
 
 .subpage-logo-text
 {
@@ -957,7 +934,6 @@ footer
 
   margin: auto;
   margin-bottom: 50px;
-  border-radius: 15px;
 
 
 
@@ -981,13 +957,10 @@ footer
 
 .accordian-drop-arrow
 {
-
   width: 40px;
   padding-right: 10px;
   filter: invert(100%);
-
   margin-left: auto;
-
   transition: 0.3s;
 
 }
@@ -1019,19 +992,14 @@ footer
 
 .accordian-content 
 {
-
   margin: auto;
-
   padding-bottom: 20px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  
   width: 100%;
   max-height: 0;
   overflow: hidden;
-
   font-size: 14px;
-
   transition: 0.3s;
 }
 
@@ -1088,7 +1056,6 @@ footer
     .card-text-holder {width: 320px; margin: auto;}
     .card-tags-holder {width: 320px; margin-left: auto; margin-right: auto;}
     .home-showcase-video {width: 320px; height: 180px;}
-    .subpage-logo-image {max-width: 320px;}
     .about-me-holder {width: 320px;}
     .subpage-text-body {max-width: 320px;}
     .general-image {max-width: 320px;}
@@ -1107,7 +1074,7 @@ footer
 
 
 /*Gradient Components*/
-.topnav, .subpage-logo-image, .home-showcase-video, .tool-card, .subpage-text-body, .accordian-content, 
+.topnav, .home-showcase-video, .tool-card, .subpage-text-body, .accordian-content, 
 .accordian-button, .general-image, footer, iframe
 {
   background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
