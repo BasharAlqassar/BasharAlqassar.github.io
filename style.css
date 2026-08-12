@@ -576,6 +576,7 @@ body {
 .accordian-holder
 {
   margin: auto;
+  border-radius: 15px;
   margin-bottom: 50px;
   width: 70%;
   max-width: 800px;
