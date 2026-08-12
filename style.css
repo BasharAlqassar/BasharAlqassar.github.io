@@ -168,7 +168,7 @@ body {
 
 /*Gradient Components*/
 .topnav, .home-showcase-video, .tool-card, .subpage-text-body, .accordian-content, 
-.accordian-button, .general-image, footer, iframe,  .home-showcase-video
+.accordian-button, .general-image, footer, iframe,  .home-showcase-video, .project-card-image
 {
   background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
   box-shadow: 0 0 10px 10px rgba(0, 128, 0, 0.26);
@@ -179,13 +179,13 @@ body {
   -webkit-backdrop-filter: blur(10px);
 
   transition: 0.3s;
-
   animation: fadeInCard 0.5s forwards ease-in-out; 
 }
 
 
 /*Flex Items*/
-.home-content, .subpage-header-content, .tool-card-holder, .about-me-content, .accordian-holder, .iframe, .home-showcase-video
+.home-content, .subpage-header-content, .tool-card-holder, .about-me-content, .project-card, .card-text-holder,
+.accordian-holder, .iframe, .home-showcase-video, .subpage-header-holder, .project-card-image, .card-text-holder
 {
   display: flex;
   flex-wrap: wrap;
@@ -207,12 +207,11 @@ body {
     scale: 1.03;
     background: linear-gradient(-45deg, #00f2ff 0%, #031cff7b 100% );
     box-shadow: 0 0 5px 5px rgb(4, 213, 255);
-    
 }
 
 
 /*Non-Filter Hover*/
-.accordian-holder:hover, .accordian-button:hover,  .home-showcase-video:hover
+.accordian-holder:hover, .accordian-button:hover,  .home-showcase-video:hover, .project-card-image:hover
 {
   scale: 1.03;
   box-shadow: 0 0 10px 10px rgba(2, 251, 255, 0.286);
@@ -232,7 +231,6 @@ body {
     opacity: 1;
     transform: scaleY(1);
     transform: scaleX(1);
-
     position: relative;
     top: 0px;
   }
@@ -302,7 +300,6 @@ body {
 
   .home-showcase-video
   {
-
     width: 620px;
     height: 350px;
     margin-top: 40px;
@@ -310,10 +307,7 @@ body {
   
   }
 
-
-
-
-  /*#endregion Homepage Content*/
+/*#endregion Homepage Content*/
 
 
 /*#region Project Cards*/
@@ -338,16 +332,6 @@ body {
 .project-card
 {
   width: 400px;
-  align-self: top;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-  place-self: center;
-  opacity: 0;
-  animation: fadeInCard 0.5s forwards ease-in-out; 
-
 }
 
 
@@ -358,13 +342,8 @@ body {
   color: #f1f1f1;
   font-size: 16px;
   font-family: 'Courier New', Courier, monospace;
-  text-align: center;
-  justify-items: center;
-  justify-content: center;
-  align-self: center;
 
 }
-
 
 
  /* The image on a Card */
@@ -372,31 +351,13 @@ body {
 {
   width: 400px;
   height: 240px;
-  border-radius: 15px;
-  display: flex;
-  position: relative;
-  text-align: center;
-  transition: .25s;
-
-
-  background: linear-gradient(-45deg, #00ff0067 0%, #00ffff34 100% );
-  box-shadow: 0 0 5px 5px rgba(0, 128, 0, 0.26);
-  align-items: center;
-  text-align: center;
-
-
-  transition: 0.3s; 
-
 }
 
 
 /* Card hover animation */ 
 .project-card-image:hover
 {
-  scale: 1.03;
   filter: opacity(110%) invert(10%);
-  box-shadow: 0 0 10px 10px rgba(2, 251, 255, 0.286);
-
 }
 
 
@@ -425,7 +386,6 @@ body {
   font-weight: bold;
   text-align: center;
   padding: 0 5px;
-
   transition: scale 0.3s; 
 }
 
@@ -433,7 +393,6 @@ body {
 {
   animation: spinOnClick 1.0s ease-in-out !important;
 }
-
 
 @keyframes spinOnClick 
 {
@@ -692,7 +651,6 @@ body {
 {
   width: 400px;
   height: 240px;
-
   margin-bottom: 170px;
   align-self: top;
   position: relative;
@@ -743,40 +701,6 @@ body {
   column-gap: 50px;
 }
 
-.subpage-header-holder
-{
-    align-items: center;
-    align-self: center;
-    align-content: center;
-}
-
-
-
-.subpage-logo-text:hover
-{
-  scale: 1.03;
-  box-shadow: 0 0 10px 10px rgba(2, 251, 255, 0.286);
-}
-
-
-.subpgae-project-topic
-{
-  margin-top: 50px; 
-  margin-bottom: 20px;
-  color: rgb(0, 255, 0);
-  font-size: 48px;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
-  text-align: center;
-  justify-items: center;
-  justify-content: center;
-  align-self: center;
-
-}
-
-
-
-
 .subpage-text-body
 {
   display: flex;
@@ -803,15 +727,12 @@ body {
   background-color: #000000;
 }
 
-
 .subpage-text-body-topic
 {
   font-size: 36px;
   font-style: italic;
   color: rgba(255, 255, 255, 0.616);
 }
-
-
 
 
 .subpage-pdf
@@ -821,10 +742,9 @@ body {
   max-width: 800px;
   max-height: 1200px;
   border: none;
-  display: block;
+  display: flex;
   margin: auto;
 }
-
 
 
 .accordian-holder
@@ -837,14 +757,11 @@ body {
 }
 
 
-
-
 .accordian-icon
 {
   width: 40px;
   padding-right: 10px;
   filter: invert(100%);
-
 }
 
 .accordian-drop-arrow
@@ -858,29 +775,20 @@ body {
 }
 
 
-
 .accordian-button
 {
-
   cursor: pointer;
-
   display: flex;
   width: 100%;
   color: rgb(245, 245, 245);
   font-size: 30px;
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
-
   margin: auto;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
-
   padding: 18px 10px;
-
-
-
 }
-
 
 .accordian-content 
 {
@@ -895,13 +803,10 @@ body {
   font-size: 14px;
 }
 
-
 .PAGE_SPACER
 {
  height: 50px;
 }
-
-
 
 /*#endregion Subpages*/
 
@@ -918,7 +823,6 @@ body {
       width: auto;
       height: auto;
     }
-
 
     .topnav.responsive {position: sticky;}
     .topnav.responsive 
@@ -951,9 +855,6 @@ body {
     .about-me-holder {width: 320px;}
     .subpage-text-body {max-width: 320px;}
     .general-image {max-width: 320px;}
-
-
-
     .accordian-content {font-size: 8px;}
 
   }
