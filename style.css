@@ -16,7 +16,6 @@
   animation: fadeInCard 0.5s forwards ease-in-out; 
 }
 
-
 /*Flex Items*/
 .home-content, .subpage-header-content, .tool-card-holder, .about-me-content, .card-holder, .project-card, .card-text-holder,
 .accordian-holder, .iframe, .home-showcase-video, .subpage-header-holder, .project-card-image, .card-text-holder,
@@ -34,7 +33,6 @@
   transition: 0.3s;
 }
 
-
 /*Non-Filter Hover*/
 .tool-card:hover, .topnav a:hover, .view-more-button:hover, .accordian-holder:hover, .accordian-button:hover,
   .home-showcase-video:hover, .project-card-image:hover, .general-image:hover 
@@ -43,8 +41,6 @@
     background: linear-gradient(-45deg, #00f2ff 0%, #031cff7b 100% );
     box-shadow: 0 0 5px 5px rgb(4, 213, 255);
 }
-
-
 
 @keyframes fadeInCard {
 
@@ -66,6 +62,7 @@
   
 }
 /*#endregion General Theme */
+
 
 /*#region HTML General*/
 html {
@@ -233,10 +230,6 @@ body {
 
   /*#endregion HeaderNav*/
 
-
-
-
-  
 
 /*#region Homepage Content*/
   .home-content
@@ -534,6 +527,123 @@ body {
 /*#endregion AboutMe*/
 
 
+/*#region Subpages*/
+
+.subpage-header-content
+{
+  column-gap: 50px;
+}
+
+.subpage-text-body
+{
+  display: flex;
+  flex-direction: column;
+  justify-items: left;
+  width: 80%;
+  max-width: 1000px;
+  height: auto;
+  font-family: Calibri;
+  text-align: left;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  margin: auto;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-style: none;
+  background-color: #000000;
+}
+
+.subpage-text-body-topic
+{
+  font-size: 36px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.616);
+}
+
+
+.subpage-pdf
+{
+  width: 100%;
+  height: 100vh;
+  max-width: 800px;
+  max-height: 1200px;
+  border: none;
+  display: flex;
+  margin: auto;
+}
+
+
+.accordian-holder
+{
+  margin: auto;
+  margin-bottom: 50px;
+  width: 70%;
+  max-width: 800px;
+
+}
+
+
+.accordian-icon
+{
+  width: 40px;
+  padding-right: 10px;
+  filter: invert(100%);
+}
+
+.accordian-drop-arrow
+{
+  width: 40px;
+  padding-right: 10px;
+  filter: invert(100%);
+  margin-left: auto;
+  transition: 0.3s;
+
+}
+
+
+.accordian-button
+{
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+  color: rgb(245, 245, 245);
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  margin: auto;
+  border-radius: 0px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  padding: 18px 10px;
+}
+
+.accordian-button:hover
+{
+  scale: 1.0;
+}
+
+.accordian-content 
+{
+  margin: auto;
+  text-align: left;
+  padding-bottom: 20px;
+  border-radius: 0px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.PAGE_SPACER
+{
+ height: 50px;
+}
+
+/*#endregion Subpages*/
+
+
 /*#region Misc*/
 
 .margin-seperator
@@ -633,116 +743,6 @@ body {
 /*#endregion Misc*/
 
 
-/*#region Subpages*/
-
-.subpage-header-content
-{
-  column-gap: 50px;
-}
-
-.subpage-text-body
-{
-  display: flex;
-  flex-direction: column;
-  justify-items: left;
-  width: 80%;
-  max-width: 1000px;
-  height: auto;
-  font-family: Calibri;
-  text-align: left;
-  font-size: 20px;
-  color: rgb(255, 255, 255);
-  margin: auto;
-  margin-bottom: 15px;
-  padding: 15px;
-  border-style: none;
-  background-color: #000000;
-}
-
-.subpage-text-body-topic
-{
-  font-size: 36px;
-  font-style: italic;
-  color: rgba(255, 255, 255, 0.616);
-}
-
-
-.subpage-pdf
-{
-  width: 100%;
-  height: 100vh;
-  max-width: 800px;
-  max-height: 1200px;
-  border: none;
-  display: flex;
-  margin: auto;
-}
-
-
-.accordian-holder
-{
-  margin: auto;
-  margin-bottom: 50px;
-  width: 70%;
-  max-width: 800px;
-
-}
-
-
-.accordian-icon
-{
-  width: 40px;
-  padding-right: 10px;
-  filter: invert(100%);
-}
-
-.accordian-drop-arrow
-{
-  width: 40px;
-  padding-right: 10px;
-  filter: invert(100%);
-  margin-left: auto;
-  transition: 0.3s;
-
-}
-
-
-.accordian-button
-{
-  cursor: pointer;
-  display: flex;
-  width: 100%;
-  color: rgb(245, 245, 245);
-  font-size: 30px;
-  font-family: 'Courier New', Courier, monospace;
-  text-align: center;
-  margin: auto;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
-  padding: 18px 10px;
-}
-
-.accordian-content 
-{
-  margin: auto;
-  text-align: left;
-  padding-bottom: 20px;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-  width: 100%;
-  max-height: 0;
-  overflow: hidden;
-  font-size: 14px;
-}
-
-.PAGE_SPACER
-{
- height: 50px;
-}
-
-/*#endregion Subpages*/
-
-
 /*#region Resize by screen size */
   @media screen and (max-width: 680px) 
   {
@@ -791,7 +791,3 @@ body {
 
   }
 /*#endregion Resize by screen size */
-
-
-
-
