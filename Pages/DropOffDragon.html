@@ -34,15 +34,18 @@
     }
 
 
-     /* Color Overides */
-    .topnav, .subpage-logo-image, .home-showcase-video, .tool-card, .subpage-text-body, .accordian-content, .accordian-button, .general-image, footer, iframe
+    /*Gradient Components*/
+    .topnav, .home-showcase-video, .tool-card, .subpage-text-body, .accordian-content,
+    .accordian-button, .general-image, footer, iframe, .home-showcase-video, .project-card-image, .view-more-button
     {
         background: linear-gradient(-45deg, #1d5dff67 0%, #00ffff34 100% );
         box-shadow: 0 0 5px 5px rgba(0, 187, 255, 0.169);
     }
 
 
-    .tool-card:hover, .topnav a:hover
+    /*Non-Filter Hover*/
+    .tool-card:hover, .topnav a:hover, .view-more-button:hover, .accordian-holder:hover, .accordian-button:hover,
+    .home-showcase-video:hover, .project-card-image:hover, .general-image:hover 
     {
         filter: none;
         background: linear-gradient(-45deg, #1d5dff67 0%, #00ffff34 100% );
@@ -128,7 +131,7 @@
     <!-- Page Logo -->
     <div class="subpage-header-holder">
         <a>
-            <img class="subpage-logo-image" style="height: 100%;" src="../Images\Photos\Sip_26.jpg" alt="Project_Banner">
+            <img class="general-image" style="height: 100%; width: 500px;" src="../Images/Photos/Sip_26.jpg" alt="Project_Banner">
         </a>
     </div>
         

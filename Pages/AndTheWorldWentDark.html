@@ -33,8 +33,9 @@
         background-attachment: fixed;
     }
 
-     /* Color Overides */
-      .topnav, .subpage-logo-image, .home-showcase-video, .tool-card, .subpage-text-body, .accordian-content, .accordian-button, .general-image, footer, iframe
+    /*Gradient Components*/
+    .topnav, .home-showcase-video, .tool-card, .subpage-text-body, .accordian-content, 
+    .accordian-button, .general-image, footer, iframe, .home-showcase-video, .project-card-image, .view-more-button
     {
         background: linear-gradient(-45deg, #a000a084 0%, #5c058fba 100% );
         box-shadow: 0 0 5px 5px rgba(157, 0, 255, 0.402);
@@ -42,11 +43,13 @@
 
 
 
-    .tool-card:hover, .topnav a:hover
+    /*Non-Filter Hover*/
+    .tool-card:hover, .topnav a:hover, .view-more-button:hover, .accordian-holder:hover, .accordian-button:hover,
+    .home-showcase-video:hover, .project-card-image:hover, .general-image:hover 
     {
         filter: none;
         background: linear-gradient(-45deg, #ff00ff84 0%, #a200ffba 100% );
-        box-shadow: 0 0 10px 10px rgba(255, 0, 200, 0.402);
+        box-shadow: 0 0 10px 10px rgb(255, 0, 200);
 
     }
 
@@ -125,7 +128,7 @@
     <!-- Page Logo -->
     <div class="subpage-header-holder">
         <a  href="https://docterbuster.itch.io/bots-that-explode-most-of-the-time" target="_blank">
-            <img class="subpage-logo-image" style="height: 100%;" src="../Images/CardImages/Bots_Itch_Icon.png" alt="Project_Banner">
+            <img class="general-image" style="height: 100%; width: 500px;" src="../Images/CardImages/Bots_Itch_Icon.png" alt="Project_Banner">
         </a>
     </div>
         
