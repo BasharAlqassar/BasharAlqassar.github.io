@@ -19,7 +19,7 @@
 /*Flex Items*/
 .home-content, .subpage-header-content, .tool-card-holder, .about-me-content, .card-holder, .project-card, .card-text-holder,
 .accordian-holder, .iframe, .home-showcase-video, .subpage-header-holder, .project-card-image, .card-text-holder,
-.button-container, .general-image
+.button-container, .general-image, .store-link-badge
 {
   display: flex;
   flex-wrap: wrap;
@@ -35,7 +35,7 @@
 
 /*Non-Filter Hover*/
 .tool-card:hover, .topnav a:hover, .view-more-button:hover, .accordian-holder:hover, .accordian-button:hover,
-  .home-showcase-video:hover, .project-card-image:hover, .general-image:hover 
+  .home-showcase-video:hover, .project-card-image:hover, .general-image:hover
 {
     scale: 1.03;
     background: linear-gradient(-45deg, #00f2ff 0%, #031cff7b 100% );
@@ -761,7 +761,14 @@ body {
 
 .store-link-badge
 {
-  width: 200px
+  margin: auto;
+  width: 200px;
+}
+
+.store-link-badge:hover
+{
+    scale: 1.03;
+    cursor: pointer;
 }
 
 /*#endregion Misc*/
