@@ -429,6 +429,12 @@ body {
   margin-bottom: 50px;
   margin-top: 50px;
 }
+.tool-card-holder[type="inside-text"]
+{
+  gap: 15px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
 
 
  /* Singular Tool Card holder for div centering */
@@ -782,7 +788,7 @@ body {
     .home-sub-text {font-size: 16px;}
     .project-card-image {width: 320px; height: 180px; margin: auto;}
     .view-more-button {width: 320px; height: 180px; margin: auto;}
-    .tool-card { width: 80px;}
+    .tool-card { font-size: 14px; width: 80px; height: 100px;}
     .tool-card-text {font-size: 14px;}
     .tool-card-text[type="two-line"] {font-size: 12px;}
 
