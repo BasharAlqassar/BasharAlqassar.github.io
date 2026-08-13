@@ -136,6 +136,12 @@ body {
   }
 
 
+  alt-text
+  {
+    color: rgb(0, 255, 0); 
+    text-shadow: rgba(0, 255, 0, 0.411); 
+  }
+
 /*#endregion HTML General*/
 
 
@@ -370,6 +376,9 @@ body {
   text-align: center;
   padding: 0 5px;
   transition: scale 0.3s; 
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .card-tag:hover
