@@ -32,6 +32,33 @@
         background-size: cover;
         background-attachment: fixed;
     }
+
+    /*Gradient Components*/
+    .topnav, .home-showcase-video, .tool-card, .subpage-text-body, .accordian-content, 
+    .accordian-button, .general-image, footer, iframe, .home-showcase-video, .project-card-image, .view-more-button
+    {
+        background: linear-gradient(-45deg, #5142a37b 0%, #0026ff65 100% );
+        box-shadow: 0 0 5px 5px rgba(0, 72, 255, 0.402);
+    }
+
+
+
+    /*Non-Filter Hover*/
+    .tool-card:hover, .topnav a:hover, .view-more-button:hover, .accordian-holder:hover, .accordian-button:hover,
+    .home-showcase-video:hover, .project-card-image:hover, .general-image:hover 
+    {
+        filter: none;
+        background: linear-gradient(-45deg, #eeff00bb 0%, #e4f40465 100% );
+        box-shadow: 0 0 10px 10px rgba(255, 255, 0, 0.687);
+
+    }
+
+    alt-text
+    {
+        color: rgb(255, 255, 0);
+        text-shadow: 0 0 5px rgba(200, 255, 0, 0.201)
+    }
+
 </style>
 
     
@@ -94,22 +121,46 @@
 
 
 
-
-<!-- End of Acordian container code -->
-
-
-
- <!-- Start of subpage template!!! (Fill content here!)-->
-
+<!-- Start of subpage template!!! (Fill content here!)-->
 
 
 
 <div class="subpage-header-content">
-    <!-- Page Logo -->
     <div class="subpage-header-holder">
-        <a  href="https://store.steampowered.com/app/4189590/A_Color_Theory/" target="_blank">
-            <img class="general-image" style="height: 100%; width: 500px;" src="../Images/CardImages/AColorTheory.png" alt="Project_Banner">
-        </a>
+        <div class="subpage-text-body" style="width: 400px;">
+
+            <p style="margin: 0px;">
+                <alt-text>Role: </alt-text>Gameplay Programer, Technical Designer <br>
+                <alt-text>Platform: </alt-text>Steam & Web <br>
+                <alt-text>Team Size: </alt-text>Solo Project + Audio Help<br>
+                <alt-text>Duration: </alt-text>1+ Year <br>
+                <alt-text>Contributions: </alt-text>
+                <ul style="margin-top: 0px;">
+                <li>Gameobject Property Swapping </li>
+
+                <li>Level Design</li>
+                <li>Level Editing Pipeline</li>
+                </ul>
+            </p>
+            <!-- Project Key Tools used -->
+            <div class="tool-card-holder" type="inside-text">
+
+                    <div class="tool-card" type="small">
+                        <img class="tool-card-image" src="../Icons\Tools\godot.svg"></img>
+                        <a class="tool-card-text" color="white">Godot</a>
+                    </div>
+                    <div class="tool-card" type="small">
+                        <img class="tool-card-image" src="../Icons\Tools\github.svg"></img>
+                        <a class="tool-card-text" color="white">Git</a>
+                    </div>
+                    <div class="tool-card" type="small">
+                        <img class="tool-card-image" src="../Icons\Tools\godot.svg"></img>
+                        <a class="tool-card-text" color="white">GD Script</a>
+                    </div>
+
+
+            </div>
+        </div>
     </div>
         
     <!-- Autoplay Video Widget -->
@@ -122,7 +173,6 @@
 
 
 
-
 <div class="subpage-header-content" style="column-gap: 100px;">
 
     <!-- Project Description Intro -->
@@ -131,67 +181,64 @@
 
         <div class="subpage-text-body" style="width: 400px;">
             
-            <a class="subpage-text-body-topic">About</a>
-            <br>
 
-            A Color Theory is a Puzzle Platformer where Color determines what anything and everything does: from simple platformer-style movement, 
-            to destructible hazards to gravity-flipping capability: nothing is immune to being changed by the power of Colors!  
-            <br>
-            <br>
-            This project started as part of an experimental class about designing games and experiences around
-            concepts of Artificial Intelligence. I wanted to make a game to communicate how, abstractly speaking,
-            AI sees things differently than we do as humans. The final game is an experience that constantly 
-            has you questioning what you know about the rules of the game and hides puzzle solutions in plain sight. 
-            If only you hadn’t mistaken the goal for those spikes…you would have solved it by now!  
-
-            <br>
-            <br>
-            A Color Theory was selected for the Excellence in Digital Design award at the 2025 Boston Festival of Indie Games. 
+            <p style="margin: 0px;">
+                <a class="subpage-text-body-topic">About</a>
+                <br>
+                <br>
+                <alt-text>A Color Theory</alt-text> is a <alt-text>Puzzle Platformer where Color determines what anything and everything does</alt-text>: from simple platformer-style movement,
+                to destructible hazards to gravity-flipping capability: nothing is immune to being changed by the power of Colors!  
+                <br>
+                <br>
+                This project started as part of an experimental class about <alt-text>designing games and experiences around
+                concepts of Artificial Intelligence</alt-text>. I wanted to make a game to communicate how, abstractly speaking,
+                <alt-text>AI sees things differently than we do as humans</alt-text>. The final game is an experience that constantly
+                has you questioning what you know about the rules of the game and hides puzzle solutions in plain sight.
+                If only you hadn’t mistaken the goal for those spikes… you would have solved it by now!  
+                <br>
+                <br>
+                A Color Theory was selected for the  <alt-text>Excellence in Digital Design award at the 2025 Boston Festival of Indie Games</alt-text>.
+            </p>
 
 
         </div>
 
     </div>
 
+
+
+    
     <div class="subpage-header-holder" >
         <!-- Image -->
-        <img class="general-image" src="../Images/Photos/Bashar_FIG25.jpg" alt="Project-Image">
-        </div>
+        <img class="general-image" src="../Images/Photos/Bashar_FIG25.jpg" alt="Project-Image"> 
+    </div>
 
+
+    
 </div>
 
-<!-- Project Key Tools used -->
-<div class="tool-card-holder">
+<div class="PAGE_SPACER"></div>
 
-        <div class="tool-card">
-            <img class="tool-card-image" src="../Icons\Tools\godot.svg"></img>
-            <a class="tool-card-text" color="white">Godot</a>
-        </div>
-        <div class="tool-card">
-            <img class="tool-card-image" src="../Icons\Tools\github.svg"></img>
-            <a class="tool-card-text" color="white">Git</a>
-        </div>
-        <div class="tool-card">
-            <img class="tool-card-image" src="../Icons\Tools\godot.svg"></img>
-            <a class="tool-card-text" color="white">GD Script</a>
-        </div>
-
+<div class="subpage-header-holder" style="gap: 50px;" >
+    <a class="active" href="https://store.steampowered.com/app/4189590/A_Color_Theory/" target="_blank" rel="noopener noreferrer">
+        <img class="store-link-badge" src="../Icons/Badges/Steam.png" alt="Project_Banner">
+    </a>
 </div>
 
-
-
-
-
-
-
+<div class="PAGE_SPACER"></div>
+<hr class="line_dash_medium">
+<div class="PAGE_SPACER"></div>
 
 
 <div class="subpage-text-body">
-    
+
+<p style="margin: 0px;">
     <a class="subpage-text-body-topic">Rapid Iteration</a>
+    <br>
     <br>
     Engine-side systems are implemented with a focus on being able to quickly prototype an idea, test it and gain immediate feedback for iteration. 
     This allowed for rapid developer-side playtesting during the design phase to ensure quality, to-the-point playtesting with real players. 
+</p>
 
 </div>
 
@@ -212,10 +259,12 @@
 
 <div class="subpage-text-body">
     
+<p style="margin: 0px;">
     <a class="subpage-text-body-topic">Post-Mortum Deck</a>
     <br>
+    <br>
     A presentation I gave in March of 2026 recounting the development process of the game, with a focus on understanding scope and potential of an idea before committing to a project. 
-
+</p>
 </div>
 
 
