@@ -758,6 +758,12 @@ body {
   cursor: pointer;
 }
 
+
+.store-link-badge
+{
+  width: 200px
+}
+
 /*#endregion Misc*/
 
 
