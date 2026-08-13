@@ -52,7 +52,12 @@
         box-shadow: 0 0 5px 5px rgb(0, 187, 255);
     }
 
-
+    
+    alt-text
+    {
+        color: #00d0ff; 
+        text-shadow: 0 0 5px rgba(4, 142, 255, 0.447);
+    }
 
 
 </style>
@@ -118,22 +123,52 @@
 
 
 
-<!-- End of Acordian container code -->
-
-
-
  <!-- Start of subpage template!!! (Fill content here!)-->
 
 
 
 
-<div class="subpage-header-content">
-    <!-- Page Logo -->
+<div class="subpage-header-content" style="margin-top: 20px;">
+
     <div class="subpage-header-holder">
-        <a>
-            <img class="general-image" style="height: 100%; width: 500px;" src="../Images/Photos/Sip_26.jpg" alt="Project_Banner">
-        </a>
+        <div class="subpage-text-body" style="width: 400px;">
+
+    
+
+            <p style="margin: 0px;">
+                <alt-text>Role: </alt-text>Gameplay Programer, Technical Designer <br>
+                <alt-text>Platform: </alt-text>Mobile (IOS & Android) <br>
+                <alt-text>Team Size: </alt-text>8 Core + 2 Extra<br>
+                <alt-text>Duration: </alt-text>2 Months <br>
+                <alt-text>Contributions: </alt-text>
+                <ul style="margin-top: 0px;">
+                <li>Player Ghost System</li>
+                <li>Level Design Framework </li>
+                <li>Level Design</li>
+                <li>Design Guidelines </li>
+                <li>Bug Discovery & Fixing</li>
+                </ul>
+            </p>
+            <!-- Project Key Tools used -->
+            <div class="tool-card-holder" type="inside-text">
+
+                    <div class="tool-card" type="small">
+                        <img class="tool-card-image" src="../Icons\Tools\unity.svg"></img>
+                        <a class="tool-card-text" color="white">Unity</a>
+                    </div>
+                    <div class="tool-card" type="small">
+                        <img class="tool-card-image" src="../Icons\Tools\c-sharp.svg"></img>
+                        <a class="tool-card-text" color="white">C#</a>
+                    </div>
+                    <div class="tool-card" type="small">
+                        <img class="tool-card-image" src="../Icons\Tools\plastic-scm.svg"></img>
+                        <a class="tool-card-text" color="white">Plastic SCM</a>
+                    </div>
+
+            </div>
+        </div>
     </div>
+
         
     <!-- Autoplay Video Widget -->
     <div class="subpage-header-holder">
@@ -154,19 +189,25 @@
 
         <div class="subpage-text-body" style="width: 400px;">
             
+            <p style="margin: 0px;">
+                
             <a class="subpage-text-body-topic">About</a>
             <br>
-                Drop Off Dragon is an Auto-Runner Mobile Game featuring a baby dragon who’s goal is to crash and bounce 
+            <br>
+                <alt-text>Drop Off Dragon</alt-text> is an <alt-text>Auto-Runner Mobile Game</alt-text> featuring a baby dragon who’s goal is to crash and bounce 
                 through a magical castle to steal treasure for his hoard! 
             <br>
             <br>
-                Drop Off Dragon was fully developed and released during the 2-month internship program at Mass Digi in the Unity Game Engine 
-                using Plastic as source control. The core design principle of the project was to create a game that could be easily enjoyed by 
+                Drop Off Dragon was <alt-text>fully developed and released during the 2-month internship program at Mass Digi</alt-text> in the <alt-text>Unity Game Engine </alt-text>
+                using <alt-text>Plastic SCM</alt-text>. The core design principle of the project was to create a game that could be easily enjoyed by 
                 all ages and easily approached by families and young kids within the mobile game demographic. 
             <br>
             <br>
-                My contributions to this project include level design, a player ghost playback system, 
-                a tweener pipeline for UI, discovering and resolving many critical bugs and quality assurance. 
+                My contributions to this project include <alt-text>level design, a player ghost playback system, 
+                a tweener pipeline for UI, discovering and resolving many critical bugs and quality assurance</alt-text>.
+                
+                
+    </p>
         </div>
 
     </div>
@@ -176,24 +217,6 @@
         <!-- Image -->
         <img class="general-image" style="width: 440px;" src="../Images\Promo\drop_off_dragon_poster.png" alt="Project-Image" >
         </a>
-        </div>
-
-</div>
-
-<!-- Project Key Tools used -->
-<div class="tool-card-holder">
-
-        <div class="tool-card">
-            <img class="tool-card-image" src="../Icons\Tools\unity.svg"></img>
-            <a class="tool-card-text" color="white">Unity</a>
-        </div>
-        <div class="tool-card">
-            <img class="tool-card-image" src="../Icons\Tools\c-sharp.svg"></img>
-            <a class="tool-card-text" color="white">C#</a>
-        </div>
-        <div class="tool-card">
-            <img class="tool-card-image" src="../Icons\Tools\plastic-scm.svg"></img>
-            <a class="tool-card-text" color="white">Plastic SCM</a>
         </div>
 
 </div>
@@ -209,11 +232,15 @@
 
 <div class="subpage-text-body">
     
-    <a class="subpage-text-body-topic">Ghost Data System</a>
-    <br>
-    I developed a data structure and pipeline to record the player playing through a 
-    level and to be able to visually play that information in various parts of the application 
-    and even in the editor itself.
+    <p style="margin: 0px;">
+        <a class="subpage-text-body-topic">Player Ghost Data System</a>
+        <br>
+        <br>
+        I developed a data structure and pipeline to <alt-text>record the player playing through a 
+        level</alt-text> and to be able to visually <alt-text>play that information back</alt-text> in various parts of the application 
+        and even in the editor itself.
+
+    </p>
 
 </div>
 
@@ -238,12 +265,14 @@
 
 <div class="subpage-text-body">
     
-    <a class="subpage-text-body-topic">Recording Optimization</a>
-    <br>
-    It would be ridiculous to record several keypoints of data every single frame of gameplay,
-    so the solution I implemented was to record data on a frame interval:
-    every 4 fixed updates the game would record a set list of necessary information for proper playback. 
-
+    <p style="margin: 0px;">
+        <a class="subpage-text-body-topic">Recording Optimization</a>
+        <br>
+        <br>
+        <alt-text>It would be ridiculous to record several keypoints of data every single frame</alt-text> of gameplay,
+        so the solution I implemented was to record data on a frame interval:
+        <alt-text>every 4 fixed updates</alt-text> the game would record a set list of necessary information for proper playback. 
+    </p>
 </div>
 
 
@@ -269,23 +298,21 @@
 
 <div class="subpage-text-body">
     
-    <a class="subpage-text-body-topic">Smoothed Playback</a>
-    <br>
-    Playing this data back as is results in the movement appearing choppy,
-    so to compensate, the ghost playback is eased to glide from recorded point to
-    point for the same interval of time it was recorded for. Below is the playback function script,
-    which supports playing data back on a fixed interval as well as unscaled time for editor and level hints. 
+    <p style="margin: 0px;">
+        <a class="subpage-text-body-topic">Smoothed Playback</a>
+        <br>
+        <br>
+        While recording such minimal data allows for a <alt-text>dramatic reduction in filesize</alt-text>, 
+        playing this data back as is results in the movement appearing choppy. To compensate, 
+        the ghost <alt-text>playback is eased to glide from recorded point to point</alt-text> for the same interval of time it was recorded for. 
+
+    </p>
 
 </div>
 
-<div class="subpage-header-content" style="margin: 50px;">
-    <div class="subpage-header-holder">
-        <a>
-            <img class="general-image" style="width: 100%;" src="../Images/Promo/Ghost_Eased.gif" alt="Project_Banner">
-        </a>
-    </div>
 
-</div>
+
+<div class="PAGE_SPACER"></div>
 
 <!--Acordian Code Holder-->
 <div  class="accordian-holder">
@@ -366,6 +393,16 @@
 </div>
 
 
+<div class="subpage-header-content" style="margin: 50px;">
+    <div class="subpage-header-holder">
+        <a>
+            <img class="general-image" style="width: 100%;" src="../Images/Promo/Ghost_Eased.gif" alt="Project_Banner">
+        </a>
+    </div>
+
+</div>
+
+
 
 <hr class="line_dash_medium">
 <div class="PAGE_SPACER"></div>
@@ -374,10 +411,12 @@
 
 <div class="subpage-text-body">
     
-    <a class="subpage-text-body-topic">Level Design Do's and Don'ts</a>
-    <br>
-    A visual level design bible we created as a baseline guide for designing levels in the game. We opted for making the guide as visual as possible, including measurements and video demonstration of the capabilities of the player to show ourselves and future designers standard practice in the project. 
-
+    <p style="margin: 0px;">
+        <a class="subpage-text-body-topic">Level Design Do's and Don'ts</a>
+        <br>
+        <br>
+        A visual level design bible we created as a <alt-text>baseline guide for designing levels in the game</alt-text>. We opted for making the guide <alt-text>as visual as possible</alt-text>, including measurements and video demonstration of the capabilities of the player to show ourselves and future designers standard practice in the project. 
+    </p>
 </div>
 
 

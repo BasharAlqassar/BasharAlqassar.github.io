@@ -136,6 +136,12 @@ body {
   }
 
 
+  alt-text
+  {
+    color: rgb(0, 255, 0); 
+    text-shadow: rgba(0, 255, 0, 0.411); 
+  }
+
 /*#endregion HTML General*/
 
 
@@ -370,6 +376,9 @@ body {
   text-align: center;
   padding: 0 5px;
   transition: scale 0.3s; 
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .card-tag:hover
@@ -429,16 +438,33 @@ body {
   margin-bottom: 50px;
   margin-top: 50px;
 }
+.tool-card-holder[type="inside-text"]
+{
+  gap: 15px;
+  margin-bottom: 5px;
+  margin-top: -40px;
+}
 
 
  /* Singular Tool Card holder for div centering */
 .tool-card
 {
-
   position: relative;
   width: 120px;
   height: 180px;
 
+  color: white; 
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tool-card[type="small"]
+{
+  font-size: 14px;
+  width: 80px;
+  height: 100px;
 }
 
 
@@ -450,16 +476,6 @@ body {
   filter: invert(100%);
 }
 
-
-.tool-card-text
-{
-  color: white; 
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 20px;
-  width: 80%;
-  font-weight: bold;
-  text-align: center;
-}
 
 .tool-card-text[type="two-line"]
 {
@@ -558,6 +574,7 @@ body {
   font-size: 36px;
   font-style: italic;
   color: rgba(255, 255, 255, 0.616);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.304);
 }
 
 
@@ -781,6 +798,10 @@ body {
     .home-sub-text {font-size: 16px;}
     .project-card-image {width: 320px; height: 180px; margin: auto;}
     .view-more-button {width: 320px; height: 180px; margin: auto;}
+    .tool-card { font-size: 14px; width: 80px; height: 100px;}
+    .tool-card-text {font-size: 14px;}
+    .tool-card-text[type="two-line"] {font-size: 12px;}
+
     .project-card { margin: auto;}
     .card-text-holder {width: 320px; margin: auto;}
     .card-tags-holder {width: 320px; margin-left: auto; margin-right: auto;}
