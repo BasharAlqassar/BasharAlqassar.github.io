@@ -437,6 +437,19 @@ body {
   position: relative;
   width: 120px;
   height: 180px;
+
+  color: white; 
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tool-card[type="small"]
+{
+  font-size: 14px;
+  width: 80px;
+  height: 100px;
 }
 
 
@@ -448,16 +461,6 @@ body {
   filter: invert(100%);
 }
 
-
-.tool-card-text
-{
-  color: white; 
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 20px;
-  width: 80%;
-  font-weight: bold;
-  text-align: center;
-}
 
 .tool-card-text[type="two-line"]
 {
