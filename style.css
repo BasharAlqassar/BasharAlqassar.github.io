@@ -17,7 +17,7 @@
 }
 
 /*Flex Items*/
-.home-content, .subpage-header-content, .tool-card-holder, .about-me-content, .card-holder, .project-card, .card-text-holder,
+.home-content, .subpage-header-content, .tool-card-holder, .card-holder, .project-card, .card-text-holder,
 .accordian-holder, .iframe, .home-showcase-video, .subpage-header-holder, .project-card-image, .card-text-holder,
 .button-container, .general-image, .store-link-badge
 {
@@ -486,63 +486,6 @@ body {
 /*#endregion Tool Cards */
 
 
-/*#region AboutMe*/
-
-.about-me-content
-{
-  column-gap: 50px;
-  row-gap: 30px;
-  margin: 10px 0;
-  text-align: left;
-}
-
-.about-me-holder
-{
-  width: 600px;
-
-  justify-items: center;
-  justify-content: center;
-  align-self: center;
-
-  margin-bottom: 50px;
-
-}
-
-.about-me-text
-{
-  font-family: Calibri;
-  text-align: left;
-  font-size: 20px;
-  color: rgb(255, 255, 255);
-}
-
-.about-me-text[color="white"]
-{
-  --text-color: rgb(255, 255, 255);
-}
-
-.about-me-text[color="green"]
-{
-  --text-color: rgb(0, 255, 0);
-}
-
-.about-me-text
-{
-  color: var(--text-color);
-}
-
-
-.general-image
-{
-  width: 80%;
-  margin: auto;
-  margin-bottom: 20px;
-}
-
-
-/*#endregion AboutMe*/
-
-
 /*#region Subpages*/
 
 .subpage-header-content
@@ -589,6 +532,13 @@ body {
   margin: auto;
 }
 
+
+.general-image
+{
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
 
 .accordian-holder
 {
@@ -819,7 +769,6 @@ body {
     .card-text-holder {width: 320px; margin: auto;}
     .card-tags-holder {width: 320px; margin-left: auto; margin-right: auto;}
     .home-showcase-video {width: 320px; height: 180px;}
-    .about-me-holder {width: 320px;}
     .subpage-text-body {max-width: 320px;}
     .general-image {max-width: 320px;}
     .accordian-content {font-size: 8px;}
