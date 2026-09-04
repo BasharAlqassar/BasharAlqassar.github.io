@@ -133,13 +133,13 @@
         <div class="subpage-text-body" style="width: 400px;">
 
             <p style="margin: 0px;">
-                <alt-text>Role: </alt-text>Gameplay Programer<br>
+                <alt-text>Role: </alt-text>Gameplay Programmer<br>
                 <alt-text>Platform: </alt-text>Desktop <br>
                 <alt-text>Team Size: </alt-text>6-12<br>
                 <alt-text>Duration: </alt-text>9 Months <br>
                 <alt-text>Contributions: </alt-text>
                 <ul style="margin-top: 0px;">
-                <li>Custom Programing Language </li>
+                <li>Turn-Based Combat System </li>
                 <li>Deterministic RNG </li>
                 <li>Item/Action Data Pipeline </li>
                 <li>Shader Art </li>
@@ -212,11 +212,11 @@
     </div>
 
     <div class="subpage-header-holder" >
-        <a  href="https://docterbuster.itch.io/bots-that-explode-most-of-the-time" target="_blank">
+        <a>
         <!-- Image -->
-        <img class="general-image" style="width: 400px; margin-bottom: 30px; " src="../Images/CardImages/Bots_Itch_Icon.png" alt="Project-Image">
-        <img class="general-image" style="width: 400px; margin-bottom: 30px; " src="../Images/Promo/Robots_Code_Interface.png" alt="Project-Image">
-        <img class="general-image" style="width: 400px; margin-bottom: 30px; " src="../Images/Promo/Bot_BuilderFinal.png" alt="Project-Image">
+        <img class="general-image" style="width: 400px; margin-bottom: 30px; " src="../Images/Promo/AtWWD_Promo1.png" alt="Project-Image">
+        <img class="general-image" style="width: 400px; margin-bottom: 30px; " src="../Images/Promo/AtWWD_Promo2.png" alt="Project-Image">
+        <img class="general-image" style="width: 400px; margin-bottom: 30px; " src="../Images/Photos/AtWWD_Award.jpg" alt="Project-Image">
         </a>
         </div>
 
@@ -244,17 +244,16 @@
 
 
 
-
 <div class="subpage-text-body">
     
     <p style="margin: 0px;">
-        <a class="subpage-text-body-topic">Idea Origins </a>
+        <a class="subpage-text-body-topic">Planning for 100+ Actions & Abilities </a>
         <br>
         <br>
-        I was working on one of the many concepts I had for my masters capstone which involved <alt-text>programming a pathfinding AI</alt-text> 
-        that was able to perform basic 2D actions in an almost <alt-text>Terraria-like wave defense game</alt-text>.
+        The game was <alt-text>originally planned to include over 100 Abilities by our lead designer</alt-text>, so a very
+        large amount of my time was spent on identifying best practices to support such a high amount of content long-term. 
+        As such a very efficient action framework was required in order to be able to carry out this request 
 
-        It was the very first technical challenge I decided to tackle in the project and took me a bit to get it just right. 
     </p>
 
 </div>
@@ -263,7 +262,7 @@
 
     <div class="subpage-header-holder">
         <a>
-            <img class="general-image" style="width: 700px; height: 80%;" src="../Images/Promo/PathfindingPrototype.gif" alt="Project_Banner">
+            <img class="general-image" style="width: 700px; height: 80%;" src="../Images/Promo/AtWWD_Shop.png" alt="Project_Banner">
         </a>
     </div>
 
@@ -271,171 +270,77 @@
 
 
 <div class="subpage-text-body">
-
+    
     <p style="margin: 0px;">
-        But then it hit me: I was having a lot of fun programming the abilities of the AI, <alt-text>more fun than the original idea</alt-text> of 
-        the game I was currently making it for. 
+    The decision I ultimately made was that <alt-text>all Abilities and Actions</alt-text> were to be implemented as part of the 
+    <alt-text>same AbstracItem class</alt-text>. 
+    <br>
+    <br>
+    A <alt-text>general framework was made for what was considered an action</alt-text> that team members hoping on the item implementation task 
+    could easily adjust stats, grant properties and targeting to the actions. 
 
-        So I asked myself the question: <alt-text>“How can I translate programming a basic pathfinding AI into a game on its own?”</alt-text> 
     </p>
+
 </div>
 
+<div class="subpage-header-content" style="margin: 50px;">
 
-<div class="PAGE_SPACER"></div>
-<hr class="line_dash_medium">
-<div class="PAGE_SPACER"></div>
+    <div class="subpage-header-holder">
+        <a>
+            <img class="general-image" style="width: 700px; height: 80%;" src="../Images/Promo/AtWWD_Targeting.png" alt="Project_Banner">
+        </a>
+    </div>
+
+</div>
 
 
 <div class="subpage-text-body">
     
     <p style="margin: 0px;">
-        <a class="subpage-text-body-topic">Choosing a Programming Model </a>
+        We also decided that the <alt-text>Player Characters and Enemies of the game would also inherit from the same base</alt-text>, which allowed for enemy actions to be implemented the same way.
+        It was <alt-text>entirely possible to give a player item to an enemy</alt-text> and have it be working during development. 
         <br>
         <br>
-        It was very important that the programming language system needed to be <alt-text>approachable by anyone</alt-text> in order for the message of 
-        the game to be effective and wide-reaching. I started to prototype a <alt-text>block-based system similar to that of Scratch</alt-text> 
-        whereby instructions were represented by conditionals and actions that robot would take 
+        This approach <alt-text>saved a very large amount of time</alt-text> it would have taken to implement the enemy-side of the turn cycle, 
+        as they were just treated as the same entity as the player but with AI, different actions handcrafted for them and 
+        sometimes additional turns or rules. 
     </p>
-</div>
-
-
-<div class="subpage-header-content" style="margin: 50px;">
-
-    <div class="subpage-header-holder">
-        <a>
-            <img class="general-image" style="width: 700px; height: 80%;" src="../Images/Promo/Robots_Scratch.gif" alt="Project_Banner">
-        </a>
-    </div>
 
 </div>
+
+
+
+
+<div class="PAGE_SPACER"></div>
+<hr class="line_dash_medium">
+<div class="PAGE_SPACER"></div>
 
 
 
 <div class="subpage-text-body">
-
+    
     <p style="margin: 0px;">
-    I quickly realized that it would <alt-text>take a very large amount of time to perfect the UI design of a
-    Scratch-based system</alt-text> using the tools and time that I had available, so I needed to pivot to another system. 
+        <a class="subpage-text-body-topic">Tooltip Parsing </a>
+        <br>
+        <br>
+        But of course there <alt-text>needed to be a system that explained what all of these items would do</alt-text>: 
+        so I was responsible for developing a tooltip system that would fit the lead designer's vision. 
+        The end result was a robust and complex parser that could 
+       <alt-text> assign images, perform calculations, highlight text</alt-text> and more to streamline the flow of information. 
+
     </p>
 
 </div>
 
-<div class="PAGE_SPACER"></div>
-<hr class="line_dash_medium">
-<div class="PAGE_SPACER"></div>
-
-<div class="subpage-text-body">
-
-<p style="margin: 0px;">
-    <a class="subpage-text-body-topic">A Flow-Based Model  </a>
-    <br>
-    <br>
-    While researching other accessible programming models, I was reminded of <alt-text>Flow-Based models similar to those found in Unreal Engine’s Blueprints or Shader Graphs</alt-text> in various game engines. 
-    So I began to prototype a similar system for my game and within a day, I had a prototyped system working, 
-</p>
-
-</div>
-
-
-
 <div class="subpage-header-content" style="margin: 50px;">
-    <div class="subpage-header-holder">
-        <a>
-            <img class="general-image" style="width: 500px; height: 80%;" src="../Images/Promo/Robots_FlowEarly.gif" alt="Project_Banner">
-        </a>
-    </div>
 
     <div class="subpage-header-holder">
         <a>
-            <img class="general-image" style="width: 500px; height: 80%;" src="../Images/Promo/Robots_FlowIteration.gif" alt="Project_Banner">
+            <img class="general-image" style="width: 700px; height: 80%;" src="../Images/Promo/AtWWD_Rewards.png" alt="Project_Banner">
         </a>
     </div>
 
 </div>
-
-
-
-
-<hr class="line_dash_medium">
-<div class="PAGE_SPACER"></div>
-
-
-
-
-
-<div class="subpage-text-body">
-    
-<p style="margin: 0px;">
-    <a class="subpage-text-body-topic">Simplifying the UI </a>
-    <br>
-    <br>
-
-    Switching to a Flow-based model allowed for <alt-text>further simplification of the UI</alt-text>. I eventually ended up removing all 
-    text on the nodes completely in favor of <alt-text>clear images that would visually show what the nodes did</alt-text>. 
-    Just in case these images were not clear enough to a player, hovering over them would reveal a tooltip describing exactly what they did. 
-</p>
-
-</div>
-
-
-
-<div class="subpage-header-content" style="margin: 50px;">
-    <div class="subpage-header-holder">
-        <a>
-            <img class="general-image" style="width: 500px; height: 80%;" src="../Images/Promo/Robots_CodeDraw.gif" alt="Project_Banner">
-        </a>
-    </div>
-
-    <div class="subpage-header-holder">
-        <a>
-            <img class="general-image" style="width: 500px; height: 80%;" src="../Images/Promo/Robots_Flow_NearFinal.gif" alt="Project_Banner">
-        </a>
-    </div>
-
-</div>
-
-
-<hr class="line_dash_medium">
-<div class="PAGE_SPACER"></div>
-
-
-
-
-
-
-<div class="subpage-text-body">
-    
-<p style="margin: 0px;">
-    <a class="subpage-text-body-topic">Ease of Workflow </a>
-    <br>
-    <br>
-    I put in a lot of work into adding <alt-text>additional ways of interacting with the workflow</alt-text>
-     that obeyed laws of <alt-text>Human-Computer-Interaction</alt-text> to make programming as seamless as possible. 
-     This resulted in the addition of <alt-text>highlight code selection, dragging out blocks from a sidebar and even a mini-view of the entire workspace</alt-text>. 
-</p>
-
-</div>
-
-<div class="subpage-header-content" style="margin: 50px;">
-    <div class="subpage-header-holder">
-        <a>
-            <img class="general-image" style="width: 500px; height: 80%;" src="../Images/Promo/Robots_CodeGUI.gif" alt="Project_Banner">
-        </a>
-    </div>
-
-    <div class="subpage-header-holder">
-        <a>
-            <img class="general-image" style="width: 500px; height: 80%;" src="../Images/Promo/Robots_CodeHighlight.gif" alt="Project_Banner">
-        </a>
-    </div>
-
-</div>
-
-
-
-<hr class="line_dash_medium">
-<div class="PAGE_SPACER"></div>
-
 
 
 
